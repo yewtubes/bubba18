@@ -27,3 +27,15 @@ Remaining: authenticated Avatar/Settings/Groups/Develop and other legacy bodies,
 **Next actions:** Recover usable original inventory, avatar, settings and development documents; retain original working routes until authentic bodies are available. Validate additional social and group controls against the real backend.
 
 **Git status:** Source and evidence are published together in the commit containing this entry. Test metadata names the source base commit and identifies the changed worktree; no screenshot is represented as an exact clean-commit build.
+
+## 2026-10-27 — Group contracts verified against C# (Milestone 4, partial)
+
+**Implemented:** Fixed empty group pagination cursors and adapted the actual flat v1 role-member payload. Protected wall denial no longer prevents public group details from loading. Authentication finishes before loading membership controls. No backend permission checks were weakened.
+
+**Reused / recovered:** Existing C# group, role, wall and thumbnail APIs; original November 17 group document/CSS; the universal Frame. No replacement UI was drawn.
+
+**Tests / screenshots:** Expanded live integration now passes six checks with five screenshots in `evidence/social-2018-live/`, including Groups Games and Members. Signed-in membership hides Join; an anonymous session receives 401/403 for protected reads and never displays the protected post. Social database restart checks still pass. The earlier API fixture was corrected to match the real flat member schema.
+
+**Still broken / next:** Group relationships, store, shouts, paging and full membership/admin parity remain incomplete. Rendering and full historical visual certification remain outstanding.
+
+**Git status:** This entry and its actual runtime evidence are published with the corresponding source patch; test metadata identifies the source base and changed worktree.

@@ -1,7 +1,7 @@
 {
   "passed": true,
   "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
-  "sourceBaseCommit": "7c4411f2323fe571034728f977b43802c6da0717",
+  "sourceBaseCommit": "9447f639763b48715772c8fafd0acaaa47ad0236",
   "worktreeChanged": true,
   "viewport": {
     "width": 1366,
@@ -11,25 +11,39 @@
     "Real login and database user-search pagination through original December controller",
     "All 105 incoming requests deleted through C# APIs and verified in persistent SQL storage",
     "Recovered Following menu removes actual database relationship through existing C# API",
+    "Original November group details, protected wall and flat v1 role-member response load through C# APIs; existing membership hides Join",
+    "Anonymous wall rejection retains public group details and never discloses protected posts",
     "Request and following mutations survive database close and restart"
   ],
   "screenshots": [
     {
       "filename": "search-players-live.png",
       "url": "http://127.0.0.1:5080/search/users?keyword=LocalRequest",
-      "capturedAt": "2026-10-27T22:06:44.471Z",
+      "capturedAt": "2026-10-27T22:14:42.179Z",
       "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
     },
     {
       "filename": "friends-requests-live.png",
       "url": "http://127.0.0.1:5080/users/1/friends#!/friend-requests",
-      "capturedAt": "2026-10-27T22:06:45.899Z",
+      "capturedAt": "2026-10-27T22:14:43.446Z",
       "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
     },
     {
       "filename": "friends-following-menu-live.png",
       "url": "http://127.0.0.1:5080/users/1/friends#!/following",
-      "capturedAt": "2026-10-27T22:06:47.690Z",
+      "capturedAt": "2026-10-27T22:14:45.183Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    },
+    {
+      "filename": "group-games-live.png",
+      "url": "http://127.0.0.1:5080/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T22:14:46.476Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    },
+    {
+      "filename": "group-members-live.png",
+      "url": "http://127.0.0.1:5080/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T22:14:46.632Z",
       "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
     }
   ],

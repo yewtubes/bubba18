@@ -35,15 +35,15 @@ export const getRoles = ({ groupId }) => {
 }
 
 export const getMembers = ({groupId, cursor, limit = 10, sortOrder}) => {
-  return request('GET', getFullUrl('groups', `/v1/groups/${groupId}/users?cursor=${encodeURIComponent(cursor || '')}&limit=${limit}&sortOrder=${sortOrder}`)).then(d => d.data);
+  return request('GET', getFullUrl('groups', `/v1/groups/${groupId}/users?cursor=${encodeURIComponent(cursor || '0')}&limit=${limit}&sortOrder=${sortOrder}`)).then(d => d.data);
 }
 
 export const getRolesetMembers = ({ groupId, roleSetId, cursor, limit = 10, sortOrder }) => {
-  return request('GET', getFullUrl('groups', `/v1/groups/${groupId}/roles/${roleSetId}/users?cursor=${encodeURIComponent(cursor || '')}&limit=${limit}&sortOrder=${sortOrder}`)).then(d => d.data);
+  return request('GET', getFullUrl('groups', `/v1/groups/${groupId}/roles/${roleSetId}/users?cursor=${encodeURIComponent(cursor || '0')}&limit=${limit}&sortOrder=${sortOrder}`)).then(d => d.data);
 }
 
 export const getWall = ({ groupId, cursor, sort, limit }) => {
-  return request('GET', getFullUrl('groups', `/v2/groups/${groupId}/wall/posts?sortOrder=${sort}&limit=${limit}&cursor=${encodeURIComponent(cursor || "")}`)).then(d => d.data);
+  return request('GET', getFullUrl('groups', `/v2/groups/${groupId}/wall/posts?sortOrder=${sort}&limit=${limit}&cursor=${encodeURIComponent(cursor || '0')}`)).then(d => d.data);
 }
 
 export const postToWall = ({ groupId, content }) => {

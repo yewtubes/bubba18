@@ -19,7 +19,7 @@ try{
   if(p==='/apisite/users/v1/users/authenticated'){data={errors:[{code:0,message:'Not authenticated'}]};status=401;}
   else if(p==='/apisite/groups/v1/groups/900001')data={id:900001,name:'Local Group — API contract test',description:'Running recovered November 2018 markup with local browser test data.',memberCount:1,owner:{userId:31,username:'LocalMember'}};
   else if(p.endsWith('/roles'))data={roles:[{id:7,name:'Members',rank:1,memberCount:1}]};
-  else if(p.endsWith('/roles/7/users'))data={data:[{user:{userId:31,username:'LocalMember'},role:{id:7,name:'Members',rank:1}}],nextPageCursor:null};
+  else if(p.endsWith('/roles/7/users'))data={data:[{userId:31,username:'LocalMember',roleId:7}],nextPageCursor:null};
   else if(p==='/apisite/games/v2/groups/900001/games')data={data:[{id:42,name:'Local Test Place',rootPlace:{id:43},playing:0}]};
   else if(p.endsWith('/wall/posts'))data={data:[{id:1,body:'Local wall post. No historical account data is displayed.',created:'2026-10-27T12:00:00Z',poster:{user:{userId:31,username:'LocalMember'}}}],nextPageCursor:null};
   else if(p.startsWith('/apisite/thumbnails/'))data={data:[]};

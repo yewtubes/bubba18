@@ -1,8 +1,8 @@
 # Social milestone with the actual backend
 
-These three screenshots show the running Next.js site connected to the original C# website, Redis and disk-backed PostgreSQL via the PGlite wire server. Browser APIs are not mocked. Accounts are synthetic local records, named LocalTester and LocalRequest001–105. The viewport is 1366×768; screenshots are full-page images.
+These five screenshots show the running Next.js site connected to the original C# website, Redis and disk-backed PostgreSQL via the PGlite wire server. Browser APIs are not mocked. Accounts are synthetic local records, named LocalTester and LocalRequest001–105. The viewport is 1366×768; screenshots are full-page images.
 
-`backend-integration.json` records URLs, capture times, source base commit and changed-worktree status. Four checks passed: real login/search pagination, all 105 request deletions verified in SQL, unfollow verified in SQL, and both mutations surviving database close/restart. No page runtime exceptions or API 500s occurred.
+`backend-integration.json` records URLs, capture times, source base commit and changed-worktree status. Six checks passed: real login/search pagination, all 105 request deletions verified in SQL, unfollow verified in SQL, original group details/members/protected wall with existing-member controls, anonymous wall denial without hiding public details, and social mutations surviving database close/restart. No page runtime exceptions or API 500s occurred.
 
 Reproduce with frontend dependencies, .NET 6 website build, Redis, libsodium and the dev-database npm dependencies installed:
 

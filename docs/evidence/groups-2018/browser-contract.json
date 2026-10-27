@@ -5,7 +5,7 @@
     "width": 1366,
     "height": 768
   },
-  "sourceBaseCommit": "368c8a5fc826a1fb8c53e2b012a749fbd7ef090a",
+  "sourceBaseCommit": "9447f639763b48715772c8fafd0acaaa47ad0236",
   "worktreeChanged": true,
   "requests": [
     "/apisite/users/v1/users/authenticated",
@@ -24,13 +24,13 @@
     {
       "filename": "group-games-contract-fixture.png",
       "url": "http://127.0.0.1:3000/Groups/Group.aspx?gid=900001",
-      "capturedAt": "2026-10-27T19:17:16.431Z",
+      "capturedAt": "2026-10-27T22:16:01.769Z",
       "kind": "Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification"
     },
     {
       "filename": "group-members-contract-fixture.png",
       "url": "http://127.0.0.1:3000/Groups/Group.aspx?gid=900001",
-      "capturedAt": "2026-10-27T19:17:16.900Z",
+      "capturedAt": "2026-10-27T22:16:02.186Z",
       "kind": "Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification"
     }
   ],
