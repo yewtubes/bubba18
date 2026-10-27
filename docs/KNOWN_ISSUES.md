@@ -8,3 +8,5 @@
 - Native PostgreSQL is recommended for deployment. PGlite is a tested local fallback, not a production concurrency/authentication replacement.
 - No real payment or gift-card system is connected.
 - The opaque upstream settings ZIP is not published; active C# sources do not reference it. Proprietary Windows runtimes are installed separately.
+- December player-search markup, controller and templates are integrated and tested against C# and SQL. The exact 2018 metadata response remains unrecovered; the three-character minimum is from a 2021 metadata capture. Mobile, chat and join controls are not fully integrated.
+- The original Catalog languageResource adapter now exposes the recovered Intl comparison implementation; the previous langSensitiveCompare error is fixed and browser-tested.

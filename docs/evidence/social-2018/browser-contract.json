@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "kind": "Actual Next.js frontend with synthetic API-contract fixtures; not live C# integration or full 1:1 certification",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "sourceBaseCommit": "7c4411f2323fe571034728f977b43802c6da0717",
+  "worktreeChanged": true,
+  "checks": [
+    "December controller: 12-card pages, pagination, add/accept friend states, one universal shell",
+    "Encoded keyword and original no-results state",
+    "Ignore All snapshots both pages and declines all 105 without skipped or duplicate mutations",
+    "Original Following menu calls existing unfollow API and refreshes count",
+    "Failed mutation retains request, restores controls and shows error",
+    "Another profile cannot access request controls",
+    "Catalog original Intl dependency initialized without comparison error"
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "TypeError: n.contains is not a function\n    at f.setCreatorParam (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:8477)\n    at f.setQuery (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:7140)\n    at http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:2689\n    at http://127.0.0.1:3000/preserved/2018/vendor/angular.js:132:434\n    at m.$eval (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:69)\n    at m.$digest (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:144:131)\n    at m.$apply (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:363)\n    at http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:117\n    at Object.invoke (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:42:8)\n    at c (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:38)\n    at Object.Gc [as bootstrap] (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:332)\n    at _callee$ (webpack-internal:///./components/preserved2018/catalog.js:360:33)\n    at tryCatch (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:274:22)\n    at prototype.<computed> [as next] (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (webpack-internal:///./components/preserved2018/catalog.js:37:28)\n    at _next (webpack-internal:///./components/preserved2018/catalog.js:55:17)",
+    "TypeError: n.contains is not a function\n    at http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:17041\n    at m.$digest (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:144:410)\n    at m.$apply (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:363)\n    at http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:117\n    at Object.invoke (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:42:8)\n    at c (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:38)\n    at Object.Gc [as bootstrap] (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:21:332)\n    at _callee$ (webpack-internal:///./components/preserved2018/catalog.js:360:33)\n    at tryCatch (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:274:22)\n    at prototype.<computed> [as next] (webpack-internal:///./node_modules/next/dist/compiled/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (webpack-internal:///./components/preserved2018/catalog.js:37:28)\n    at _next (webpack-internal:///./components/preserved2018/catalog.js:55:17)",
+    "TypeError: n.contains is not a function\n    at f.setCreatorParam (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:8477)\n    at f.setQuery (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:7140)\n    at f.applySearch (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:15335)\n    at i.clearKeyword (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:33:1897)\n    at i.clearPrice (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:33:1833)\n    at i.clearCreator (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:33:1701)\n    at i.clearGenres (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:33:1525)\n    at http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:33:1996\n    at m.$broadcast (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:149:465)\n    at f.categoryClick (http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:16477)\n    at fn (eval at compile (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:236:180), <anonymous>:4:439)\n    at b (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:127:472)\n    at e (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:281:165)\n    at m.$eval (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:69)\n    at m.$apply (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:302)\n    at HTMLAnchorElement.<anonymous> (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:281:217)\n    at HTMLAnchorElement.dispatch (http://127.0.0.1:3000/preserved/2018/vendor/jquery.js:3:8436)\n    at r.handle (http://127.0.0.1:3000/preserved/2018/vendor/jquery.js:3:5139)",
+    "TypeError: n.contains is not a function\n    at http://127.0.0.1:3000/preserved/2018/catalog-runtime.original.js:29:17041\n    at m.$digest (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:144:410)\n    at m.$apply (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:147:363)\n    at HTMLAnchorElement.<anonymous> (http://127.0.0.1:3000/preserved/2018/vendor/angular.js:281:217)\n    at HTMLAnchorElement.dispatch (http://127.0.0.1:3000/preserved/2018/vendor/jquery.js:3:8436)\n    at r.handle (http://127.0.0.1:3000/preserved/2018/vendor/jquery.js:3:5139)"
+  ],
+  "unsupported": [],
+  "screenshots": [
+    {
+      "filename": "search-players-contract-fixture.png",
+      "url": "http://127.0.0.1:3000/search/users?keyword=Local",
+      "capturedAt": "2026-10-27T22:04:15.729Z",
+      "kind": "Actual Next.js frontend with synthetic API-contract fixtures; not live C# integration or full 1:1 certification"
+    },
+    {
+      "filename": "friends-requests-contract-fixture.png",
+      "url": "http://127.0.0.1:3000/users/31/friends#!/friend-requests",
+      "capturedAt": "2026-10-27T22:04:17.282Z",
+      "kind": "Actual Next.js frontend with synthetic API-contract fixtures; not live C# integration or full 1:1 certification"
+    },
+    {
+      "filename": "friends-following-menu-contract-fixture.png",
+      "url": "http://127.0.0.1:3000/users/31/friends#!/following",
+      "capturedAt": "2026-10-27T22:04:18.527Z",
+      "kind": "Actual Next.js frontend with synthetic API-contract fixtures; not live C# integration or full 1:1 certification"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 import {startDatabase,root} from './server.mjs';
-import {readFile,writeFile,mkdir,open} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,mkdtemp,open} from 'node:fs/promises';
 import path from 'node:path';
 import cp from 'node:child_process';
 import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 const output=path.join(root,'docs/evidence/social-2018-live');await mkdir(output,{recursive:true});
-const children=[],handles=[],delay=ms=>new Promise(r=>setTimeout(r,ms));let database,browser;
+const children=[],handles=[],delay=ms=>new Promise(r=>setTimeout(r,ms));let database,browser,dataDir;
 const report={passed:false,kind:'Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks',sourceBaseCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),worktreeChanged:true,viewport:{width:1366,height:768},checks:[],screenshots:[],errors:[],apiFailures:[]};
 async function spawn(name,command,args,cwd,env={}){const log=await open(path.join(root,'.local/social-live-'+name+'.log'),'w');handles.push(log);const child=cp.spawn(command,args,{cwd,detached:true,env:{...process.env,...env},stdio:['ignore',log.fd,log.fd]});child.on('error',e=>{child.startupError=e;});children.push(child);return child;}
 try{
- database=await startDatabase({dataDir:path.join(root,'.local/social-live-db'),port:5432});report.database=database.identity;
+ dataDir=await mkdtemp(path.join(root,'.local/social-live-db-'));database=await startDatabase({dataDir,port:5432});report.database=database.identity;
  const fixture=JSON.parse(await readFile(path.join(root,'.local/visual-test-account.json'),'utf8'));
  const {rows:existing}=await database.db.query('SELECT id FROM public."user"');assert.equal(existing.length,0,'Use a fresh dedicated test database');
  await database.db.query('INSERT INTO public."user"(id,username,password,description) VALUES(1,$1,$2,$3)',[fixture.username,fixture.hash,'Local account for verifying the preserved 2018 interface.']);
@@ -38,7 +38,9 @@ try{
  const {rows:[count]}=await database.db.query('SELECT count(*)::int AS count FROM user_friend_request WHERE user_id_two=1');assert.equal(count.count,0);report.checks.push('All 105 incoming requests deleted through C# APIs and verified in persistent SQL storage');
  await page.locator('#following').click();await page.getByText('LocalRequest001',{exact:true}).waitFor();await page.locator('.avatar-card-menu .rbx-menu-item').click();await page.locator('.popover .friend-unfollow').waitFor();await page.waitForTimeout(250);await shot('friends-following-menu-live.png');await page.locator('.popover .friend-unfollow').click();await page.getByText('Following (0)',{exact:true}).waitFor();
  const {rows:[following]}=await database.db.query('SELECT count(*)::int AS count FROM user_following WHERE user_id_who_is_following=1');assert.equal(following.count,0);report.checks.push('Recovered Following menu removes actual database relationship through existing C# API');
- assert.equal(report.errors.length,0,report.errors.join('\n'));assert.equal(report.apiFailures.length,0,JSON.stringify(report.apiFailures));report.passed=true;console.log(JSON.stringify({passed:true,checks:report.checks.length,screenshots:report.screenshots.length}));
+ assert.equal(report.errors.length,0,report.errors.join('\n'));assert.equal(report.apiFailures.length,0,JSON.stringify(report.apiFailures));report.passed=true;
 }finally{
- await writeFile(path.join(output,'backend-integration.json'),JSON.stringify(report,null,2)+'\n');if(browser)await browser.close();for(const child of children.reverse()){try{process.kill(-child.pid,'SIGTERM');}catch{}}await delay(300);for(const log of handles)await log.close();if(database)await database.close();
+ if(browser)await browser.close();for(const child of children.reverse()){try{process.kill(-child.pid,'SIGTERM');}catch{}}await delay(300);for(const log of handles)await log.close();if(database)await database.close();
+ if(report.passed){const reopened=await startDatabase({dataDir,port:5432});try{const {rows:[stored]}=await reopened.db.query('SELECT (SELECT count(*) FROM user_friend_request WHERE user_id_two=1)::int AS requests,(SELECT count(*) FROM user_following WHERE user_id_who_is_following=1)::int AS following');assert.equal(stored.requests,0);assert.equal(stored.following,0);report.checks.push('Request and following mutations survive database close and restart');report.restartPersistence=true;}catch(e){report.passed=false;throw e;}finally{await reopened.close();}}
+ await writeFile(path.join(output,'backend-integration.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,checks:report.checks.length,screenshots:report.screenshots.length}));
 }

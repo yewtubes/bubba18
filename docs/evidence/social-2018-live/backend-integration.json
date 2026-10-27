@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+  "sourceBaseCommit": "7c4411f2323fe571034728f977b43802c6da0717",
+  "worktreeChanged": true,
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "checks": [
+    "Real login and database user-search pagination through original December controller",
+    "All 105 incoming requests deleted through C# APIs and verified in persistent SQL storage",
+    "Recovered Following menu removes actual database relationship through existing C# API",
+    "Request and following mutations survive database close and restart"
+  ],
+  "screenshots": [
+    {
+      "filename": "search-players-live.png",
+      "url": "http://127.0.0.1:5080/search/users?keyword=LocalRequest",
+      "capturedAt": "2026-10-27T22:06:44.471Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    },
+    {
+      "filename": "friends-requests-live.png",
+      "url": "http://127.0.0.1:5080/users/1/friends#!/friend-requests",
+      "capturedAt": "2026-10-27T22:06:45.899Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    },
+    {
+      "filename": "friends-following-menu-live.png",
+      "url": "http://127.0.0.1:5080/users/1/friends#!/following",
+      "capturedAt": "2026-10-27T22:06:47.690Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    }
+  ],
+  "errors": [],
+  "apiFailures": [],
+  "database": {
+    "version": "PostgreSQL 18.6 (PGlite 0.5.12) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "database": "postgres"
+  },
+  "restartPersistence": true
+}
