@@ -1,0 +1,2112 @@
+{
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "method": "Original archived document and original unscoped CSS versus adapted running page; stable geometry and typography only. This is not full pixel or interaction parity.",
+  "pages": [
+    {
+      "name": "games",
+      "referenceUrl": "https://web.archive.org/web/20181215050530id_/https://www.roblox.com/games",
+      "referenceHash": "116121f821464afe51724907e8aedd3413cb9c0f4cae3b8d0da595ca2e15cb1c",
+      "captureDate": "20181215050530",
+      "renderedAt": "2026-10-27T18:42:42.870Z",
+      "referenceScreenshot": "historical-reference-games.png",
+      "implementationScreenshot": "games.png",
+      "original": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 916,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 876,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": null,
+        ".content h2": null,
+        ".content h3": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 966.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 1000.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "adapted": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 916,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 876,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": null,
+        ".content h2": null,
+        ".content h3": {
+          "x": 13,
+          "y": 99,
+          "width": 77,
+          "height": 29,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 966.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 1000.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "checks": [
+        {
+          "selector": "#header",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "backgroundColor",
+          "reference": "rgb(0, 116, 189)",
+          "implementation": "rgb(0, 116, 189)",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "y",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "height",
+          "reference": 40,
+          "implementation": 40,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "x",
+          "reference": 71,
+          "implementation": 71,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "width",
+          "reference": 341.5,
+          "implementation": 341.5,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "x",
+          "reference": 412.5,
+          "implementation": 412.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "width",
+          "reference": 308.5,
+          "implementation": 308.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "x",
+          "reference": 721,
+          "implementation": 721,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "width",
+          "reference": 33,
+          "implementation": 33,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontSize",
+          "reference": "0px",
+          "implementation": "0px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "backgroundColor",
+          "reference": "rgb(227, 227, 227)",
+          "implementation": "rgb(227, 227, 227)",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "x",
+          "reference": 0,
+          "implementation": 13,
+          "matches": false
+        },
+        {
+          "selector": ".content h3",
+          "property": "width",
+          "reference": 0,
+          "implementation": 77,
+          "matches": false
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontSize",
+          "reference": "24px",
+          "implementation": "24px",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "x",
+          "reference": 317.5,
+          "implementation": 317.5,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "width",
+          "reference": 77,
+          "implementation": 77,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontSize",
+          "reference": "21px",
+          "implementation": "21px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        }
+      ],
+      "matched": 58,
+      "total": 60
+    },
+    {
+      "name": "create",
+      "referenceUrl": "https://web.archive.org/web/20181215050606id_/https://www.roblox.com/create",
+      "referenceHash": "d70d89814f6511b24cc99cb3ad839956133b963ccad7c2bc3825c277ea505ee7",
+      "captureDate": "20181215050606",
+      "renderedAt": "2026-10-27T18:42:44.738Z",
+      "referenceScreenshot": "historical-reference-create.png",
+      "implementationScreenshot": "create.png",
+      "original": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 2392.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 2392.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": {
+          "x": 650.5,
+          "y": 129,
+          "width": 133,
+          "height": 70,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h2": {
+          "x": 198,
+          "y": 1337.203125,
+          "width": 970,
+          "height": 85,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h3": {
+          "x": 198,
+          "y": 1040,
+          "width": 260,
+          "height": 91.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 2432.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 2466.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "adapted": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 2392.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 2392.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": {
+          "x": 650.5,
+          "y": 129,
+          "width": 133,
+          "height": 70,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h2": {
+          "x": 198,
+          "y": 1337.203125,
+          "width": 970,
+          "height": 85,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h3": {
+          "x": 198,
+          "y": 1040,
+          "width": 260,
+          "height": 91.203125,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 2432.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 2466.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "checks": [
+        {
+          "selector": "#header",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "backgroundColor",
+          "reference": "rgb(0, 116, 189)",
+          "implementation": "rgb(0, 116, 189)",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "y",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "height",
+          "reference": 40,
+          "implementation": 40,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "x",
+          "reference": 71,
+          "implementation": 71,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "width",
+          "reference": 341.5,
+          "implementation": 341.5,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "x",
+          "reference": 412.5,
+          "implementation": 412.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "width",
+          "reference": 308.5,
+          "implementation": 308.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "x",
+          "reference": 721,
+          "implementation": 721,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "width",
+          "reference": 33,
+          "implementation": 33,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontSize",
+          "reference": "0px",
+          "implementation": "0px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "backgroundColor",
+          "reference": "rgb(227, 227, 227)",
+          "implementation": "rgb(227, 227, 227)",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "x",
+          "reference": 650.5,
+          "implementation": 650.5,
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "width",
+          "reference": 133,
+          "implementation": 133,
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontSize",
+          "reference": "48px",
+          "implementation": "48px",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "x",
+          "reference": 198,
+          "implementation": 198,
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "width",
+          "reference": 970,
+          "implementation": 970,
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontSize",
+          "reference": "30px",
+          "implementation": "30px",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "x",
+          "reference": 198,
+          "implementation": 198,
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "width",
+          "reference": 260,
+          "implementation": 260,
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontSize",
+          "reference": "24px",
+          "implementation": "24px",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "x",
+          "reference": 317.5,
+          "implementation": 317.5,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "width",
+          "reference": 77,
+          "implementation": 77,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontSize",
+          "reference": "21px",
+          "implementation": "21px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        }
+      ],
+      "matched": 72,
+      "total": 72
+    },
+    {
+      "name": "robux",
+      "referenceUrl": "https://web.archive.org/web/20181120030543id_/https://www.roblox.com/upgrades/robux",
+      "referenceHash": "309a44321383e0e1aec04b0975b025599dcd06af6272039f25fe2fac19ba9d41",
+      "captureDate": "20181120030543",
+      "renderedAt": "2026-10-27T18:42:46.277Z",
+      "referenceScreenshot": "historical-reference-robux.png",
+      "implementationScreenshot": "robux.aspx.png",
+      "original": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 828,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 198,
+          "y": 40,
+          "width": 970,
+          "height": 788,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": {
+          "x": 587.5,
+          "y": 146,
+          "width": 54,
+          "height": 38.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h2": {
+          "x": 198,
+          "y": 50,
+          "width": 133,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h3": {
+          "x": 331,
+          "y": 56,
+          "width": 24,
+          "height": 34,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 878.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 912.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "adapted": {
+        "#header": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(0, 116, 189)"
+        },
+        ".rbx-navbar": {
+          "x": 71,
+          "y": 4,
+          "width": 341.5,
+          "height": 32.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "#navbar-search-input": {
+          "x": 412.5,
+          "y": 6,
+          "width": 308.5,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        "#navbar-search-btn": {
+          "x": 721,
+          "y": 6,
+          "width": 33,
+          "height": 28,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "0px",
+          "fontWeight": "400",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-main": {
+          "x": 0,
+          "y": 40,
+          "width": 1366,
+          "height": 828,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content": {
+          "x": 198,
+          "y": 40,
+          "width": 970,
+          "height": 788,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(227, 227, 227)"
+        },
+        ".content h1": {
+          "x": 587.5,
+          "y": 146,
+          "width": 54,
+          "height": 38.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h2": {
+          "x": 198,
+          "y": 50,
+          "width": 133,
+          "height": 40,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": "400",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".content h3": {
+          "x": 331,
+          "y": 56,
+          "width": 24,
+          "height": 34,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        ".container-footer": {
+          "x": 0,
+          "y": 878.203125,
+          "width": 1366,
+          "height": 157.796875,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "backgroundColor": "rgb(255, 255, 255)"
+        },
+        ".container-footer a": {
+          "x": 317.5,
+          "y": 912.203125,
+          "width": 77,
+          "height": 27,
+          "fontFamily": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      "checks": [
+        {
+          "selector": "#header",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "backgroundColor",
+          "reference": "rgb(0, 116, 189)",
+          "implementation": "rgb(0, 116, 189)",
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "y",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": "#header",
+          "property": "height",
+          "reference": 40,
+          "implementation": 40,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "x",
+          "reference": 71,
+          "implementation": 71,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "width",
+          "reference": 341.5,
+          "implementation": 341.5,
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".rbx-navbar",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "x",
+          "reference": 412.5,
+          "implementation": 412.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "width",
+          "reference": 308.5,
+          "implementation": 308.5,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-input",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "x",
+          "reference": 721,
+          "implementation": 721,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "width",
+          "reference": 33,
+          "implementation": 33,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontSize",
+          "reference": "0px",
+          "implementation": "0px",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "y",
+          "reference": 6,
+          "implementation": 6,
+          "matches": true
+        },
+        {
+          "selector": "#navbar-search-btn",
+          "property": "height",
+          "reference": 28,
+          "implementation": 28,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-main",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "x",
+          "reference": 198,
+          "implementation": 198,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "width",
+          "reference": 970,
+          "implementation": 970,
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".content",
+          "property": "backgroundColor",
+          "reference": "rgb(227, 227, 227)",
+          "implementation": "rgb(227, 227, 227)",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "x",
+          "reference": 587.5,
+          "implementation": 587.5,
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "width",
+          "reference": 54,
+          "implementation": 54,
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontSize",
+          "reference": "36px",
+          "implementation": "36px",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": ".content h1",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "x",
+          "reference": 198,
+          "implementation": 198,
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "width",
+          "reference": 133,
+          "implementation": 133,
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontSize",
+          "reference": "30px",
+          "implementation": "30px",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "fontWeight",
+          "reference": "400",
+          "implementation": "400",
+          "matches": true
+        },
+        {
+          "selector": ".content h2",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "x",
+          "reference": 331,
+          "implementation": 331,
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "width",
+          "reference": 24,
+          "implementation": 24,
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontSize",
+          "reference": "24px",
+          "implementation": "24px",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".content h3",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "x",
+          "reference": 0,
+          "implementation": 0,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "width",
+          "reference": 1366,
+          "implementation": 1366,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontSize",
+          "reference": "16px",
+          "implementation": "16px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer",
+          "property": "backgroundColor",
+          "reference": "rgb(255, 255, 255)",
+          "implementation": "rgb(255, 255, 255)",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "x",
+          "reference": 317.5,
+          "implementation": 317.5,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "width",
+          "reference": 77,
+          "implementation": 77,
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontFamily",
+          "reference": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "implementation": "\"Source Sans Pro\", Arial, Helvetica, sans-serif",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontSize",
+          "reference": "21px",
+          "implementation": "21px",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "fontWeight",
+          "reference": "300",
+          "implementation": "300",
+          "matches": true
+        },
+        {
+          "selector": ".container-footer a",
+          "property": "backgroundColor",
+          "reference": "rgba(0, 0, 0, 0)",
+          "implementation": "rgba(0, 0, 0, 0)",
+          "matches": true
+        }
+      ],
+      "matched": 72,
+      "total": 72
+    }
+  ]
+}
