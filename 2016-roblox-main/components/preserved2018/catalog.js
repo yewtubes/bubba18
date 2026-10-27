@@ -19,7 +19,7 @@ export default function Catalog2018(){
    try{app=angular.module('robloxApp');}catch{
     app=angular.module('robloxApp',['ngSanitize']);window.robloxApp=app;
     const translate=(key,params)=>{let value=captured.locale[key]||key;for(const [name,text] of Object.entries(params||{}))value=value.replace(new RegExp('\\{'+name+'\\}','g'),text);return value;};
-    app.provider('languageResource',function(){this.setLanguageKeysFromFile=()=>{};this.$get=()=>({get:translate,getTranslation:translate});});
+    app.provider('languageResource',function(){this.setLanguageKeysFromFile=()=>{};this.$get=()=>({get:translate,getTranslation:translate,intl:Roblox.IntlUtils});});
     app.filter('translate',()=>translate);app.filter('abbreviate',()=>number=>Number(number||0).toLocaleString('en-US'));app.value('_',_);
     app.factory('abpService',()=>({adIds:{leaderboardAbp:'leaderboard'},registerAd(){},refreshAllAds(){}}));
     app.run(['$templateCache',cache=>Object.entries(captured.templates).forEach(([key,value])=>cache.put(key,value))]);

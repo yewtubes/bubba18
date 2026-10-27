@@ -13,10 +13,11 @@ import {multiGetUserThumbnails} from '../../services/thumbnails';
 // scope fields. The original controller remains in the research resource set.
 export default function Friends2018(){
  const router=useRouter(),auth=AuthenticationStore.useContainer(),host=useRef(null),[error,setError]=useState('');
- useEffect(()=>{const userId=Number(router.query.userId);if(!userId||auth.isPending)return;let disposed=false,scope,generation=0;
+ useEffect(()=>{const userId=Number(router.query.userId);if(!userId||auth.isPending)return;const requestedTab=router.asPath.split('#!/')[1]||window.location.hash.replace(/^#!\//,'');let disposed=false,scope,generation=0;
   (async()=>{
    await loadOriginalScript('/preserved/2018/vendor/jquery.js');await loadOriginalScript('/preserved/2018/vendor/bootstrap.js');await loadOriginalScript('/preserved/2018/vendor/angular.js');if(disposed)return;
    const angular=window.angular,name='preservedFriends'+Date.now(),app=angular.module(name,[]),root=host.current;
+   app.config(['$locationProvider',provider=>provider.hashPrefix('!')]);
    const translate=(key,params)=>{let result=locale[key]||key;for(const [k,v] of Object.entries(params||{}))result=result.split('{'+k+'}').join(v);return result;};
    app.filter('translate',()=>translate);app.run(['$templateCache',cache=>{cache.put('friend-card-menu',controls.menu);cache.put('system-feedback','<div class="alert-system-feedback"><div class="alert alert-warning"></div></div>');}]);
    app.directive('cardMenu',()=>({restrict:'A',scope:true,templateUrl:'friend-card-menu',link(s,element){
@@ -38,7 +39,7 @@ export default function Friends2018(){
     const run=promise=>promise.catch(()=>{if(!disposed)setError('The friends request could not be completed. Please try again.');});
     const mutate=action=>{if(operation||userId!==auth.userId||!auth.isAuthenticated)return;operation=true;s.disabled=true;setError('');run((async()=>{try{await action();if(!disposed)await load();}catch(e){if(!disposed)await load();throw e;}finally{operation=false;apply(()=>{s.disabled=false;});}})());};
     const tabs={friends:['Label.Friends','Message.FriendsTabTooltip'],following:['Label.Following','Message.FollowingTabTooltip'],followers:['Label.Followers','Message.FollowerTabTooltip'],'friend-requests':['Label.FriendRequests','Message.RequestsTabTooltip']};
-    s.selectTab=tab=>{if(operation)return;if(!tabs[tab]||(tab==='friend-requests'&&userId!==auth.userId))tab='friends';setError('');s.currentData.activeTab=tab;s.currentData.currentPage=0;s.currentData.templateVisible=false;[s.currentData.stateLabel,s.currentData.tooltipLabel]=tabs[tab].map(key=>translate(key));window.history.replaceState(null,'','#!/'+tab);run(load());};
+    s.selectTab=tab=>{if(operation)return;if(!tabs[tab]||(tab==='friend-requests'&&userId!==auth.userId))tab='friends';setError('');s.currentData.activeTab=tab;s.currentData.currentPage=0;s.currentData.templateVisible=false;[s.currentData.stateLabel,s.currentData.tooltipLabel]=tabs[tab].map(key=>translate(key));window.history.replaceState(window.history.state,'','#!/'+tab);run(load());};
     s.newPage=direction=>{if(s.disabled)return;s.currentData.currentPage+=direction==='next'?18:-18;run(load());};
     s.acceptFriendRequest=id=>mutate(()=>service.acceptFriendRequest({userId:id}));s.declineFriendRequest=id=>mutate(()=>service.declineFriendRequest({userId:id}));
     s.declineAllFriendRequests=()=>mutate(async()=>{
@@ -49,7 +50,7 @@ export default function Friends2018(){
     });
     s.unFollow=friend=>mutate(()=>service.unfollowUser({userId:friend.UserId}));s.follow=friend=>mutate(()=>service.followUser({userId:friend.UserId}));s.unFriend=friend=>mutate(()=>service.unfriendUser({userId:friend.UserId}));
     getUserInfo({userId}).then(user=>apply(()=>{s.currentData.userName=user.name;})).catch(()=>{if(!disposed)setError('User not found.');});
-    const initial=window.location.hash.replace(/^#!\//,'');s.selectTab(['friends','followers','following','friend-requests'].includes(initial)?initial:'friends');
+    s.selectTab(['friends','followers','following','friend-requests'].includes(requestedTab)?requestedTab:'friends');
    }]);
    const t=document.createElement('template');t.innerHTML=capture.html;t.content.querySelector('#state-properties')?.remove();
    t.content.querySelectorAll('[captcha]').forEach(e=>e.remove());

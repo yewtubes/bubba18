@@ -16,6 +16,7 @@ export default function Search2018(){
  useEffect(()=>{
   if(!router.isReady||auth.isPending)return;let disposed=false,scope;const root=host.current;
   (async()=>{
+   window.Roblox=window.Roblox||{};
    for(const file of ['vendor/jquery.js','vendor/angular.js','vendor/angular-sanitize.js','intl-string.original.js','search-runtime.original.js'])await loadOriginalScript('/preserved/2018/'+file);
    if(disposed)return;
    const angular=window.angular,app=angular.module('preservedSearch'+Date.now(),['ngSanitize']);
