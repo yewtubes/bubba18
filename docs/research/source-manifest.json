@@ -1366,8 +1366,68 @@
         "search/users",
         "catalog"
       ]
+    },
+    {
+      "url": "https://js.rbxcdn.com/1aeb2d6aeb60919539349ce9b2b4eee64e86e83219b2e5af45a28e99d10ccb78.js",
+      "filename": "redesign-bundle.raw",
+      "description": "Later original redesigned Groups component resource; exact December version unrecovered",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2019-05-24T13:08:08Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved-private-original-selected-templates-published",
+      "content_hash": "24083507c5ca54725949f2c70b5a6485ff299c2cad6f759df173a806f6ea89a3",
+      "helps_restore": [
+        "groups-redesign"
+      ],
+      "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/efe935ba9b5f7eec75775966e936952cf1b0295731d665a550a71db864fa84ed.css/fetch",
+      "filename": "redesign-css.raw",
+      "description": "Later original redesigned Groups component resource; exact December version unrecovered",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2019-05-24T13:08:08Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "b7588e9c9793d69bf07c53301e86df1a4aea1a82d7cca3a9dc3e915ef7b19a4d",
+      "helps_restore": [
+        "groups-redesign"
+      ],
+      "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
+    },
+    {
+      "url": "https://js.rbxcdn.com/d5485aec6ae7827ee9ac58afa8307b8d.js.gzip",
+      "filename": "redesign-page.raw",
+      "description": "Later original redesigned Groups component resource; exact December version unrecovered",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2019-05-24T13:08:08Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved-private-original-selected-templates-published",
+      "content_hash": "8d97d485df78328271c28b236a7f262d447d52e5dbf3f35b7f46f914d3779059",
+      "helps_restore": [
+        "groups-redesign"
+      ],
+      "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
+    },
+    {
+      "url": "https://js.rbxcdn.com/7f873aa886b95df8dca20e68b86766e76fb0367664f5b479d91b7c1f49c8cf28.js",
+      "filename": "thumbnail-components.raw",
+      "description": "Later original redesigned Groups component resource; exact December version unrecovered",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2019-05-24T13:08:08Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved-private-original-selected-templates-published",
+      "content_hash": "ba3e68b3a6d3664867480f5e961a2977b4005e769aa152c46711d8ce9a6949a1",
+      "helps_restore": [
+        "groups-redesign"
+      ],
+      "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
     }
   ],
-  "source_count": 92,
+  "source_count": 96,
   "publication_policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present."
 }
