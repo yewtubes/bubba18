@@ -1,0 +1,79 @@
+{
+  "policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present.",
+  "files": [
+    {
+      "path": "docs/research/raw/116121f821464afe51724907e8aedd3413cb9c0f4cae3b8d0da595ca2e15cb1c.html",
+      "original_sha256": "0b3943f8b6a73f0a346ee82cbd3d5ca3f2408c8f6b4e6c53c5f7fe1be82e5bfe",
+      "published_sha256": "fef8020fb63d14d6592f3ef5fc6d74b2a51c28d767f8bb106a46a42f7c5200f9"
+    },
+    {
+      "path": "docs/research/raw/309a44321383e0e1aec04b0975b025599dcd06af6272039f25fe2fac19ba9d41.html",
+      "original_sha256": "60b75ea627f7232d7aee8eed4f750afa2ef9d29187e44485a948ef500132f53f",
+      "published_sha256": "e4929a29f50755c93715f5edbb92f551fd6fda5e0b25ec585cf957bd5b4c341f"
+    },
+    {
+      "path": "docs/research/raw/5fdb19f64edc767da830a51232ae3fb17505a5f127d86bebf2eb02243320b54c.html",
+      "original_sha256": "aac41a0a35747cfd6216330df07a04f9d4721b1218be7e019b28d92c5edc3179",
+      "published_sha256": "aca520b244a1024a6e0fcdbb0d9d6fcf2bbaf8b8983dfd6d98aefea5776bf7d7"
+    },
+    {
+      "path": "docs/research/raw/6635f0794ac8ac3bc9cdaac22b19db91a4bdda08dc9ae45ba146b222c27b2b9c.html",
+      "original_sha256": "cf71c9458770732e9cb12daf89fbfc8fb70eadf55a5e9022a22196e644265b69",
+      "published_sha256": "b05a62800419caa591e2a6164ca50881bc8a412256f4fac466a9be29990f9305"
+    },
+    {
+      "path": "docs/research/raw/673a20e7815622efa30ed8716ce34c08e7ec3967bb417f0b1e4e11d81594f0f4.html",
+      "original_sha256": "45bba08532a1044e209d13c2b3327713876daf3e797a7056e6c35d6bdfe9b390",
+      "published_sha256": "8ff68b729bf983e27dc8ef4bfe5a8716abefac67b2ffb0b72ca7cd8a158879cc"
+    },
+    {
+      "path": "docs/research/raw/6c11ae7d7732a7ab027865bea20838867941faa9337d26c32701932f2bffe11e.html",
+      "original_sha256": "5f12bce6c46de118dbd27f7eed4c9b15d7fff281f893d39ea7d51d905e11622f",
+      "published_sha256": "a69806159028172968286d1801b810d2479a93e8da4f53f548e7b668563f3b03"
+    },
+    {
+      "path": "docs/research/raw/c478418cb2ce5f9a7f8a6d1870150f72c6b0e5465c85bd1782ce0ea60cd7a982.html",
+      "original_sha256": "9f1c7109fc6e2d2a59b14a5dd7128d4b58f9c55331c17173c7f721815aa7cb84",
+      "published_sha256": "d89ba08c7462f3b235dfffdcbb70b13707918496146352ebb4de0e1af9e8bad8"
+    },
+    {
+      "path": "docs/research/raw/c4e9de2dbce8df312edff20d9bc61cc82b6086bd99bb318886264dbbfa669e4b.html",
+      "original_sha256": "53910b0ed49d9aa736f28dba31907b91647e483c5b5a16a54a776275cbd4b7f4",
+      "published_sha256": "3e22c46593f3be316b6c8e9688a7c52a587854f865f1dedc74786dd1938236aa"
+    },
+    {
+      "path": "docs/research/raw/cf487455635b1b112444d2d85def9c131afa00259e989e6467761fe3535ea64c.html",
+      "original_sha256": "882975450611f3f4b6455e11d6bff5311c4a0c180b85796a012bfdd747bedb00",
+      "published_sha256": "651ca176e22366e240f6a7f47843047169c990df0d0d5009fa26016f0dc44541"
+    },
+    {
+      "path": "docs/research/raw/d70d89814f6511b24cc99cb3ad839956133b963ccad7c2bc3825c277ea505ee7.html",
+      "original_sha256": "a43f50d227210a3dbad8b4757335c30ae19061bc0f3f0fb80966e491cb0cfa49",
+      "published_sha256": "8e77b6ff85b8b3ef5c90ccd1d4fc4462bf6c14020276898f9f03a0ba39f26716"
+    },
+    {
+      "path": "docs/research/raw/f069d79b5034556d18ccd2c3ae7aeddc155aec562f97f2f4cdb3f213bd8883ca.html",
+      "original_sha256": "1eaa622f11265aeb6d53a8bd73c3c350882b24dae0668d599c809a9c0b8ef81b",
+      "published_sha256": "fe48abee7322c88c9ca5cacf502ea0c1ee0363277232db434824436786aa7bfc"
+    },
+    {
+      "path": "docs/research/raw/f12d99f078901d5ee7444126247e95820f77ed8fe7bccffbefabfdb643bb0d29.html",
+      "original_sha256": "3fcec09a1f064be26e19d4a9aa4924645eb1a836fc221775966653bb0c119bce",
+      "published_sha256": "da09c21e31ca7ef66a23f4d3fdd1f6dd4d01a4a6de7b39ef4075caa3bc9fa8b8"
+    }
+  ],
+  "raw_html_withheld": [
+    "docs/research/raw/c4e9de2dbce8df312edff20d9bc61cc82b6086bd99bb318886264dbbfa669e4b.html",
+    "docs/research/raw/6c11ae7d7732a7ab027865bea20838867941faa9337d26c32701932f2bffe11e.html",
+    "docs/research/raw/d70d89814f6511b24cc99cb3ad839956133b963ccad7c2bc3825c277ea505ee7.html",
+    "docs/research/raw/6635f0794ac8ac3bc9cdaac22b19db91a4bdda08dc9ae45ba146b222c27b2b9c.html",
+    "docs/research/raw/c478418cb2ce5f9a7f8a6d1870150f72c6b0e5465c85bd1782ce0ea60cd7a982.html",
+    "docs/research/raw/cf487455635b1b112444d2d85def9c131afa00259e989e6467761fe3535ea64c.html",
+    "docs/research/raw/5fdb19f64edc767da830a51232ae3fb17505a5f127d86bebf2eb02243320b54c.html",
+    "docs/research/raw/f069d79b5034556d18ccd2c3ae7aeddc155aec562f97f2f4cdb3f213bd8883ca.html",
+    "docs/research/raw/309a44321383e0e1aec04b0975b025599dcd06af6272039f25fe2fac19ba9d41.html",
+    "docs/research/raw/673a20e7815622efa30ed8716ce34c08e7ec3967bb417f0b1e4e11d81594f0f4.html",
+    "docs/research/raw/f12d99f078901d5ee7444126247e95820f77ed8fe7bccffbefabfdb643bb0d29.html",
+    "docs/research/raw/116121f821464afe51724907e8aedd3413cb9c0f4cae3b8d0da595ca2e15cb1c.html"
+  ]
+}

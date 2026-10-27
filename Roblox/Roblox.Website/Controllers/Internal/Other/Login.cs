@@ -57,7 +57,8 @@ namespace Roblox.Website.Controllers
 		[HttpPostBypass("login")]
 		public async Task<MVC.IActionResult> Login(
 			[MVC.FromForm] string? username,
-			[MVC.FromForm] string? password)
+			[MVC.FromForm] string? password,
+            [MVC.FromForm] string? returnUrl = null)
 		{
 			var ip = GetIP(GetRequesterIpRaw(HttpContext));
 			var hashedIp = HashString(ip);
@@ -173,7 +174,7 @@ namespace Roblox.Website.Controllers
 					Expires = DateTimeOffset.Now.AddYears(1)
 				});
 
-			return Redirect("/home");
+			return Redirect(Url.IsLocalUrl(returnUrl) ? returnUrl! : "/home");
 		}
 		
 		private static readonly Dictionary<string, long> Temp2FATokens = new Dictionary<string, long>();

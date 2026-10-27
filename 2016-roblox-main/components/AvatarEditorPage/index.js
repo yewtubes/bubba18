@@ -173,6 +173,7 @@ const useStyles = createUseStyles({
 // REF2: https://youtu.be/pF-jlI9OJGs
 
 function AvatarEditor() {
+    const router = useRouter();
     const s = useStyles();
     const buttonStyles = useButtonStyles();
     const auth = AuthenticationStore.useContainer();
@@ -237,12 +238,12 @@ function AvatarEditor() {
         debounce.current = false;
     }
     
-    useEffect(async () => {
+    useEffect(() => { (async () => {
         if (debounce.current) {
             await wait(3);
             if (debounce.current) debounce.current = false;
         }
-    }, [debounce]);
+    })().catch(console.error); }, [debounce]);
     
     useEffect(() => {
         setAvThumb(store.avThumb)
@@ -259,7 +260,6 @@ function AvatarEditor() {
                 <span>Explore the catalog to find more clothes!</span>
                 <ActionButton label="Get More" className={s.moreBut} buttonStyle={buttonStyles.newBuyButton}
                               onClick={() => {
-                                  const router = useRouter();
                                   router.push("/catalog").then();
                               }}/>
             </div>
@@ -272,7 +272,7 @@ function AvatarEditor() {
                             avThumb && page.thumbnailType !== 1 ?
                             <img src={avThumb} alt={`${auth.username}'s Avatar`}/>
                             :
-                            store.avThumb3D && is3DReady ?
+                            store.avThumb3D && page.thumbnailType === 1 ?
                             null
                             :
                             <span className="spinner" style={{ height: "100%", backgroundSize: "auto 36px" }}/>

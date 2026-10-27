@@ -1,7 +1,1 @@
-import Login from "../components/loginPage";
-
-const LoginPage = () => {
-    return <Login></Login>
-}
-
-export default LoginPage;
+export {default} from '../components/preserved2018/login';

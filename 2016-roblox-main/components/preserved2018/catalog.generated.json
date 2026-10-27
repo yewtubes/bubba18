@@ -1,0 +1,744 @@
+{
+  "templates": {
+    "catalog-page": "<div class=\"alert-system-feedback\"><div class=\"alert alert-warning\" ng-class=\"{'on':layout.showError}\"><span class=\"alert-content\" ng-bind=\"'Response.Error.Filter'|translate\"></span> <span class=\"icon-close-white\" ng-click=\"closeWarning()\"></span></div></div><div class=\"clearfix catalog-content\" id=\"catalog-content\" ng-class=\"{'splash':data.displaySplash,'c-version':data.showCVersion,'buy-button-refactor-enabled':catalogData.stateProperties.isBuyButtonRepositionEnabledForCatalogFilter}\"><div id=\"main-view\" ng-hide=\"layout.hideMainView\"><div class=\"search-bars\"><h1 class=\"heading\" ng-if=\"library.initialized&amp;&amp;!(library.isPhone&amp;&amp;library.isApp)\"><a href=\"{{library.catalogUrl}}\" ng-bind=\"'Heading.CatalogPage'|translate\" target=\"_self\"></a></h1><a class=\"btn-primary-sm buy-robux\" href=\"{{library.buyRobuxUrl}}\" ng-bind=\"'Action.BuyRobux'|translate\" ng-if=\"library.initialized&amp;&amp;!(library.isPhone&amp;&amp;library.isApp)&amp;&amp;!catalogData.stateProperties.isBuyButtonRepositionEnabledForCatalogFilter\" target=\"_self\"></a><div ng-include=\"'mobile-catalog-search-bar'\"></div><div class=\"clearfix catalog-search-bar-container\" ng-if=\"library.initialized&amp;&amp;!library.isPhone\"><div ng-include=\"'catalog-search-bar'\"></div><a class=\"btn-primary-md buy-robux\" href=\"{{library.buyRobuxUrl}}\" ng-bind=\"'Action.BuyRobux'|translate\" ng-if=\"library.initialized&amp;&amp;!(library.isPhone&amp;&amp;library.isApp)&amp;&amp;catalogData.stateProperties.isBuyButtonRepositionEnabledForCatalogFilter\" target=\"_self\"></a></div></div><div class=\"catalog-results\"><h3 class=\"featured-items-heading\" ng-show=\"data.displaySplash\"><span ng-bind-html=\"'Label.FeaturedItemsOnRoblox'|translate:{spanStart:'&lt;span class=text-roblox&gt;',spanEnd:'&lt;/span&gt;',roblox:'Roblox'}\"></span> <a class=\"btn-primary-xs buy-robux\" href=\"{{library.buyRobuxUrl}}\" ng-bind=\"'Action.BuyRobux'|translate\" ng-if=\"!catalogData.stateProperties.isBuyButtonRepositionEnabledForCatalogFilter\" target=\"_self\"></a></h3><div ng-if=\"library.initialized&amp;&amp;!library.isPhone\" ng-show=\"!data.displaySplash\"><div ng-include=\"'catalog-breadcrumbs'\"></div></div><div class=\"results-container\" id=\"results\"><div class=\"section-content-off\" ng-bind=\"'Response.NoItemsFound'|translate\" ng-show=\"layout.showNoResultsMessage\"></div><div class=\"section-content-off\" ng-bind=\"'Response.NoSaleItemsFromSearch'|translate\" ng-show=\"data.isAlternateResult\"></div><div class=\"section-content-off\" ng-bindd=\"'Response.TemporarilyUnavailable' | translate\" ng-show=\"layout.showErrorMessage\"></div><ul class=\"hlist item-cards-stackable\" infinite-scroll=\"getNextPage()\" ng-if=\"library.initialized&amp;&amp;library.isPhone\"><li class=\"list-item item-card\" item-card=\"\" ng-repeat=\"item in data.results\"></li></ul><ul class=\"hlist item-cards-stackable\" ng-class=\"{'faded':layout.loading}\" ng-if=\"library.initialized&amp;&amp;!library.isPhone\"><li class=\"list-item item-card\" item-card=\"\" ng-repeat=\"item in data.results\"></li></ul><div class=\"spinner spinner-sm\" ng-show=\"layout.loading\"></div></div><button class=\"btn-control-md btn-full-width view-all\" ng-bind=\"'Label.AllFeaturedItems'|translate\" ng-click=\"getAllFeaturedItems()\" ng-if=\"showViewAllFeaturedItemsButton()\"></button><div current-page=\"data.pageNumber\" is-loading=\"layout.loading\" items-per-page=\"data.resultsPerPage\" model-changed=\"data.updatePagination\" ng-show=\"data.showPagination\" num-pages=\"data.numberOfPages\" page-changed=\"pageChanged\" pagination=\"\" show-first-last=\"layout.showFirstLast\"></div></div></div><div ng-include=\"'catalog-mobile-search-options'\"></div><div ng-if=\"library.initialized&amp;&amp;!library.isPhone\"><div ng-include=\"'catalog-search-options'\"></div></div></div>",
+    "catalog-item-card": "<a class=\"item-card-container\" href=\"{{item.AbsoluteUrl}}\" target=\"_self\"><div class=\"asset-status-icon\" ng-if=\"item.AssetStatusIcon\"><div class=\"status-{{assetStatusIcon.CssTag}}\" ng-class=\"{'has-icon':assetStatusIcon.ShowTimerIcon,'has-text':assetStatusIcon.DisplayText&amp;&amp;assetStatusIcon.DisplayText.length&gt;0}\" ng-repeat=\"assetStatusIcon in item.AssetStatusIcon\"><span class=\"icon-clock\" ng-if=\"assetStatusIcon.ShowTimerIcon\"></span> <span>{{assetStatusIcon.DisplayText}}</span></div></div><div class=\"item-card-link\"><div class=\"item-card-thumb-container\"><img class=\"item-card-thumb\" image-retry=\"\" ng-src=\"{{item.Thumbnail.Url}}\" thumbnail=\"item.Thumbnail\"/> <span ng-class=\"'icon-'+item.AssetRestrictionIcon.CssTag+'-label'\" ng-show=\"item.AssetRestrictionIcon\"></span></div></div><div class=\"item-card-caption\"><div class=\"item-card-name-link\"><div class=\"text-overflow item-card-name\" title=\"{{item.Name}}\">{{item.Name}}</div></div><div class=\"text-secondary\" ng-class=\"{'margin-top-none':!item.HasSecondaryInfo}\" ng-if=\"item.HasSecondaryInfo\"><div class=\"text-overflow item-card-label\" ng-if=\"item.Remaining\"><span ng-bind=\"'Label.Card.Remaining'|translate\"></span> <span ng-bind=\"item.Remaining|number\"></span></div><div class=\"text-overflow item-card-label\" ng-if=\"item.Price&amp;&amp;item.BestPrice\"><span ng-bind=\"'Label.Card.PriceWas'|translate\"></span> <span class=\"icon-robux-gray\"></span> <span class=\"strike-through\" ng-bind=\"item.Price|number\"></span></div><div class=\"text-overflow item-card-label\" ng-if=\"item.Creator\"><span ng-bind=\"'Label.Card.CreatorBy'|translate\"></span> <span class=\"text-link creator-name\" ng-click=\"creatorClick($event,item.Creator.CreatorProfileLink)\" title=\"{{item.Creator.Name}}\">{{item.Creator.Name}}</span> <span class=\"mobile-creator-name\">{{item.Creator.Name}}</span></div></div><div class=\"text-overflow item-card-price\" ng-class=\"{'margin-top-none':item.HasSecondaryInfo}\"><span class=\"icon icon-robux\" ng-if=\"item.Price||item.BestPrice\"></span> <span class=\"text-robux\" ng-bind=\"item.Price|number\" ng-if=\"item.Price&amp;&amp;!item.BestPrice\"></span> <span class=\"text-robux\" ng-bind=\"item.BestPrice|number\" ng-if=\"item.BestPrice\"></span> <span class=\"text-label\" ng-class=\"{'text-robux':item.IsFree}\" ng-if=\"!item.Price&amp;&amp;item.NoPriceText\">{{item.NoPriceText}}</span></div></div></a>",
+    "catalog-genre-filters": "<a class=\"small text all-genres-filter\" ng-bind=\"'Label.AllGenres'|translate\" ng-class=\"{'text-link-secondary':!data.showCVersion,'menu-link':data.showCVersion}\" ng-click=\"clearGenreFilters()\"></a><ul><li class=\"checkbox top-border\" ng-repeat=\"genre in data.genres\"><input id=\"genre-{{genre.Data}}\" ng-change=\"filterChanged()\" ng-model=\"genre.IsSelected\" type=\"checkbox\"/> <label for=\"genre-{{genre.Data}}\">{{genre.Description}}</label></li></ul>",
+    "catalog-creator-filters": "<ul ng-if=\"data.creators&amp;&amp;data.displayCreators\"><li class=\"radio top-border\" ng-repeat=\"creator in data.creators\"><input id=\"radio-creator-{{creator.Data}}\" name=\"radio-creator\" ng-change=\"filterChanged()\" ng-model=\"data.creator\" ng-value=\"creator\" type=\"radio\"/> <label for=\"radio-creator-{{creator.Data}}\" ng-if=\"creator.Data&lt;2\">{{creator.Description}}</label> <label class=\"has-input\" for=\"radio-creator-custom\" ng-class=\"{'form-has-error':forms.searchOptionsForm.creatorName.$error.required}\" ng-if=\"(creator.Data&gt;=2||creator.Data===layout.customText)\"><input class=\"form-control input-field username-input\" maxlength=\"20\" name=\"creatorName\" ng-focus=\"data.creator=creator\" ng-model=\"data.creatorName\" ng-required=\"library.isPhone&amp;&amp;data.creator===creator\" placeholder=\"{{'Label.Username'|translate}}\" type=\"text\"/> <button class=\"btn-secondary-xs btn-update-filter\" ng-bind=\"'Action.Go'|translate\" ng-click=\"applyCreatorName()\" ng-disabled=\"!data.creatorName||data.creatorName.length===0\"></button></label></li></ul>",
+    "catalog-price-filters": "<ul ng-if=\"data.currencyTypes\"><li class=\"radio top-border\" ng-repeat=\"currencyType in data.currencyTypes\" ng-show=\"showCurrencyType(currencyType)\"><input id=\"radio-price-{{currencyType.Data}}\" name=\"radio-price\" ng-change=\"filterChanged()\" ng-model=\"data.currencyType\" ng-value=\"currencyType\" type=\"radio\"/> <label for=\"radio-price-{{currencyType.Data}}\" ng-if=\"currencyType.Data!==library.robuxFilterId&amp;&amp;currencyType.Data!==library.customRobuxFilterId\">{{currencyType.Description}}</label> <label class=\"has-input\" for=\"radio-price-{{currencyType.Data}}\" ng-if=\"(currencyType.Data===library.robuxFilterId||currencyType.Data===library.customRobuxFilterId)\"><input class=\"form-control input-field input-number price-input\" min=\"0\" name=\"minPrice\" ng-focus=\"data.currencyType=currencyType\" ng-model=\"data.minPrice\" pattern=\"[0-9]*\" placeholder=\"{{'Label.Filter.PriceMin'|translate}}\" type=\"number\"/> <input class=\"form-control input-field input-number price-input\" min=\"0\" name=\"maxPrice\" ng-focus=\"data.currencyType=currencyType\" ng-model=\"data.maxPrice\" pattern=\"[0-9]*\" placeholder=\"{{'Label.Filter.PriceMax'|translate}}\" type=\"number\"/> <button class=\"btn-secondary-xs btn-update-filter\" ng-bind=\"'Action.Go'|translate\" ng-click=\"applySearch(true)\" ng-disabled=\"data.currencyType.Data!==library.robuxFilterId&amp;&amp;data.currencyType.Data!==library.customRobuxFilterId\"></button></label></li></ul>",
+    "catalog-show-unavailable-filter": "<ul><li class=\"radio top-border\"><input id=\"radio-unavailable-hide\" name=\"radio-unavailable\" ng-change=\"filterChanged()\" ng-model=\"data.includeNotForSale\" ng-value=\"false\" type=\"radio\"/> <label for=\"radio-unavailable-hide\" ng-bind=\"'Label.Filter.Hide'|translate\"></label><li class=\"radio top-border\"><input id=\"radio-unavailable-show\" name=\"radio-unavailable\" ng-change=\"filterChanged()\" ng-model=\"data.includeNotForSale\" ng-value=\"true\" type=\"radio\"/> <label for=\"radio-unavailable-show\" ng-bind=\"'Label.Filter.Show'|translate\"></label></li></li></ul>",
+    "mobile-catalog-search-bar": "<div class=\"mobile-search-container\" is-element-at-top=\"layout.isSearchBarFixed\" ng-class=\"{'stick-to-top':library.isPhone&amp;&amp;layout.isSearchBarFixed}\" stick-to-top=\"\"><div class=\"search-bar\"><button class=\"btn-generic-menu-black-sm mobile-menu-button\" id=\"search-options-button\" ng-click=\"toggleSearchOptions(true)\" type=\"button\"><span class=\"icon-menu-black\"></span></button><form class=\"form-horizontal search-form\" name=\"forms.keywordForm\"><div class=\"form-group\"><div class=\"input-group\"><input class=\"form-control input-field\" maxlength=\"50\" ng-keypress=\"onKeywordKeypress($event)\" ng-model=\"data.keyword\" placeholder=\"{{'Label.SearchField'|translate}}\" type=\"text\"/><div class=\"input-group-btn\"><button class=\"input-addon-btn\" ng-click=\"searchKeyword()\" type=\"submit\"><span class=\"icon-search\"></span></button></div></div></div></form></div></div>",
+    "catalog-mobile-search-options": "<div class=\"mobile-panel mobile-search-options\" id=\"mobile-search-options\" ng-show=\"layout.isSearchOptionsOpen\"><form class=\"search-options-form\" name=\"forms.searchOptionsForm\" novalidate=\"\" role=\"form\"><div class=\"section-content-off\" ng-bind=\"'Response.GenericError'|translate\" ng-if=\"layout.hasSearchOptionsError\"></div><div class=\"rbx-tabs-horizontal\" ng-if=\"!layout.hasSearchOptionsError\"><ul class=\"nav nav-tabs\" id=\"horizontal-tabs\" role=\"tablist\"><li class=\"rbx-tab active\"><a class=\"rbx-tab-heading\" data-target=\"#category-tab\" data-toggle=\"tab\"><span class=\"text-lead\" ng-bind=\"'Label.Filter.Category'|translate\"></span></a><li class=\"rbx-tab\"><a class=\"rbx-tab-heading\" data-target=\"#filter-tab\" data-toggle=\"tab\"><span class=\"text-lead\" ng-bind=\"'Label.Filter.Filter'|translate\"></span></a><li class=\"rbx-tab\"><a class=\"rbx-tab-heading\" data-target=\"#sorting-tab\" data-toggle=\"tab\"><span class=\"text-lead\" ng-bind=\"'Label.Filter.Sorting'|translate\"></span></a></li></li></li></ul><div class=\"tab-content rbx-tab-content\"><div class=\"section-content tab-pane active\" id=\"category-tab\"><ul class=\"panel-group\" id=\"category-panel-group\"><li class=\"panel panel-default\" ng-repeat=\"category in data.categories\"><a class=\"panel-heading\" data-parent=\"#category-panel-group\" data-target=\"#mobile-category-{{category.Category.Data}}\" data-toggle=\"collapse\" ng-class=\"{'font-bold':category.Category.Data===data.category.Data}\" ng-click=\"mobileCategoryClick(category)\" role=\"tab\"><span class=\"icon-checkmark-blue selected-icon\" ng-show=\"category.Category.Data===data.category.Data\"></span> {{category.Category.Description}} <span ng-show=\"category.Category.Data===data.category.Data&amp;&amp;data.subcategory\">({{data.subcategory.ShortTitle||data.subcategory.Description}})</span> <span class=\"icon-down-16x16 arrow-icon\" ng-if=\"category.Subcategories\"></span></a><div accordion-menu=\"\" class=\"panel-collapse collapse\" data-toggle=\"collapsible-element\" id=\"mobile-category-{{category.Category.Data}}\" role=\"tabpanel\"><ul ng-if=\"category.Subcategories\"><li class=\"radio top-border\" ng-repeat=\"subcategory in category.Subcategories\"><input id=\"mobile-radio-cat-{{category.Category.Data}}-{{subcategory.Data}}\" name=\"radio-category\" ng-click=\"mobileCategoryClick(category,true)\" ng-model=\"data.subcategory\" ng-value=\"subcategory\" type=\"radio\"/> <label for=\"mobile-radio-cat-{{category.Category.Data}}-{{subcategory.Data}}\">{{subcategory.Description}}</label></li></ul></div></li></ul></div><div class=\"tab-pane\" id=\"filter-tab\"><div class=\"text-label\" ng-bind=\"'Label.Filter.Price'|translate\" ng-if=\"data.currencyTypes\"></div><div class=\"section-content\" ng-if=\"data.currencyTypes\"><div ng-include=\"'catalog-price-filters'\"></div></div><div class=\"text-label\" ng-bind=\"'Label.Filter.Creator'|translate\" ng-if=\"data.creators&amp;&amp;data.displayCreators\"></div><div class=\"section-content\" ng-if=\"data.creators&amp;&amp;data.displayCreators\"><div ng-include=\"'catalog-creator-filters'\"></div></div><div ng-if=\"data.genres\"><div class=\"text-label\" ng-bind=\"'Label.Filter.Genre'|translate\"></div><div class=\"section-content\"><div ng-include=\"'catalog-genre-filters'\"></div></div></div><div class=\"text-label\" ng-bind=\"'Label.Filter.UnavailableItems'|translate\" ng-if=\"showUnavailableFilter()\"></div><div class=\"section-content\" ng-if=\"showUnavailableFilter()\"><div ng-include=\"'catalog-show-unavailable-filter'\"></div></div></div><div class=\"tab-pane\" id=\"sorting-tab\"><div class=\"section-content\"><ul><li class=\"radio top-border\" ng-hide=\"sort.IsPriceRelated&amp;&amp;data.currencyType&amp;&amp;data.currencyType.ExcludePriceSorts\" ng-repeat=\"sort in data.sortMenus[0].Sorts\"><input id=\"radio-sort-{{sort.Data}}\" name=\"radio-sort\" ng-model=\"data.sortType\" ng-value=\"sort\" type=\"radio\"/> <label for=\"radio-sort-{{sort.Data}}\">{{sort.Description}}</label></li></ul></div><div ng-show=\"data.sortType.HasSubMenu\"><div class=\"text-label\" ng-bind=\"'Label.Filter.ByTime'|translate\"></div><div class=\"section-content\"><ul><li class=\"radio top-border\" ng-repeat=\"sort in data.sortMenus[1].Sorts\"><input id=\"radio-sub-sort-{{sort.Data}}\" name=\"radio-sub-sort\" ng-model=\"data.sortAggregation\" ng-value=\"sort\" type=\"radio\"/> <label for=\"radio-sub-sort-{{sort.Data}}\">{{sort.Description}}</label></li></ul></div></div></div></div></div><div class=\"button-container\"><button class=\"btn-control-lg\" id=\"cancel-button\" ng-bind=\"'Action.Filter.Cancel'|translate\" ng-click=\"toggleSearchOptions(false)\"></button> <button class=\"btn-primary-lg apply-button\" ng-bind=\"'Action.Filter.Apply'|translate\" ng-click=\"applyMobileSearch()\" ng-if=\"!layout.hasSearchOptionsError\"></button></div></form></div>",
+    "catalog-search-options": "<div class=\"search-options\" id=\"search-options\"><form class=\"border-right search-options-form\" name=\"forms.searchOptionsForm\" novalidate=\"\" role=\"form\"><div class=\"section-content-off\" ng-bind=\"'Response.GenericError'|translate\" ng-if=\"layout.hasSearchOptionsError\"></div><div ng-if=\"!layout.hasSearchOptionsError\"><div class=\"border-bottom category-section\"><h3 class=\"search-options-header\" ng-bind=\"'Heading.CatalogCategory'|translate\"></h3><ul class=\"panel-group\" id=\"category-panel-group\"><li class=\"panel panel-default\" ng-repeat=\"category in data.categories\"><a class=\"small text menu-link panel-heading\" data-parent=\"#category-panel-group\" data-target=\"#category-{{category.Category.Data}}\" data-toggle=\"collapse\" ng-click=\"categoryClick($event,category)\" role=\"tab\"><span ng-bind=\"'Action.ViewAllItems'|translate\" ng-if=\"category.Category.Data===library.allCategoriesId\">View All Items</span> <span ng-if=\"category.Category.Data!==library.allCategoriesId\">{{category.Category.Description}}</span> <span class=\"icon-plus toggle-submenu\" ng-show=\"canToggleSubmenu(category)\"></span></a><div accordion-menu=\"\" class=\"panel-collapse collapse\" data-collapsed-icon=\"icon-plus\" data-expanded-icon=\"icon-minus\" data-toggle=\"collapsible-element\" id=\"category-{{category.Category.Data}}\" role=\"tabpanel\" use-secondary-icons=\"true\"><ul class=\"subcategory-menu\" ng-if=\"category.Subcategories\"><li class=\"top-border\" ng-repeat=\"subcategory in category.Subcategories\"><a class=\"small text menu-link\" ng-class=\"{'active':data.category.Data===category.Category.Data&amp;&amp;data.subcategory.Data==subcategory.Data}\" ng-click=\"updateCategory($event,false,true,category.Category,subcategory)\">{{subcategory.Description}}</a></li></ul></div></li></ul></div><div ng-show=\"!data.displaySplash\"><h3 class=\"search-options-header filters-header\" ng-bind=\"'Label.Filter.Filters'|translate\"></h3><div class=\"border-bottom filters-section\"><div ng-if=\"data.genres\"><div class=\"filter-label\" ng-bind=\"'Label.Filter.Genre'|translate\"></div><div ng-include=\"'catalog-genre-filters'\"></div></div><div class=\"filter-label\" ng-bind=\"'Label.Filter.Creator'|translate\" ng-if=\"data.creators&amp;&amp;data.displayCreators\">Creator</div><div ng-include=\"'catalog-creator-filters'\"></div><div class=\"filter-label\" ng-bind=\"'Label.Filter.Price'|translate\" ng-if=\"data.currencyTypes\"></div><div ng-include=\"'catalog-price-filters'\"></div><div class=\"filter-label\" ng-bind=\"'Label.Filter.UnavailableItems'|translate\"></div><div ng-include=\"'catalog-show-unavailable-filter'\"></div></div></div></div></form></div>",
+    "catalog-breadcrumbs": "<div class=\"breadcrumbs\" ng-controller=\"breadcrumbsController\"><ul class=\"breadcrumb-container\"><li ng-click=\"clearSubcategory()\"><a class=\"text-link breadcrumb-link font-header-2\">{{data.category.Description}}</a><li ng-click=\"clearGenres()\" ng-show=\"isNonDefaultSubcategorySelected()\"><span class=\"icon-right-16x16\"></span> <a class=\"text-link breadcrumb-link font-header-2\">{{data.subcategory.Description}}</a><li ng-show=\"showPriceBreadcrumb()||showCreatorBreadcrumb()||showGenreBreadcrumb()\"><span class=\"icon-right-16x16\"></span><li class=\"breadcrumb-filter\" ng-click=\"clearCreator()\" ng-show=\"showGenreBreadcrumb()\"><span class=\"breadcrumb-filter-name\">{{getGenreBreadcrumb()}}</span><li class=\"breadcrumb-filter\" ng-click=\"clearPrice()\" ng-show=\"showCreatorBreadcrumb()\"><span class=\"breadcrumb-filter-name\"><span class=\"breadcrumb-group-label\" ng-bind=\"'Label.BreadCrumb.Group'|translate\" ng-show=\"data.isCreatorAGroup\"></span>{{data.creatorBreadcrumb}}</span><li class=\"breadcrumb-filter\" ng-click=\"clearKeyword()\" ng-show=\"showPriceBreadcrumb()\"><span class=\"breadcrumb-filter-name\" ng-bind=\"'Label.BreadCrumb.Free'|translate\" ng-show=\"showFreeBreadcrumb()\"></span> <span class=\"breadcrumb-filter-name\" ng-show=\"showCustomPriceBreadcrumb()\"><span ng-show=\"data.minPriceBreadcrumb&amp;&amp;!data.maxPriceBreadcrumb\"><span class=\"icon-robux-white\"></span> <span ng-bind=\"'Label.BreadCrumb.PriceAbove'|translate:{price:data.minPriceBreadcrumb}\"></span></span> <span ng-show=\"data.maxPriceBreadcrumb&amp;&amp;data.minPriceBreadcrumb\"><span class=\"icon-robux-white\"></span> {{data.minPriceBreadcrumb}} - <span class=\"icon-robux-white\"></span> {{data.maxPriceBreadcrumb}}</span> <span ng-show=\"data.maxPriceBreadcrumb&amp;&amp;!data.minPriceBreadcrumb\"><span class=\"icon-robux-white\"></span> <span ng-bind=\"'Label.BreadCrumb.PriceBelow'|translate:{price:data.maxPriceBreadcrumb}\"></span></span></span><li ng-show=\"data.keywordBreadcrumb&amp;&amp;data.keywordBreadcrumb.length&gt;0\"><span class=\"icon-right-16x16\"></span> <a class=\"text-link breadcrumb-link\">{{data.keywordBreadcrumb}}</a></li></li></li></li></li></li></li></ul><div class=\"xsmall num-results-showing\" ng-show=\"data.totalResults&gt;0&amp;&amp;!data.isAlternateResult\"><span class=\"num-results-line\" ng-bind=\"'Label.BreadCrumb.ResultsCount'|translate:{startNumber:data.startIndex,endNumber:data.endIndex,resultsCount:data.totalResults}\"></span></div><div class=\"sort-menus\"><div class=\"input-group-btn sort-dropdown\"><button aria-expanded=\"false\" aria-haspopup=\"true\" class=\"input-dropdown-btn\" data-toggle=\"dropdown\" ng-disabled=\"disabled\" type=\"button\"><span class=\"rbx-selection-label ng-binding\">{{data.sortType.Description}}</span> <span class=\"icon-down-16x16\"></span></button><ul class=\"dropdown-menu\" data-toggle=\"dropdown-menu\" role=\"menu\"><li class=\"ng-scope\" ng-hide=\"sort.IsPriceRelated&amp;&amp;data.currencyType&amp;&amp;data.currencyType.ExcludePriceSorts\" ng-model=\"data.sortValue\" ng-repeat=\"sort in data.sortMenus[0].Sorts\" ng-value=\"sort\"><a class=\"ng-binding\" ng-click=\"updateSort(sort)\">{{sort.Description}}</a></li></ul></div><div class=\"input-group-btn subsort-dropdown\" ng-show=\"data.sortType.HasSubMenu\"><button aria-expanded=\"false\" aria-haspopup=\"true\" class=\"input-dropdown-btn\" data-toggle=\"dropdown\" ng-disabled=\"disabled\" type=\"button\"><span class=\"rbx-selection-label ng-binding\">{{data.sortAggregation.Description}}</span> <span class=\"icon-down-16x16\"></span></button><ul class=\"dropdown-menu\" data-toggle=\"dropdown-menu\" role=\"menu\"><li class=\"ng-scope\" ng-model=\"data.sortAggregation\" ng-repeat=\"sort in data.sortMenus[1].Sorts\" ng-value=\"sort\"><a class=\"ng-binding\" ng-click=\"updateSortAggregation(sort)\">{{sort.Description}}</a></li></ul></div></div></div>",
+    "catalog-search-bar": "<div class=\"search-container\"><div class=\"input-group\"><input class=\"form-control input-field search-input\" maxlength=\"50\" ng-keypress=\"onKeywordKeypress($event,true)\" ng-model=\"data.keyword\" placeholder=\"{{'Label.SearchField'|translate}}\"/><div class=\"input-group-btn\"><button aria-expanded=\"false\" aria-haspopup=\"true\" class=\"input-dropdown-btn category-options\" data-toggle=\"dropdown\" ng-disabled=\"disabled\" ng-if=\"!layout.hasSearchOptionsError\" type=\"button\"><span class=\"rbx-selection-label\">{{getCategoryDropdownValue()}}</span> <span class=\"icon-down-16x16\"></span></button><ul class=\"dropdown-menu\" data-toggle=\"dropdown-menu\" role=\"menu\"><li ng-repeat=\"category in data.categories|orderBy:'Category.SecondarySortOrder'\"><a ng-click=\"updateCategory($event,true,false,category.Category)\">{{category.Category.Description}}</a></li></ul><button class=\"input-addon-btn\" ng-click=\"applySearch(true)\" type=\"submit\"><span class=\"icon-search\"></span></button></div></div></div>",
+    "rbx-pagination": "<div class=\"rbx-pager\"><ul class=\"pager\"><li class=\"first\" ng-class=\"{'disabled':pagination.isLoading||pagination.curPage===1}\" ng-if=\"pagination.showFirstLast\"><a ng-click=\"pagination.pageUpdated('first')\"><span class=\"icon-first-page\"></span></a><li class=\"pager-prev\" ng-class=\"{'disabled':pagination.isLoading||pagination.curPage===1}\"><a ng-click=\"pagination.pageUpdated('prev')\"><span class=\"icon-left\"></span></a><li class=\"pager-cur\"><span id=\"rbx-current-page\">{{pagination.curPage|number}}</span><li class=\"pager-total\"><span>/</span> <span>{{pagination.totalPages|number}}</span><li class=\"pager-next\" ng-class=\"{'disabled':pagination.isLoading||pagination.curPage===pagination.totalPages}\"><a ng-click=\"pagination.pageUpdated('next')\"><span class=\"icon-right\"></span></a><li class=\"last\" ng-class=\"{'disabled':pagination.isLoading||pagination.curPage===pagination.totalPages}\" ng-if=\"pagination.showFirstLast\"><a ng-click=\"pagination.pageUpdated('last')\"><span class=\"icon-last-page\"></span></a></li></li></li></li></li></li></ul></div>",
+    "fun-captcha-template": "<div id=\"{{captchaElem.id}}\" ng-show=\"showContainer\"></div>",
+    "fun-captcha-modal-template": "<div class=\"modal-body\"><button class=\"close\" ng-click=\"$close()\" type=\"button\"><span aria-hidden=\"true\"><span class=\"icon-close\"></span></span><span class=\"sr-only\">Close</span></button><div class=\"funcaptcha-modal-body\" id=\"funcaptcha-modal-body\"></div></div>"
+  },
+  "locale": {
+    "Action.BuyRobux": "Buy Robux",
+    "Action.Dialog.AddGearOk": "OK",
+    "Action.Filter.Apply": "Apply",
+    "Action.Filter.Cancel": "Cancel",
+    "Action.Go": "Go",
+    "Action.ViewAllItems": "View All Items",
+    "Description.Dialog.AddGearBody": "To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)",
+    "Heading.CatalogCategory": "Category",
+    "Heading.CatalogPage": "Catalog",
+    "Label.AllFeaturedItems": "View All Featured Items",
+    "Label.AllGenres": "All Genres",
+    "Label.Amazon": "Amazon",
+    "Label.BreadCrumb.Free": "Free",
+    "Label.BreadCrumb.GenreOrText": "{genreName1} or {genreName2}",
+    "Label.BreadCrumb.GenreSelectedText": "Genre: {genreCount} selected",
+    "Label.BreadCrumb.Group": "Group:",
+    "Label.BreadCrumb.PriceAbove": "{price} and above",
+    "Label.BreadCrumb.PriceBelow": "{price} and below",
+    "Label.BreadCrumb.ResultsCount": "{startNumber} - {endNumber} of {resultsCount} Results",
+    "Label.Bundle": "Bundle",
+    "Label.Bundles": "Bundles",
+    "Label.Card.CreatorBy": "By",
+    "Label.Card.PriceWas": "Was",
+    "Label.Card.Remaining": "Remaining:",
+    "Label.CategoryAttributes": "Attributes",
+    "Label.CategoryType": "Type",
+    "Label.Dialog.AddGearTitle": "Add Gear to Your Game",
+    "Label.FeaturedBundles": "Featured Bundles",
+    "Label.FeaturedItemsOnRoblox": "Featured Items on {spanStart}{roblox}{spanEnd}",
+    "Label.Filter.ByTime": "By Time",
+    "Label.Filter.Category": "Category",
+    "Label.Filter.Creator": "Creator",
+    "Label.Filter.Filter": "Filter",
+    "Label.Filter.Filters": "Filters",
+    "Label.Filter.Genre": "Genre",
+    "Label.Filter.Hide": "Hide",
+    "Label.Filter.Price": "Price",
+    "Label.Filter.PriceMax": "Max",
+    "Label.Filter.PriceMin": "Min",
+    "Label.Filter.PriceTo": "To",
+    "Label.Filter.Show": "Show",
+    "Label.Filter.Sorting": "Sorting",
+    "Label.Filter.UnavailableItems": "Unavailable Items",
+    "Label.GoogleOnly": "Google Only",
+    "Label.Ios": "IOS",
+    "Label.Mobile": "Mobile",
+    "Label.New": "New",
+    "Label.Rthro": "Rthro",
+    "Label.Sale": "Sale",
+    "Label.SearchField": "Search",
+    "Label.Username": "Username",
+    "Label.Xbox": "Xbox",
+    "LabelAccessories": "Accessories",
+    "LabelAccessoryAll": "All Accessories",
+    "LabelAccessoryBack": "Back",
+    "LabelAccessoryFace": "Face",
+    "LabelAccessoryFront": "Front",
+    "LabelAccessoryHair": "Hair",
+    "LabelAccessoryHats": "Hats",
+    "LabelAccessoryNeck": "Neck",
+    "LabelAccessoryShoulder": "Shoulder",
+    "LabelAccessoryWaist": "Waist",
+    "LabelAll": "All",
+    "LabelAllBodyParts": "All Body Parts",
+    "LabelAllCategories": "All Categories",
+    "LabelAllClothing": "All Clothing",
+    "LabelAllCollectibles": "All Collectibles",
+    "LabelAllCreators": "All Creators",
+    "LabelAllCurrency": "All Currency",
+    "LabelAllFeatured": "All Featured Items",
+    "LabelAllTime": "All Time",
+    "LabelAnimations": "Animations",
+    "LabelAnyPrice": "Any Price",
+    "LabelAvatarAnimations": "Avatar Animations",
+    "LabelBestselling": "Bestselling",
+    "LabelBodyParts": "Body Parts",
+    "LabelClothing": "Clothing",
+    "LabelCollectibleAccessories": "Collectible Accessories",
+    "LabelCollectibleFaces": "Collectible Faces",
+    "LabelCollectibleGear": "Collectible Gear",
+    "LabelCollectibles": "Collectibles",
+    "LabelFaces": "Faces",
+    "LabelFeatured": "Featured",
+    "LabelFeaturedAccesories": "Featured Accessories",
+    "LabelFeaturedAnimations": "Featured Animations",
+    "LabelFeaturedFaces": "Featured Faces",
+    "LabelFeaturedGear": "Featured Gear",
+    "LabelFeaturedPackages": "Featured Packages",
+    "LabelFree": "Free",
+    "LabelGear": "Gear",
+    "LabelGearAll": "All Gear",
+    "LabelGearBuilding": "Building",
+    "LabelGearExplosive": "Explosive",
+    "LabelGearMelee": "Melee",
+    "LabelGearMusical": "Musical",
+    "LabelGearNavigation": "Navigation",
+    "LabelGearPersonalTransport": "Transport",
+    "LabelGearPowerUps": "Power Up",
+    "LabelGearRanged": "Ranged",
+    "LabelGearSocial": "Social",
+    "LabelGenreAdventure": "Adventure",
+    "LabelGenreAll": "All Genres",
+    "LabelGenreBuilding": "Building",
+    "LabelGenreComedy": "Comedy",
+    "LabelGenreFighting": "Fighting",
+    "LabelGenreFPS": "FPS",
+    "LabelGenreHorror": "Horror",
+    "LabelGenreMedieval": "Medieval",
+    "LabelGenreMilitary": "Military",
+    "LabelGenreNaval": "Naval",
+    "LabelGenreRPG": "RPG",
+    "LabelGenreSciFi": "Sci-Fi",
+    "LabelGenreSports": "Sports",
+    "LabelGenreTownAndCity": "Town and City",
+    "LabelGenreWestern": "Western",
+    "LabelHeads": "Heads",
+    "LabelMostFavorited": "Most Favorited",
+    "LabelNoResellers": "No Resellers",
+    "LabelOffSale": "Offsale",
+    "LabelPackages": "Packages",
+    "LabelPants": "Pants",
+    "LabelPastDay": "Past Day",
+    "LabelPastWeek": "Past Week",
+    "LabelPriceHighFirst": "Price (High to Low)",
+    "LabelPriceLowFirst": "Price (Low to High)",
+    "LabelRecentlyUpdated": "Recently Updated",
+    "LabelRelevance": "Relevance",
+    "LabelRoblox": "Roblox",
+    "LabelRobux": "Robux",
+    "LabelShirts": "Shirts",
+    "LabelTShirts": "T-Shirts",
+    "Response.Error.Filter": "Errors exist in Filter tab",
+    "Response.GenericError": "An error occurred. Please try again later.",
+    "Response.NoItemsFound": "No items found.",
+    "Response.NoSaleItemsFromSearch": "Your search did not find items for sale. Unavailable items displayed below.",
+    "Response.TemporarilyUnavailable": "Catalog temporarily unavailable. Please try again later."
+  },
+  "metadata": {
+    "BuyRobuxUrl": "/robux.aspx",
+    "CatalogUrl": "/catalog",
+    "NumberOfSplashResultsToDisplay": 25
+  },
+  "options": {
+    "Categories": [
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 3,
+          "SecondarySortOrder": 1,
+          "Data": "1",
+          "IsSelected": false,
+          "Description": "All Categories"
+        },
+        "Subcategories": null
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 1,
+          "SecondarySortOrder": 5,
+          "Data": "0",
+          "IsSelected": false,
+          "Description": "Featured"
+        },
+        "Subcategories": [
+          {
+            "key": 0,
+            "ShortTitle": "All",
+            "Data": "0",
+            "IsSelected": false,
+            "Description": "All Featured Items"
+          },
+          {
+            "key": 19,
+            "ShortTitle": "Accessories",
+            "Data": "19",
+            "IsSelected": false,
+            "Description": "Featured Accessories"
+          },
+          {
+            "key": 38,
+            "ShortTitle": "Animations",
+            "Data": "38",
+            "IsSelected": false,
+            "Description": "Featured Animations"
+          },
+          {
+            "key": 10,
+            "ShortTitle": "Faces",
+            "Data": "10",
+            "IsSelected": false,
+            "Description": "Featured Faces"
+          },
+          {
+            "key": 5,
+            "ShortTitle": "Gear",
+            "Data": "5",
+            "IsSelected": false,
+            "Description": "Featured Gear"
+          },
+          {
+            "key": 37,
+            "ShortTitle": "Bundles",
+            "Data": "37",
+            "IsSelected": false,
+            "Description": "Featured Bundles"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 2,
+          "SecondarySortOrder": 4,
+          "Data": "2",
+          "IsSelected": false,
+          "Description": "Collectibles"
+        },
+        "Subcategories": [
+          {
+            "key": 2,
+            "ShortTitle": "All",
+            "Data": "2",
+            "IsSelected": false,
+            "Description": "All Collectibles"
+          },
+          {
+            "key": 19,
+            "ShortTitle": "Accessories",
+            "Data": "19",
+            "IsSelected": false,
+            "Description": "Collectible Accessories"
+          },
+          {
+            "key": 10,
+            "ShortTitle": "Faces",
+            "Data": "10",
+            "IsSelected": false,
+            "Description": "Collectible Faces"
+          },
+          {
+            "key": 5,
+            "ShortTitle": "Gear",
+            "Data": "5",
+            "IsSelected": false,
+            "Description": "Collectible Gear"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 4,
+          "SecondarySortOrder": 3,
+          "Data": "3",
+          "IsSelected": false,
+          "Description": "Clothing"
+        },
+        "Subcategories": [
+          {
+            "key": 3,
+            "ShortTitle": "All",
+            "Data": "3",
+            "IsSelected": false,
+            "Description": "All Clothing"
+          },
+          {
+            "key": 12,
+            "ShortTitle": "Shirts",
+            "Data": "12",
+            "IsSelected": false,
+            "Description": "Shirts"
+          },
+          {
+            "key": 13,
+            "ShortTitle": "T-Shirts",
+            "Data": "13",
+            "IsSelected": false,
+            "Description": "T-Shirts"
+          },
+          {
+            "key": 14,
+            "ShortTitle": "Pants",
+            "Data": "14",
+            "IsSelected": false,
+            "Description": "Pants"
+          },
+          {
+            "key": 37,
+            "ShortTitle": "Bundles",
+            "Data": "37",
+            "IsSelected": false,
+            "Description": "Bundles"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 5,
+          "SecondarySortOrder": 2,
+          "Data": "4",
+          "IsSelected": false,
+          "Description": "Body Parts"
+        },
+        "Subcategories": [
+          {
+            "key": 4,
+            "ShortTitle": "All",
+            "Data": "4",
+            "IsSelected": false,
+            "Description": "All Body Parts"
+          },
+          {
+            "key": 15,
+            "ShortTitle": "Heads",
+            "Data": "15",
+            "IsSelected": false,
+            "Description": "Heads"
+          },
+          {
+            "key": 10,
+            "ShortTitle": "Faces",
+            "Data": "10",
+            "IsSelected": false,
+            "Description": "Faces"
+          },
+          {
+            "key": 37,
+            "ShortTitle": "Bundles",
+            "Data": "37",
+            "IsSelected": false,
+            "Description": "Bundles"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 6,
+          "SecondarySortOrder": 6,
+          "Data": "5",
+          "IsSelected": false,
+          "Description": "Gear"
+        },
+        "Subcategories": [
+          {
+            "ShortTitle": "All",
+            "Data": "0",
+            "IsSelected": false,
+            "Description": "All Gear"
+          },
+          {
+            "ShortTitle": "Building",
+            "Data": "8",
+            "IsSelected": false,
+            "Description": "Building"
+          },
+          {
+            "ShortTitle": "Explosive",
+            "Data": "3",
+            "IsSelected": false,
+            "Description": "Explosive"
+          },
+          {
+            "ShortTitle": "Melee",
+            "Data": "1",
+            "IsSelected": false,
+            "Description": "Melee"
+          },
+          {
+            "ShortTitle": "Musical",
+            "Data": "6",
+            "IsSelected": false,
+            "Description": "Musical"
+          },
+          {
+            "ShortTitle": "Navigation",
+            "Data": "5",
+            "IsSelected": false,
+            "Description": "Navigation"
+          },
+          {
+            "ShortTitle": "Power Up",
+            "Data": "4",
+            "IsSelected": false,
+            "Description": "Power Up"
+          },
+          {
+            "ShortTitle": "Ranged",
+            "Data": "2",
+            "IsSelected": false,
+            "Description": "Ranged"
+          },
+          {
+            "ShortTitle": "Social",
+            "Data": "7",
+            "IsSelected": false,
+            "Description": "Social"
+          },
+          {
+            "ShortTitle": "Transport",
+            "Data": "9",
+            "IsSelected": false,
+            "Description": "Transport"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 7,
+          "SecondarySortOrder": 7,
+          "Data": "11",
+          "IsSelected": false,
+          "Description": "Accessories"
+        },
+        "Subcategories": [
+          {
+            "key": 19,
+            "ShortTitle": "All",
+            "Data": "19",
+            "IsSelected": false,
+            "Description": "All Accessories"
+          },
+          {
+            "key": 9,
+            "ShortTitle": "Hats",
+            "Data": "9",
+            "IsSelected": false,
+            "Description": "Hats"
+          },
+          {
+            "key": 20,
+            "ShortTitle": "Hair",
+            "Data": "20",
+            "IsSelected": false,
+            "Description": "Hair"
+          },
+          {
+            "key": 21,
+            "ShortTitle": "Face",
+            "Data": "21",
+            "IsSelected": false,
+            "Description": "Face"
+          },
+          {
+            "key": 22,
+            "ShortTitle": "Neck",
+            "Data": "22",
+            "IsSelected": false,
+            "Description": "Neck"
+          },
+          {
+            "key": 23,
+            "ShortTitle": "Shoulder",
+            "Data": "23",
+            "IsSelected": false,
+            "Description": "Shoulder"
+          },
+          {
+            "key": 24,
+            "ShortTitle": "Front",
+            "Data": "24",
+            "IsSelected": false,
+            "Description": "Front"
+          },
+          {
+            "key": 25,
+            "ShortTitle": "Back",
+            "Data": "25",
+            "IsSelected": false,
+            "Description": "Back"
+          },
+          {
+            "key": 26,
+            "ShortTitle": "Waist",
+            "Data": "26",
+            "IsSelected": false,
+            "Description": "Waist"
+          }
+        ]
+      },
+      {
+        "Category": {
+          "IsSelectedCategory": false,
+          "PrimarySortOrder": 8,
+          "SecondarySortOrder": 8,
+          "Data": "12",
+          "IsSelected": false,
+          "Description": "Avatar Animations"
+        },
+        "Subcategories": [
+          {
+            "key": 38,
+            "ShortTitle": "Bundles",
+            "Data": "38",
+            "IsSelected": false,
+            "Description": "Bundles"
+          }
+        ]
+      }
+    ],
+    "Genres": [
+      {
+        "GenreId": 13,
+        "Data": "13",
+        "IsSelected": false,
+        "Description": "Building"
+      },
+      {
+        "GenreId": 5,
+        "Data": "5",
+        "IsSelected": false,
+        "Description": "Horror"
+      },
+      {
+        "GenreId": 1,
+        "Data": "1",
+        "IsSelected": false,
+        "Description": "Town and City"
+      },
+      {
+        "GenreId": 11,
+        "Data": "11",
+        "IsSelected": false,
+        "Description": "Military"
+      },
+      {
+        "GenreId": 9,
+        "Data": "9",
+        "IsSelected": false,
+        "Description": "Comedy"
+      },
+      {
+        "GenreId": 2,
+        "Data": "2",
+        "IsSelected": false,
+        "Description": "Medieval"
+      },
+      {
+        "GenreId": 7,
+        "Data": "7",
+        "IsSelected": false,
+        "Description": "Adventure"
+      },
+      {
+        "GenreId": 3,
+        "Data": "3",
+        "IsSelected": false,
+        "Description": "Sci-Fi"
+      },
+      {
+        "GenreId": 6,
+        "Data": "6",
+        "IsSelected": false,
+        "Description": "Naval"
+      },
+      {
+        "GenreId": 14,
+        "Data": "14",
+        "IsSelected": false,
+        "Description": "FPS"
+      },
+      {
+        "GenreId": 15,
+        "Data": "15",
+        "IsSelected": false,
+        "Description": "RPG"
+      },
+      {
+        "GenreId": 8,
+        "Data": "8",
+        "IsSelected": false,
+        "Description": "Sports"
+      },
+      {
+        "GenreId": 4,
+        "Data": "4",
+        "IsSelected": false,
+        "Description": "Fighting"
+      },
+      {
+        "GenreId": 10,
+        "Data": "10",
+        "IsSelected": false,
+        "Description": "Western"
+      }
+    ],
+    "SortMenus": [
+      {
+        "ElementId": "SortMain",
+        "Sorts": [
+          {
+            "Description": "Relevance",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": false,
+            "Data": "0"
+          },
+          {
+            "Description": "Most Favorited",
+            "IsSelected": false,
+            "HasSubMenu": true,
+            "IsPriceRelated": false,
+            "Data": "1"
+          },
+          {
+            "Description": "Bestselling",
+            "IsSelected": false,
+            "HasSubMenu": true,
+            "IsPriceRelated": false,
+            "Data": "2"
+          },
+          {
+            "Description": "Recently Updated",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": false,
+            "Data": "3"
+          },
+          {
+            "Description": "Price (High to Low)",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": true,
+            "Data": "5"
+          },
+          {
+            "Description": "Price (Low to High)",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": true,
+            "Data": "4"
+          }
+        ],
+        "IsVisible": true
+      },
+      {
+        "ElementId": "SortAggregation",
+        "Sorts": [
+          {
+            "Description": "All Time",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": false,
+            "Data": "5"
+          },
+          {
+            "Description": "Past Week",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": false,
+            "Data": "3"
+          },
+          {
+            "Description": "Past Day",
+            "IsSelected": false,
+            "HasSubMenu": false,
+            "IsPriceRelated": false,
+            "Data": "1"
+          }
+        ],
+        "IsVisible": false
+      }
+    ],
+    "CreatorFilters": [
+      {
+        "userId": 0,
+        "Data": "0",
+        "IsSelected": false,
+        "Description": "All Creators"
+      },
+      {
+        "userId": 1,
+        "Data": "1",
+        "IsSelected": false,
+        "Description": "Roblox"
+      }
+    ],
+    "PriceFilters": [
+      {
+        "IsIndented": false,
+        "IsFollowedBySearchTextbox": false,
+        "ExcludePriceSorts": false,
+        "SearchBoxData": null,
+        "Data": "0",
+        "IsSelected": false,
+        "Description": "Any Price"
+      },
+      {
+        "IsIndented": false,
+        "IsFollowedBySearchTextbox": false,
+        "ExcludePriceSorts": false,
+        "SearchBoxData": null,
+        "Data": "3",
+        "IsSelected": false,
+        "Description": "R$?"
+      },
+      {
+        "IsIndented": false,
+        "IsFollowedBySearchTextbox": false,
+        "ExcludePriceSorts": true,
+        "SearchBoxData": null,
+        "Data": "5",
+        "IsSelected": false,
+        "Description": "Free"
+      }
+    ],
+    "RobloxUserId": 1,
+    "RobloxUserName": "ROBLOX",
+    "GearCategoryId": 5,
+    "DefaultGearSubcategoryId": 0,
+    "DefaultCurrencyId": 0,
+    "FreeFilterId": 5,
+    "CustomRobuxFilterId": 3,
+    "RobuxFilterId": 1,
+    "DefaultCategoryId": 0,
+    "AllCategoriesId": 1,
+    "DefaultCreatorId": 0,
+    "DefaultSortTypeId": 0,
+    "DefaultSortAggregationId": 5,
+    "CategoriesWithCreatorFilters": "1,3",
+    "AddGearImageUrl": "https://static.rbxcdn.com/images/Catalog/add-gear-to-game.png"
+  }
+}

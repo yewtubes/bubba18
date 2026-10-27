@@ -191,9 +191,9 @@ const AvatarPageStore = createContainer(() => {
         setListItemMetadata({});
     }
     
-    useEffect(async () => {
+    useEffect(() => { (async () => {
         if (listItems.length === 0) await LoadRecentItemsToList(RECENT_ITEMS.ALL);
-    }, []);
+    })().catch(console.error); }, []);
     
     return {
         LoadRecentItemsToList,

@@ -3,7 +3,7 @@ import '../styles/helpers/textHelpers.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Roblox CSS
 import '../styles/roblox/icons.css';
-import Navbar from '../components/navbar';
+import Frame from '../components/preserved2018/frame';
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import Footer from '../components/footer';
@@ -41,43 +41,14 @@ if (typeof window !== 'undefined') {
 }
 
 function RobloxApp({ Component, pageProps }) {
-  // set theme:
-  // jss globals apparently don't support parameters/props, so the only way to do a dynamic global style is to either append a <style> element, use setAttribute(), or append a css file.
-  // @ts-ignore
-  useEffect(() => {
-    const el = typeof window !== 'undefined' && document.getElementsByTagName('body');
-    if (el && el.length) {
-      const theme = getTheme();
-      const divBackground = theme === themeType.obc2016 ? 'url(/img/Unofficial/obc_theme_2016_bg.png) repeat-x #222224' : document.getElementById('theme-2016-enabled') ? '#e3e3e3' : '#fff';
-      el[0].setAttribute('style', 'background: ' + divBackground);
-    }
-  }, [pageProps]);
-
-  return <div>
-    <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={''} />
-      <title>{pageProps.title}</title>
-      <link rel='icon' type="image/vnd.microsoft.icon" href='/favicon.ico' />
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
-    </Head>
-    <AuthenticationStore.Provider>
-      <LoginModalStore.Provider>
-        <NavigationStore.Provider>
-          <Navbar/>
-        </NavigationStore.Provider>
-      </LoginModalStore.Provider>
-      <GlobalAlert />
-      <MainWrapper>
-        {getFlag('clientSideRenderingEnabled', false) ? <NextNProgress options={{showSpinner: false}} color='#fff' height={2} /> : null}
-        <ThumbnailStore.Provider>
-          <Component {...pageProps} />
-          <Chat />
-        </ThumbnailStore.Provider>
-      </MainWrapper>
-      <Footer/>
-    </AuthenticationStore.Provider>
-  </div>
+  return <AuthenticationStore.Provider>
+    <LoginModalStore.Provider><NavigationStore.Provider><ThumbnailStore.Provider>
+      <Frame page={Component.preservedPage} title={pageProps.title} legacy={!Component.preserved2018}>
+        <Component {...pageProps}/>
+        {!Component.preserved2018&&<Chat/>}
+      </Frame>
+    </ThumbnailStore.Provider></NavigationStore.Provider></LoginModalStore.Provider>
+  </AuthenticationStore.Provider>;
 }
 
 export default RobloxApp;

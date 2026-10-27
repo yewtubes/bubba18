@@ -301,7 +301,7 @@ function OutfitsTab() {
     const [renameOutfitModal, setRenameOutfitModal] = useState(false);
     
     
-    useEffect(async () => {
+    useEffect(() => { (async () => {
         if (deb.current) return;
         deb.current = true;
         store.setLoadingAvatar(false);
@@ -311,7 +311,7 @@ function OutfitsTab() {
             setLoadingOutfits(false);
         }
         deb.current = false;
-    }, []);
+    })().catch(console.error); }, []);
     
     return <div className={s.outfitsWrapper}>
         {deleteOutfitModal ? <DeleteOutfitModal outfitId={deleteOutfitModal} openModal={setDeleteOutfitModal}/> : null}

@@ -106,9 +106,9 @@ const AvatarInfoStore = createContainer(() => {
         setIsRendering(true);
     }
     
-    useEffect(ReloadAvatar, []);
+    useEffect(() => { ReloadAvatar().catch(console.error); }, []);
     
-    useEffect(async () => {
+    useEffect(() => { (async () => {
         if (debo.current || !isRendering || avThumb != null) return;
         debo.current = true;
         
@@ -135,7 +135,7 @@ const AvatarInfoStore = createContainer(() => {
         
         setIsRendering(false);
         debo.current = false;
-    }, [isRendering]);
+    })().catch(console.error); }, [isRendering]);
     
     useEffect(() => {
         if (!modifiedScaling) return;

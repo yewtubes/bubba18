@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://web.archive.org/web/20181215id_/https://authsite.roblox.com/login/a9153727-1076-4e5a-a7df-d45894d70a19/get-html-bundle",
+    "filename": "ed09c158fd64ee050c96db31a9436e55345387b1d5d8842bfdc211da1428e202.bin",
+    "description": "login-templates.original.js",
+    "claimed_date": null,
+    "independently_verified_date": "Sat, 15 Dec 2018 23:51:34 GMT",
+    "source_type": "login-templates.original.js",
+    "retrieval_status": "retrieved",
+    "content_hash": "ed09c158fd64ee050c96db31a9436e55345387b1d5d8842bfdc211da1428e202",
+    "local_path": "docs/research/raw/ed09c158fd64ee050c96db31a9436e55345387b1d5d8842bfdc211da1428e202.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "https://web.archive.org/web/20181215id_/https://authsite.roblox.com/login/a9153727-1076-4e5a-a7df-d45894d70a19/en_us/get-language-resources-bundle",
+    "filename": "55d2f5c91dc7b4d7e8cf22aae650ed9936a19a842435e181ab8b6f863b036ad7.bin",
+    "description": "login-language.original.js",
+    "claimed_date": null,
+    "independently_verified_date": "Sat, 15 Dec 2018 23:51:33 GMT",
+    "source_type": "login-language.original.js",
+    "retrieval_status": "retrieved",
+    "content_hash": "55d2f5c91dc7b4d7e8cf22aae650ed9936a19a842435e181ab8b6f863b036ad7",
+    "local_path": "docs/research/raw/55d2f5c91dc7b4d7e8cf22aae650ed9936a19a842435e181ab8b6f863b036ad7.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "https://web.archive.org/web/20181215id_/https://authsite.roblox.com/login/a9153727-1076-4e5a-a7df-d45894d70a19/get-css-bundle",
+    "filename": "509427959a2388a7aaba10552b9e590d0fc79e4f6b80260a34f590186c668a6c.bin",
+    "description": "login.original.css",
+    "claimed_date": null,
+    "independently_verified_date": "Sat, 15 Dec 2018 23:52:29 GMT",
+    "source_type": "login.original.css",
+    "retrieval_status": "retrieved",
+    "content_hash": "509427959a2388a7aaba10552b9e590d0fc79e4f6b80260a34f590186c668a6c",
+    "local_path": "docs/research/raw/509427959a2388a7aaba10552b9e590d0fc79e4f6b80260a34f590186c668a6c.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "https://js.rbxcdn.com/c6bc42333fd6d21c11fe866fbd333310.js.gzip",
+    "filename": "441db72adb4f303d82a34db00cb2facf33dc22e42fa31e18905db17beb71096f.bin",
+    "description": "catalog-templates.original.js",
+    "claimed_date": null,
+    "independently_verified_date": null,
+    "source_type": "catalog-templates.original.js",
+    "retrieval_status": "retrieved",
+    "content_hash": "441db72adb4f303d82a34db00cb2facf33dc22e42fa31e18905db17beb71096f",
+    "local_path": "docs/research/raw/441db72adb4f303d82a34db00cb2facf33dc22e42fa31e18905db17beb71096f.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "https://js.rbxcdn.com/6e928f38695a579dfa9b608ba9c57893.js.gzip",
+    "filename": "ad96820d55aee4c4a089262252510f9030bc18a1d66d7ec8c8db8dd4859c13f6.bin",
+    "description": "catalog-bundle.original.js",
+    "claimed_date": null,
+    "independently_verified_date": null,
+    "source_type": "catalog-bundle.original.js",
+    "retrieval_status": "retrieved",
+    "content_hash": "ad96820d55aee4c4a089262252510f9030bc18a1d66d7ec8c8db8dd4859c13f6",
+    "local_path": "docs/research/raw/ad96820d55aee4c4a089262252510f9030bc18a1d66d7ec8c8db8dd4859c13f6.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "user-supplied:chatlogs-1432890790882967666-1432890791985942605.html",
+    "filename": "c50a30d8de2910a1af95979247be265532f144af46e5dda4cb381200a46e2f8c.bin",
+    "description": "discord-export",
+    "claimed_date": null,
+    "independently_verified_date": null,
+    "source_type": "discord-export",
+    "retrieval_status": "retrieved",
+    "content_hash": "c50a30d8de2910a1af95979247be265532f144af46e5dda4cb381200a46e2f8c",
+    "local_path": "docs/research/raw/c50a30d8de2910a1af95979247be265532f144af46e5dda4cb381200a46e2f8c.bin",
+    "helps_restore": []
+  },
+  {
+    "url": "https://cdn.discordapp.com/attachments/1432890791985942605/1489176903758774272/AprHomepage.html?ex=REDACTED&is=REDACTED&hm=REDACTED&",
+    "source_type": "discord-attachment",
+    "retrieval_status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://cdn.discordapp.com/attachments/1432890791985942605/1489178107800715396/AprMyFriends.html?ex=REDACTED&is=REDACTED&hm=REDACTED&",
+    "source_type": "discord-attachment",
+    "retrieval_status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

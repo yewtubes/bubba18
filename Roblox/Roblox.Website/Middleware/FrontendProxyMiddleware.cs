@@ -187,6 +187,9 @@ public class FrontendProxyMiddleware
 
 		foreach (var item in BypassUrls)
 		{
+            // Preserve the backend POST while serving the historical GET document.
+            if (item == "/login" && HttpMethods.IsGet(ctx.Request.Method) &&
+                string.Equals(ctx.Request.Path.Value, "/login", StringComparison.OrdinalIgnoreCase)) continue;
 			if (requestUrl.ToLower().StartsWith(item))
 			{
 				await _next(ctx);

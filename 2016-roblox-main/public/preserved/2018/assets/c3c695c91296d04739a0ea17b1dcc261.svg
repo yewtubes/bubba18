@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>img_EarnSeriousCash_new</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="117.760516" height="58.3792679" rx="3"></rect>
+        <rect id="path-3" x="0" y="0" width="117.760516" height="58.3792679" rx="3"></rect>
+    </defs>
+    <g id="img_EarnSeriousCash_new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img_EarnSeriousCash" transform="translate(-5.000000, -5.000000)">
+            <g>
+                <rect id="Rectangle-4" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="260" height="260"></rect>
+                <circle id="Oval-2" fill="#EEEEEE" fill-rule="nonzero" cx="130" cy="130" r="100"></circle>
+                <circle id="Oval-2" fill="#E3E3E3" fill-rule="nonzero" cx="130" cy="130" r="75"></circle>
+                <g id="Group-5" stroke-dasharray="8" transform="translate(20.000000, 66.000000)">
+                    <g id="Rectangle-34">
+                        <g id="path-1-Clipped">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="path-1"></g>
+                            <path d="M3,0 L114.760516,0 C116.41737,-3.04359188e-16 117.760516,1.34314575 117.760516,3 L117.760516,55.3792679 C117.760516,57.0361221 116.41737,58.3792679 114.760516,58.3792679 L3,58.3792679 C1.34314575,58.3792679 3.8818616e-15,57.0361221 0,55.3792679 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="path-1" stroke="#00A2FF" stroke-width="4" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                    <g id="Rectangle-34" transform="translate(100.000000, 63.000000)">
+                        <g id="path-3-Clipped">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="path-3"></g>
+                            <path d="M3,0 L114.760516,0 C116.41737,-3.04359188e-16 117.760516,1.34314575 117.760516,3 L117.760516,55.3792679 C117.760516,57.0361221 116.41737,58.3792679 114.760516,58.3792679 L3,58.3792679 C1.34314575,58.3792679 3.8818616e-15,57.0361221 0,55.3792679 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="path-3" stroke="#00A2FF" stroke-width="4" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(64.000000, 87.000000)">
+                    <g id="Group-20">
+                        <g id="Rectangle-34">
+                            <g id="path-5-link" fill="#F2F2F2">
+                                <rect id="path-5" x="0" y="0" width="117.760516" height="58.3792679" rx="3"></rect>
+                            </g>
+                            <rect id="Rectangle-path" stroke="#0074BD" stroke-width="4" x="2" y="2" width="113.760516" height="54.3792679" rx="3"></rect>
+                        </g>
+                        <g id="Rectangle-34" transform="translate(6.000000, 6.000000)">
+                            <g id="path-6-link" fill="#F2F2F2">
+                                <rect id="path-6" x="0.97840093" y="0.97840093" width="117.760516" height="58.3792679" rx="3"></rect>
+                            </g>
+                            <rect id="Rectangle-path" stroke="#0074BD" stroke-width="4" x="2.97840093" y="2.97840093" width="113.760516" height="54.3792679" rx="3"></rect>
+                        </g>
+                        <g id="Rectangle-34" transform="translate(13.000000, 13.000000)">
+                            <g id="path-7-link" fill="#0074BD">
+                                <rect id="path-7" x="0.9568019" y="0.9568019" width="117.760516" height="58.3792679" rx="3"></rect>
+                            </g>
+                            <rect id="Rectangle-path" stroke="#0074BD" stroke-width="4" x="2.9568019" y="2.9568019" width="113.760516" height="54.3792679" rx="3"></rect>
+                        </g>
+                        <path d="M121.363547,68.954812 L25.372353,68.954812 C25.3851794,68.7932184 25.391715,68.6298534 25.391715,68.4649619 C25.391715,65.0925057 22.6577991,62.3585897 19.2853429,62.3585897 C18.9562674,62.3585897 18.6332717,62.3846203 18.3183025,62.4347347 L18.3183025,24.7740824 C18.6332717,24.8241967 18.9562674,24.8502273 19.2853429,24.8502273 C22.6577991,24.8502273 25.391715,22.1163114 25.391715,18.7438552 C25.391715,18.6008021 25.3867959,18.4588978 25.3771176,18.3183025 L121.358783,18.3183025 C121.349104,18.4588978 121.344185,18.6008021 121.344185,18.7438552 C121.344185,22.1163114 124.078101,24.8502273 127.450557,24.8502273 C127.482013,24.8502273 127.513413,24.8499895 127.544755,24.8495155 L127.544755,62.3593016 C127.513413,62.3588276 127.482013,62.3585897 127.450557,62.3585897 C124.078101,62.3585897 121.344185,65.0925057 121.344185,68.4649619 C121.344185,68.6298534 121.350721,68.7932184 121.363547,68.954812 Z" id="Combined-Shape" fill="#F5F5F5" fill-rule="nonzero"></path>
+                        <circle id="Oval-16" fill="#0074BD" fill-rule="nonzero" cx="111.218265" cy="43.1788558" r="8.28685111"></circle>
+                        <circle id="Oval-16" fill="#F2F2F2" fill-rule="nonzero" cx="111.218265" cy="43.1788558" r="4.79765064"></circle>
+                        <circle id="Oval-16" stroke="#0074BD" stroke-width="3" fill="#F2F2F2" fill-rule="nonzero" cx="35.0102919" cy="42.8609929" r="4.4797878"></circle>
+                        <path d="M29.2220539,52.7741571 L40.5619554,52.7741571" id="Line-16" stroke="#0074BD" stroke-width="3" stroke-linecap="round"></path>
+                        <circle id="Path" stroke="#979797" stroke-linecap="square" cx="73.1744155" cy="43.5162115" r="18.2195081"></circle>
+                        <circle id="Path" stroke="#0074BD" fill="#0074BD" fill-rule="nonzero" stroke-linecap="square" cx="73.3856182" cy="43.7274142" r="21.9199113"></circle>
+                        <path d="M71.2758684,44.7007142 L75.2941208,44.7007142 C76.9393894,44.7007142 78.2682603,46.0295851 78.2682603,47.6748537 C78.2682603,49.3201224 76.9393894,50.6489932 75.2941208,50.6489932 L68.0644306,50.6489932 C67.273436,50.6489932 66.6248205,51.2976088 66.6248205,52.0886033 C66.6248205,52.8795979 67.273436,53.5282134 68.0644306,53.5282134 L71.8453845,53.5282134 L71.8453845,56.3599739 C71.8453845,57.1509684 72.494,57.799584 73.2849946,57.799584 C74.0759891,57.799584 74.7246047,57.1509684 74.7246047,56.3599739 L74.7246047,53.5282134 L75.3099406,53.5282134 C78.5371984,53.5282134 81.1633003,50.9021115 81.1633003,47.6748537 C81.1633003,44.447596 78.5371984,41.821494 75.3099406,41.821494 L71.2916883,41.821494 C69.6464197,41.821494 68.3175488,40.4926232 68.3175488,38.8473545 C68.3175488,37.2020859 69.6464197,35.873215 71.2916883,35.873215 L78.3948194,35.873215 C79.1858139,35.873215 79.8344295,35.2245995 79.8344295,34.4336049 C79.8344295,33.6426104 79.1858139,32.9939949 78.3948194,32.9939949 L74.7404246,32.9939949 L74.7404246,30.2255139 C74.7404246,29.4345194 74.091809,28.7859039 73.3008145,28.7859039 C72.5098199,28.7859039 71.8612044,29.4345194 71.8612044,30.2255139 L71.8612044,33.0098148 L71.2758684,33.0098148 C68.0486107,33.0098148 65.4225088,35.6359167 65.4225088,38.8631744 C65.4383287,42.0746123 68.0644306,44.7007142 71.2758684,44.7007142 Z" id="Shape" stroke="#F2F2F2" fill="#F2F2F2" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <circle id="Oval-18" stroke="#0074BD" stroke-width="3" fill="#F2F2F2" fill-rule="nonzero" cx="50.4743475" cy="66.4743475" r="4.47434745"></circle>
+                <g id="Group-4" transform="translate(29.000000, 133.000000)" fill-rule="nonzero" stroke="#0074BD" stroke-width="3">
+                    <g id="Group-10" transform="translate(42.000000, 19.000000)">
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="23" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="19" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="15" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="11" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="7" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F5F5F5" cx="10.5" cy="3" rx="10.5" ry="3"></ellipse>
+                    </g>
+                    <g id="Group-9" transform="translate(12.000000, 0.000000)">
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="39" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="35" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="31" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="27" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="23" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="19" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="15" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="11" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="7" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F5F5F5" cx="10.5" cy="3" rx="10.5" ry="3"></ellipse>
+                    </g>
+                    <g id="Group-6" transform="translate(174.000000, 13.000000)">
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="27" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="23" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="19" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="15" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="11" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="7" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F5F5F5" cx="10.5" cy="3" rx="10.5" ry="3"></ellipse>
+                    </g>
+                    <g id="Group-7" transform="translate(159.000000, 34.000000)">
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="19" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="15" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="11" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="7" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F5F5F5" cx="10.5" cy="3" rx="10.5" ry="3"></ellipse>
+                    </g>
+                    <g id="Group-8" transform="translate(0.000000, 21.000000)">
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="27" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="23" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="19" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="15" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="11" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F2F2F2" cx="10.5" cy="7" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" fill="#F5F5F5" cx="10.5" cy="3" rx="10.5" ry="3"></ellipse>
+                    </g>
+                    <g id="Group-11" transform="translate(26.000000, 44.000000)" fill="#F5F5F5">
+                        <ellipse id="Oval-8" cx="10.5" cy="9" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" cx="45.5" cy="8" rx="10.5" ry="3"></ellipse>
+                        <ellipse id="Oval-8" transform="translate(56.500000, 8.000000) rotate(26.000000) translate(-56.500000, -8.000000) " cx="56.5" cy="8" rx="10.5" ry="3"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

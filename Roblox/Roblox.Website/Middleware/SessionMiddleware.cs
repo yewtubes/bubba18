@@ -137,6 +137,8 @@ public class SessionMiddleware
 	// TODO: Remove writeline stuff later cause it was just seeing how often 429s are served
 	private async Task<int> GetIPBlockStats(string ip)
 	{
+        // An unconfigured integration must not make an external IP lookup.
+        if (string.IsNullOrWhiteSpace(Roblox.Configuration.IPHubApiKey)) return 0;
 		int retries = 2;
 		int delay = 7500;
 		

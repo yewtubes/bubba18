@@ -30,3 +30,6 @@ Roblox/Roblox.Website/RSA/PrivateKey*
 
 # Opaque legacy settings archive: not required by active JsonDataDirectory code.
 /Roblox/Roblox.Libraries/Json/Old/ClientAppSettings.zip
+
+# Runtime logs can contain account/session diagnostics; publish structured checks.
+/docs/evidence/recovery/*.log
