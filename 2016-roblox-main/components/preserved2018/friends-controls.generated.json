@@ -1,0 +1,5 @@
+{
+  "menu": "<div class=card-menu-container><a class=rbx-menu-item data-toggle=popover data-bind=friend-popover-content-{{friend.UserId}}><span class=icon-more></span></a><div class=rbx-popover-content data-toggle=friend-popover-content-{{friend.UserId}}><ul class=dropdown-menu role=menu id=menu-{{friend.UserId}} ng-if=\"currentData.activeTab=='following'\"><li ng-show=friend.IsFollowed||friend.IsDeleted><a class=friend-unfollow ng-bind=\"'Action.Unfollow'|translate\"></a><li ng-show=!friend.IsFollowed><a class=friend-follow ng-bind=\"'Action.Follow'|translate\"></a></ul><ul class=dropdown-menu role=menu id=menu-{{friend.UserId}} ng-if=\"currentData.activeTab=='friends'\"><li ng-show=friend.IsDeleted><a class=friend-unfriend ng-bind=\"'Action.Unfriend'|translate\"></a></ul></div></div>",
+  "source": "https://js.rbxcdn.com/4eed11b2f28c267a8aa70917e03bd189.js.gzip",
+  "dateEvidence": "Referenced by April-attributed mirror; December continuity unverified"
+}

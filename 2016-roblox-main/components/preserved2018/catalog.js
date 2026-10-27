@@ -13,6 +13,7 @@ export default function Catalog2018(){
    if(!current)return;
    window.Roblox=window.Roblox||{};Roblox.Lang={CatalogResources:captured.locale};Roblox.CatalogTemplates={CardItemTemplate:'catalog-item-card'};
    Roblox.DeviceMeta=()=>({isPhone:false,isInApp:false});Roblox.Endpoints={getAbsoluteUrl:url=>url};
+   await loadOriginalScript('/preserved/2018/intl-string.original.js');Roblox.IntlUtils=new Roblox.Intl('en-us');
    Roblox.BootstrapWidgets={SetupAccordion(){},SetupVerticalMenu(){},SetupDropdown(){},ShowAccordionMenu(selector){window.jQuery(selector).collapse('show');}};
    const angular=window.angular;let app;
    try{app=angular.module('robloxApp');}catch{

@@ -33,7 +33,8 @@ export const getPreviousUsernames = async ({ userId }) => {
 }
 
 export const searchUsers = async ({keyword, limit, offset}) => {
-  return await request('GET', getBaseUrl() + 'search/users/results?keyword=' + (keyword||'') + '&maxRows='+limit+'&startIndex='+offset).then(d => d.data);
+  const query=new URLSearchParams({keyword:keyword||'',limit:String(limit||12),offset:String(offset||0)});
+  return await request('GET', getBaseUrl().replace(/\/$/,'') + '/search/users/results?' + query).then(d => d.data);
 }
 
 export const getMembershipType = async ({userId}) => {

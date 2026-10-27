@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path');
 const root=path.resolve(__dirname,'../..'),site=path.join(root,'2016-roblox-main');
 const postcss=require(path.join(site,'node_modules/postcss'));
 const dir=path.join(site,'public/preserved/2018');
-for(const filename of fs.readdirSync(dir).filter(n=>n.endsWith('.original.css'))){
+for(const filename of fs.readdirSync(dir).filter(n=>n.endsWith('.original.css')&&(!process.argv[2]||n===process.argv[2]))){
  const css=postcss.parse(fs.readFileSync(path.join(dir,filename),'utf8'));
  css.walkAtRules('import',r=>r.remove());
  css.walkRules(r=>{

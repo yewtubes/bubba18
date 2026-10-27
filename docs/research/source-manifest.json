@@ -1288,8 +1288,86 @@
       "helps_restore": [
         "groups"
       ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181203064802id_/https://www.roblox.com/search/users",
+      "retrieved_url": "https://web.archive.org/web/20181203064802id_/https://www.roblox.com/search/users",
+      "filename": "search-20181203.html",
+      "description": "Public player search; raw original withheld, structural template published",
+      "claimed_date": null,
+      "independently_verified_date": "2018-12-03T06:48:02Z",
+      "source_type": "document",
+      "retrieval_status": "retrieved-private-original",
+      "content_hash": "db2cab4cb2cb456601bf6fb5067d27554b875a14c485e69dff9f8b294b68efc5",
+      "helps_restore": [
+        "search/users"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/page___5760a763b80b19e192bc1cbdd4038dcd_m.css/fetch",
+      "retrieved_url": "https://static.rbxcdn.com/css/page___5760a763b80b19e192bc1cbdd4038dcd_m.css/fetch",
+      "filename": "search.original.css",
+      "description": "Original resource referenced by December 3 capture",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-03T06:48:02Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "55c22d00f23a47751f37081fd80707dd353a344e200bc31706f0236d3531776d",
+      "local_path": "2016-roblox-main/public/preserved/2018/search.original.css",
+      "helps_restore": [
+        "search/users"
+      ]
+    },
+    {
+      "url": "https://js.rbxcdn.com/f482dc6b768a9aeedeb33278107cfcd8.js.gzip",
+      "retrieved_url": "https://js.rbxcdn.com/f482dc6b768a9aeedeb33278107cfcd8.js.gzip",
+      "filename": "search-bundle.original.js",
+      "description": "Original resource referenced by December 3 capture",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-03T06:48:02Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved",
+      "content_hash": "667088a0d86e547bfd210e19bf11379fe201f3fe844f260f3cc1ce29afcafe59",
+      "local_path": "2016-roblox-main/public/preserved/2018/search-bundle.original.js",
+      "helps_restore": [
+        "search/users"
+      ]
+    },
+    {
+      "url": "https://js.rbxcdn.com/3c994e99d57381cb2dc35d2fb6aa5646.js.gzip",
+      "retrieved_url": "https://js.rbxcdn.com/3c994e99d57381cb2dc35d2fb6aa5646.js.gzip",
+      "filename": "search-templates.original.js",
+      "description": "Original resource referenced by December 3 capture",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-03T06:48:02Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved",
+      "content_hash": "42b793656d881861d238946a1329a39fe4a2374024d683bd3855d1dbea63af4b",
+      "local_path": "2016-roblox-main/public/preserved/2018/search-templates.original.js",
+      "helps_restore": [
+        "search/users"
+      ]
+    },
+    {
+      "url": "https://js.rbxcdn.com/c07f55ebc3fcb5a84969b6bbeec66668.js.gzip",
+      "filename": "intl-string.original.js",
+      "description": "Original Intl and String sections from December referenced leanbase",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-03T06:48:02Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved-selected-sections",
+      "content_hash": "712f6eda6e5648f813b34c3af256d05a75cce86e0f334ff99bf1513a428f6b1e",
+      "derived_content_hash": "4d7c62fbecf22c2fe36eb4a2d98c60fe8d3cc0619da9a8051b45b8321821b3ef",
+      "helps_restore": [
+        "search/users",
+        "catalog"
+      ]
     }
   ],
-  "source_count": 87,
+  "source_count": 92,
   "publication_policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present."
 }
