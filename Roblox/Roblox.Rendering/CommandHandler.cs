@@ -22,6 +22,7 @@ namespace Roblox.Rendering
     {
         private static System.Threading.Mutex mux { get; set; } = new();
         private static ClientWebSocket? ws { get; set; }
+        public static bool IsConnected => ws is { State: WebSocketState.Open };
         private static Dictionary<string, Func<RenderResponse<Stream>,int>> resultListeners { get; } = new();
         private static Uri wsUrl { get; set; }
 		private static Dictionary<int, Process> rccProcesses { get; } = new();

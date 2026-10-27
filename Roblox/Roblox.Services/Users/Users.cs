@@ -1221,7 +1221,8 @@ public class UsersService : ServiceBase, IService
 				}
 			}
 
-			var usersService = ServiceProvider.GetOrCreate<UsersService>();
+			// Keep the approval and account records on the same transaction connection.
+			var usersService = this;
 			
 			var appId = await usersService.CreateApplication(new CreateUserApplicationRequest()
 			{
@@ -1269,8 +1270,8 @@ public class UsersService : ServiceBase, IService
 			await InsertAsync("user_avatar", "user_id", new
 			{
 				user_id = userId,
-				thumbnail_url = "/images/thumbnails/default_thumbnail.png", // will be generated
-				avatar_type = 2,
+				thumbnail_url = (string?)null, // pending until a genuine render completes
+				avatar_type = 1, // R6, matching user_avatar_type.r15 = false
 				scale_height = 1.0f,
 				scale_width = 1.0f,
 				scale_head = 1.0f,
@@ -1283,7 +1284,7 @@ public class UsersService : ServiceBase, IService
 				left_arm_color_id = 194,
 				right_leg_color_id = 102,
 				left_leg_color_id = 102,
-				headshot_thumbnail_url = "/images/thumbnails/default_headshot.png" // will be generated
+				headshot_thumbnail_url = (string?)null
 			});
 			
 			await InsertAsync("user_avatar_type", new
@@ -1317,7 +1318,21 @@ public class UsersService : ServiceBase, IService
 			? Roblox.Configuration.SignupAvatarAssetIdsMan
 			: Roblox.Configuration.SignupAvatarAssetIdsFemale;
 
-		await av.RedrawAvatar(userId, avatarAssetIds);
+        // Avatar configuration is persistent before signup returns. Rendering is optional
+        // infrastructure and must not turn a committed account into a failed signup.
+        await av.UpdateUserAvatar(userId, await av.GetAvatarColors(userId), avatarAssetIds);
+        if (Roblox.Rendering.CommandHandler.IsConnected)
+        {
+            _ = Task.Run(async () =>
+            {
+                try
+                {
+                    using var renderer = ServiceProvider.GetOrCreate<AvatarService>();
+                    await renderer.RedrawAvatar(userId, avatarAssetIds);
+                }
+                catch (Exception error) { Writer.Info(LogGroup.SignUp, "Initial avatar render remains pending", error); }
+            });
+        }
 
 		return result;
 	}

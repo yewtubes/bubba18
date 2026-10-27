@@ -25,6 +25,7 @@ using Roblox.Website.WebsiteModels.Discord;
 using Npgsql;
 using Dapper;
 using Roblox.Dto.Users;
+using Roblox.Website.WebsiteServices;
 using HttpGetBypassUserCheck = Roblox.Website.Controllers.HttpGetBypassAttribute;
 
 // Everything login/signup here
@@ -546,115 +547,6 @@ namespace Roblox.Website.Controllers
 			}
 		}
 		
-		[HttpGetBypass("discordverify")]
-		public async Task<MVC.IActionResult> DiscordURL()
-		{
-			var ID = Roblox.Configuration.DiscordClientID;
-			var Redirect = Uri.EscapeDataString(Roblox.Configuration.DiscordRedirect);
-			var scope = Uri.EscapeDataString("identify");
-			
-			return new MVC.RedirectResult(
-				$"https://discord.com/api/oauth2/authorize?client_id={ID}&redirect_uri={Redirect}&response_type=code&scope={scope}"
-			);
-		}
-			
-		[HttpGetBypass("discordcb")]
-		public async Task<MVC.IActionResult> DiscordVerify([MVC.FromQuery] string code)
-		{
-			try
-			{
-				if (Request.Query.ContainsKey("error"))
-				{
-					return Redirect("/");
-				}
-
-				if (Request.Cookies["discord_id"] != null)
-				{
-					return Redirect("/");
-				}
-
-				var clientid = Roblox.Configuration.DiscordClientID;
-				var clientsec = Roblox.Configuration.DiscordClientSecret;
-				var redirurl = Roblox.Configuration.DiscordRedirect;
-
-				var httpClient = new HttpClient();
-				var parameters = new Dictionary<string, string>
-				{
-					{"client_id", clientid},
-					{"client_secret", clientsec},
-					{"grant_type", "authorization_code"},
-					{"code", code},
-					{"redirect_uri", redirurl}
-				};
-
-				var Response = await httpClient.PostAsync("https://discord.com/api/oauth2/token", 
-					new FormUrlEncodedContent(parameters));
-				
-				if (!Response.IsSuccessStatusCode)
-				{
-					return Redirect("/?signupmsg=Discord verification failed. Please try again.");
-				}
-
-				var discordtoken = await Response.Content.ReadFromJsonAsync<TokenRes>();
-				
-				httpClient.DefaultRequestHeaders.Authorization = 
-					new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", discordtoken.access_token);
-				
-				var userres = await httpClient.GetAsync("https://discord.com/api/users/@me");
-				var userinfo = await userres.Content.ReadFromJsonAsync<DiscordUser>();
-
-				if (await services.users.IsDiscordIdUsed(userinfo.id))
-				{
-					return Redirect("/?signupmsg=This Discord account is already linked to another BubbaBlox account.");
-				}
-				
-				// this is so retarded please change this later (this should match validatesignupcookie)
-				var key = Roblox.Configuration.DiscordKey;
-				var token = $"BBSignUp|{DateTime.UtcNow:yyyyMMddHHmmss}|KeyValidation";
-				var IDtoken = $"BBSignUp|{userinfo.id}|DiscordId";
-				var encryptedtoken = EncryptWithKey(token, key);
-				var encryptedId = EncryptWithKey(IDtoken, key);
-				
-				HttpContext.Response.Cookies.Append("signupkey", encryptedtoken, new CookieOptions
-				{
-					HttpOnly = true,
-					Secure = true,
-					SameSite = SameSiteMode.Lax,
-					Expires = DateTimeOffset.Now.AddDays(1)
-				});
-
-				HttpContext.Response.Cookies.Append("discord_id", encryptedId, new CookieOptions
-				{
-					HttpOnly = true,
-					Secure = true,
-					SameSite = SameSiteMode.Lax,
-					Expires = DateTimeOffset.Now.AddMinutes(10)
-				});
-
-				HttpContext.Response.Cookies.Append("discord_profile", Newtonsoft.Json.JsonConvert.SerializeObject(new
-				{
-					id = userinfo.id,
-					username = userinfo.username,
-					discriminator = userinfo.discriminator,
-					avatar = userinfo.avatar
-				}), new CookieOptions
-				{
-					HttpOnly = false,
-					Secure = true,
-					SameSite = SameSiteMode.Lax,
-					Expires = DateTimeOffset.Now.AddMinutes(10),
-					Path = "/"
-				});
-
-				return Redirect("/");
-			}
-			catch (Exception ex)
-			{
-				Console.WriteLine($"Discord verification error: {ex.Message}");
-				return Redirect("/?signupmsg=Discord verification failed. Please try again.");
-			}
-		}
-		
 		[HttpGetBypassUserCheck("UserCheck/checkifinvalidusernameforsignup")]
 		public async Task<MVC.IActionResult> CheckUsernameAvailability([MVC.FromQuery] string username)
 		{
@@ -709,112 +601,19 @@ namespace Roblox.Website.Controllers
 			return sr.ReadToEnd();
 		}
 		
-		// this is so stupid (this should match discordcb) (IT is better now.)
-		private async Task<bool> ValidateSignupCookie(NpgsqlConnection db)
-		{
-			var key = Roblox.Configuration.DiscordKey;
-			var cookie = Request.Cookies["signupkey"];
-			
-			if (string.IsNullOrEmpty(cookie))
-				return false;
-			
-			try
-			{
-				var decrypted = DecryptWithKey(cookie, key);
-				if (!decrypted.StartsWith("BBSignUp|") || 
-					!decrypted.EndsWith("|KeyValidation"))
-				return false;
-				
-				// check if this has been used before, if so return false as user is trying tos ign up again
-				var Used = await db.ExecuteScalarAsync<bool>(
-					"SELECT EXISTS(SELECT 1 FROM user_signup_tokens WHERE token = @token)",
-					new { token = cookie });
-			
-				if (Used)
-					return false;
-				
-				var parts = decrypted.Split('|');
-				if (parts.Length != 3)
-					return false;
-				
-				if (!DateTime.TryParseExact(parts[1], "yyyyMMddHHmmss", 
-					System.Globalization.CultureInfo.InvariantCulture, 
-					System.Globalization.DateTimeStyles.None, out var TokenDateTime))
-					return false;
-					
-				// 3 hours to sign up
-				if (DateTime.UtcNow - TokenDateTime > TimeSpan.FromHours(3))
-					return false;
-				
-				return true;
-			}
-			catch
-			{
-				return false;
-			}
-		} 
-		
-		private string ValidateDiscordKey()
-		{
-			var key = Roblox.Configuration.DiscordKey;
-			var cookie = Request.Cookies["discord_id"];
-			
-			if (string.IsNullOrEmpty(cookie))
-				return null;
-			
-			try
-			{
-				var decrypted = DecryptWithKey(cookie, key);
-				if (!decrypted.StartsWith("BBSignUp|") || 
-					!decrypted.EndsWith("|DiscordId"))
-					return null;
-				
-				var parts = decrypted.Split('|');
-				if (parts.Length != 3)
-					return null;
-				
-				return parts[1];
-			}
-			catch
-			{
-				return null;
-			}
-		}
-
 		[HttpPostBypass("login/signup")]
 		[MVC.Consumes("application/x-www-form-urlencoded")]
-		// the form errors probably don't work, but doesn't hurt to try (TODO: replace this iwth something else cause it didn't lmao)
+        // Native signup keeps account validation/cooldowns; Cap replaces the Discord gate.
 		public async Task<MVC.IActionResult> Signup(
-			[MVC.FromServices] NpgsqlConnection db,
+			[MVC.FromServices] CapService cap,
 			[MVC.FromForm] string username,
 			[MVC.FromForm] string password,
-			[MVC.FromForm] string birthday = null,
+			[MVC.FromForm] string? birthday = null,
 			[MVC.FromForm] int? gender = null,
-			[MVC.FromForm] string context = null,
+			[MVC.FromForm] string? context = null,
+			[MVC.FromForm] string? capToken = null,
 			[MVC.FromForm] bool isEligibleForHideAdsAbTest = false)
 		{
-			// error 1 = already signed up with discord id
-			// error 2 = no discord ID in cookies
-			// error 3 = failed to validate signup cookie (bad encryption, expired, already used)
-			if (!await ValidateSignupCookie(db))
-			{
-				return ReturnFormError("Registration is temporarily unavailable. Please try again later.", 
-					new List<string> { "AbuseDetection-3" });
-			}
-
-			var DiscordID = ValidateDiscordKey();
-			if (string.IsNullOrEmpty(DiscordID))
-			{
-				return ReturnFormError("Registration is temporarily unavailable. Please try again later.", 
-					new List<string> { "AbuseDetection-2" });
-			}
-
-			if (await services.users.IsDiscordIdUsed(DiscordID))
-			{
-				return ReturnFormError("Registration is temporarily unavailable. Please try again later.", 
-					new List<string> { "AbuseDetection-1" });
-			}
-			
 			MVC.IActionResult ReturnFormError(string msg, List<string> reasons)
 			{
 				return StatusCode(403, new 
@@ -824,6 +623,11 @@ namespace Roblox.Website.Controllers
 					fieldErrors = new object[0] 
 				});
 			}
+
+            if (!cap.IsConfigured)
+                return StatusCode(503, new { message = "Verification is temporarily unavailable.", reasons = new[] { "Unavailable" } });
+            if (string.IsNullOrEmpty(capToken) || capToken.Length > 512)
+                return ReturnFormError(BadCaptchaMessage, new List<string> { "Captcha" });
 
 			try
 			{
@@ -885,6 +689,16 @@ namespace Roblox.Website.Controllers
 				return ReturnFormError("Registration is temporarily unavailable. Please try again later.", 
 					new List<string> { "AbuseDetection" });
 
+            try
+            {
+                if (!await cap.Verify(capToken, HttpContext.RequestAborted))
+                    return ReturnFormError(BadCaptchaMessage, new List<string> { "Captcha" });
+            }
+            catch (Exception error) when (error is HttpRequestException or TaskCanceledException or InvalidOperationException or System.Text.Json.JsonException)
+            {
+                return StatusCode(503, new { message = "Verification is temporarily unavailable.", reasons = new[] { "Unavailable" } });
+            }
+
 			var finalcool = "signup:step2:" + ip;
 			try
 			{
@@ -907,24 +721,6 @@ namespace Roblox.Website.Controllers
 
 				var newuser = await services.users.CreateUser(username, password, genderEnum);
 				
-				var signupkey = Request.Cookies["signupkey"];
-				await db.ExecuteAsync(
-					"INSERT INTO user_signup_tokens (token, user_id, discord_id, used_at) " +
-					"VALUES (@token, @userId, @discordId, CURRENT_TIMESTAMP)",
-					new
-					{
-						token = signupkey,
-						userId = newuser.userId,
-						discordId = DiscordID
-					});
-				
-				// add discord to DB incase they alt
-				// ik you can just make a discord alt but they are usually hard to make in my experience and need phone number and shit
-				if (!string.IsNullOrEmpty(DiscordID))
-				{
-					await services.users.LinkDiscordAccount(newuser.userId, DiscordID);
-				}
-		
 				var sess = await services.users.CreateSession(newuser.userId);
 
 				var sesscookie = Middleware.SessionMiddleware.CreateJwt(new Middleware.JwtEntry()
@@ -943,90 +739,6 @@ namespace Roblox.Website.Controllers
 						SameSite = SameSiteMode.None,
 						Expires = DateTimeOffset.Now.AddYears(1)
 					});
-
-				// should we also encrypt this? not really anything harmful anyone can do with this except like change their username
-				// discord ID is already encrypted so
-				var DiscordProfileJSON = Request.Cookies["discord_profile"];
-				DiscordProfile DihcordProfile = null;
-				string DiscordUsername = "Unknown";
-				string DiscordAvatarURL = null;
-
-				if (!string.IsNullOrEmpty(DiscordProfileJSON))
-				{
-					try
-					{
-						DihcordProfile = JsonConvert.DeserializeObject<DiscordProfile>(DiscordProfileJSON);
-						DiscordUsername = $"{DihcordProfile.username}#{DihcordProfile.discriminator}";
-						if (!string.IsNullOrEmpty(DihcordProfile.avatar))
-						{
-							DiscordAvatarURL = $"https://cdn.discordapp.com/avatars/{DiscordID}/{DihcordProfile.avatar}.png";
-						}
-					}
-					catch (Exception ex)
-					{
-						Writer.Info(LogGroup.SignUp, "failed to parse discord profile", ex);
-					}
-				}
-
-				try
-				{
-					var webhook = Roblox.Configuration.SignupWebhook;
-					string genderText = gender.Value == 3 ? "Female" : "Male";
-					
-					var embed = new
-					{
-						title = "Signup",
-						description = $"A new user has signed up",
-						color = 0x00ff00,
-						thumbnail = new
-						{
-							url = DiscordAvatarURL
-						},
-						fields = new[]
-						{
-							new
-							{
-								name = "Username",
-								value = username,
-								inline = true
-							},
-							new
-							{
-								name = "Gender",
-								value = genderText,
-								inline = true
-							},
-							new
-							{
-								name = "Discord ID",
-								value = DiscordID,
-								inline = true
-							},
-							new
-							{
-								name = "Discord Name",
-								value = DiscordUsername,
-								inline = true
-							}
-						},
-						timestamp = DateTime.UtcNow.ToString("o")
-					};
-
-					var payload = new
-					{
-						embeds = new[] { embed }
-					};
-
-					using (var httpClient = new HttpClient())
-					{
-						var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
-						await httpClient.PostAsync(webhook, content);
-					}
-				}
-				catch (Exception ex)
-				{
-					Writer.Info(LogGroup.SignUp, "Failed to send signup notif to webhook (is it configured?)", ex);
-				}
 
 				Response.Cookies.Delete("discord_id");
 				Response.Cookies.Delete("discord_profile");

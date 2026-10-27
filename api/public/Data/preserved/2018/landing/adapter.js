@@ -3,7 +3,18 @@
  */
 (function () {
   'use strict';
-  var origin=location.origin;
+  var origin=location.origin,pendingSignupToken=null,capLoading;
+  function solveCap(){
+    window.CAP_CUSTOM_WASM_URL='/captcha/assets/cap_wasm_bg.wasm';
+    window.CAP_CUSTOM_HASHWX_URL='/captcha/assets/hashwx.wasm';
+    window.CAP_PAKO_URL='/captcha/assets/pako_inflate.min.js';
+    window.CAP_DISABLE_WIDGET_REF=true;
+    if(!capLoading)capLoading=new Promise(function(resolve,reject){
+      var script=document.createElement('script');script.src='/captcha/assets/widget.js';
+      script.onload=function(){resolve();};script.onerror=function(){capLoading=null;script.remove();reject(new Error('CAP could not be loaded.'));};document.head.appendChild(script);
+    });
+    return capLoading.then(function(){var cap=new window.Cap({apiEndpoint:'/captcha/'});return cap.solve().finally(function(){cap.widget.remove();});});
+  }
   function localPath(value,fallback) {
     try { var u=new URL(value||fallback||'/home',origin);return u.origin===origin&&u.pathname.startsWith('/')?u.pathname+u.search+u.hash:(fallback||'/home'); }
     catch(e){return fallback||'/home';}
@@ -58,19 +69,27 @@
       httpPost:function(options,data){
         var url=new URL(options.url,origin);if(url.origin!==origin)return $q.reject({status:400});
         if(url.pathname==='/local-auth/v2/login')return nativePost('/login',{username:data.cvalue,password:data.password,returnUrl:returnUrl});
-        if(url.pathname==='/local-auth/v2/signup')return nativePost('/login/signup',data);
+        if(url.pathname==='/local-auth/v2/signup'){var token=pendingSignupToken;pendingSignupToken=null;return nativePost('/login/signup',Object.assign({},data,{capToken:token||''}));}
         return $q.reject({status:501,data:{errors:[{code:0}],reasons:['Unavailable']}});
       }
     };
   }]);
-  // Surface native verification errors in the original general-error state.
-  app.run(['$injector','$templateCache',function(injector,cache){
-    var definitions=injector.get('signUpDirective');
-    var original=definitions[0].link;
-    delete definitions[0].templateUrl;definitions[0].template=function(){return cache.get('sign-up')+'<a class="text-link" ng-if="verificationRequired" href="/discordverify">Verify with Discord</a>';};
-    definitions[0].link=function(scope,element,attrs){original.apply(this,arguments);var handle=scope.handleSignupErrors;
-      scope.handleSignupErrors=function(error){error=error||{};error.reasons=error.reasons||['Unavailable'];handle(error);
-        if(error.reasons.some(function(reason){return reason.indexOf('AbuseDetection-')===0;})){scope.verificationRequired=true;scope.signupForm.$generalErrorText='Verify your Discord account before signing up.';}
+  // Keep the recovered form/controller; solve CAP before submitting its native request.
+  app.run(['$injector',function(injector){
+    var definitions=injector.get('signUpDirective'),original=definitions[0].link;
+    definitions[0].link=function(scope,element,attrs){
+      original.apply(this,arguments);
+      var submit=scope.submitSignup,handle=scope.handleSignupErrors;
+      scope.handleSignupErrors=function(error){
+        error=error||{};error.reasons=error.reasons||['Unavailable'];
+        if(error.reasons.indexOf('Captcha')!==-1){scope.isSubmitting=false;scope.setGeneralError();scope.signupForm.$generalErrorText=error.message||'Verification failed. Please try again.';return;}
+        handle(error);if(scope.signupForm.$generalError&&error.message)scope.signupForm.$generalErrorText=error.message;
+      };
+      scope.submitSignup=function(count){
+        if(scope.isSubmitting)return;
+        if(!scope.isFormValid()||!scope.isGenderValid()||!scope.isValidBirthday(scope.signup.birthdayDay))return submit(count);
+        scope.isSubmitting=true;scope.signupForm.$generalError=false;
+        solveCap().then(function(result){if(!result||!result.token)throw new Error("Verification interrupted");scope.$evalAsync(function(){pendingSignupToken=result.token;scope.isSubmitting=false;submit(count);});}).catch(function(){scope.$evalAsync(function(){scope.isSubmitting=false;scope.setGeneralError();scope.signupForm.$generalErrorText='Verification is temporarily unavailable. Please try again.';});});
       };
     };
     definitions[0].compile=function(){return definitions[0].link;};

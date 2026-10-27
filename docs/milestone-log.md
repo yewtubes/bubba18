@@ -59,3 +59,11 @@ Remaining: authenticated Avatar/Settings/Groups/Develop and other legacy bodies,
 **Tests / screenshots:** Actual C# + Redis + persistent PostgreSQL wire engine + Next.js, no browser mocks. Build passed. Browser test covers original scrolling, mobile expansion, username uniqueness, validation, real signup verification denial, wrong password, successful session and local redirect. Six real screenshots and exact outcomes are in `evidence/landing-2018/`.
 
 **Still broken / next:** Signup requires configured Discord OAuth; no verification was bypassed. Only English is connected. Store links lead to the local download page; genuine 2018 client/rendering compatibility is still unverified. Full pixel comparison remains outstanding. Continue converting remaining page bodies after publishing this milestone.
+
+## 2026-10-27 — Discord signup replaced by self-hosted CAP
+
+**Implemented / reused:** The original December signup controller/form solves CAP before using native C# registration. Official pinned CAP core/widget, local WASM/assets and Redis single-use nonce/token storage run behind restricted C# proxy routes. Removed the signup-only Discord gate, OAuth routes and identity/token/webhook coupling; optional existing-account login/recovery stays available.
+
+**Tests / screenshots:** Real browser, C#, Redis and SQL checks in `evidence/cap-signup/`; no successful-verification fixtures. Includes first-account creation, session, related data, replay rejection, fail-closed outage and SQL restart. The signup transaction now shares its approval connection, and missing renderer leaves actual pending thumbnails instead of failing account creation. Build succeeds; genuine screenshots accompany source.
+
+**Limits / next:** Actual RCC thumbnails/multiplayer remain unverified. Production Redis must retain nonce data through restarts. Next requested tasks are the archived embed/favicon, shared navigation/layout/dropdown fixes, profile Creations, original Messages/Develop/Trade bodies, admin repair and a local 2018 Blog page. No full historical parity is claimed.

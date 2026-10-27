@@ -44,12 +44,7 @@ try{
  await page.getByText('This username is already in use.',{exact:true}).waitFor();
  await page.locator('#signup-username').fill('LandingTestUser');await page.waitForFunction(()=>angular.element(document.querySelector('[sign-up]')).isolateScope().signupForm.signupUsername.$valid);
  await page.locator('.password-visibility-toggle').click();assert.equal(await page.locator('#signup-password').getAttribute('type'),'text');await page.locator('.password-visibility-toggle').click();
- const rejected=page.waitForResponse(r=>r.url().endsWith('/login/signup')&&r.request().method()==='POST');await page.locator('#signup-button').click();assert.equal((await rejected).status(),403);
- await page.getByText('Verify your Discord account before signing up.',{exact:true}).waitFor();await page.getByRole('link',{name:'Verify with Discord',exact:true}).waitFor();
- assert.equal((await database.db.query('SELECT count(*)::int AS n FROM public."user"')).rows[0].n,1);
- // Clear test credentials before storing error screenshots.
- await page.locator('#signup-password').fill('');await page.waitForTimeout(500);await shot('landing-verification-live.jpg');
- report.checks.push('Native username uniqueness contract, password visibility and real signup 403 work; missing Discord verification cannot create an account');
+ report.checks.push('Original username uniqueness and password visibility work; full CAPTCHA signup is covered by verify-cap-signup.mjs');
  await page.setViewportSize({width:390,height:844});await page.goto(origin+'/',{waitUntil:'networkidle'});await page.locator('.navbar-toggle').click();await page.locator('#login-username').waitFor({state:'visible'});await page.waitForFunction(()=>document.querySelector('#LandingNavbar').classList.contains('in')&&!document.querySelector('#LandingNavbar').classList.contains('collapsing'));assert((await page.locator('#LandingNavbar').boundingBox()).height>150);await shot('landing-mobile-login-live.jpg');
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));report.checks.push('Original responsive mobile login expands without horizontal overflow');
  await page.setViewportSize(report.viewport);await page.goto(origin+'/',{waitUntil:'networkidle'});

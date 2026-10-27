@@ -1,0 +1,20 @@
+{
+  "name": "bubba18-cap",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node ../tools/dev-database/verify-cap-signup.mjs"
+  },
+  "dependencies": {
+    "capjs-core": "0.1.6",
+    "cap-widget": "0.1.58",
+    "@cap.js/wasm": "0.0.8",
+    "ioredis": "6.0.0",
+    "pako": "2.1.0"
+  }
+}

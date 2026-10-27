@@ -1,0 +1,64 @@
+{
+  "capRequests": [
+    {
+      "path": "/captcha/assets/widget.js",
+      "status": 200
+    },
+    {
+      "path": "/captcha/assets/cap_wasm_bg.wasm",
+      "status": 200
+    },
+    {
+      "path": "/captcha/challenge",
+      "status": 200,
+      "instrumentation": true
+    },
+    {
+      "path": "/captcha/redeem",
+      "status": 200,
+      "success": true,
+      "instrumentation": false
+    }
+  ],
+  "passed": true,
+  "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+  "sourceBaseCommit": "9b697ecdd57706b0400a1b87200eb58e70df6877",
+  "worktreeChanged": true,
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "checks": [
+    "Native signup rejects missing CAPTCHA before any account mutation",
+    "Private siteverify requires authentication and has no public proxy route",
+    "Real CAP verifier rejects a forged challenge",
+    "Original landing form solves real CAP proof-of-work and browser instrumentation, creates an independent account and establishes its session without Discord",
+    "Atomic Redis nonce and token consumption reject both challenge replay and reuse of the signup token",
+    "Existing account service creates exactly one persistent settings, economy and avatar record",
+    "CAP outage fails closed and does not create a second account",
+    "New CAPTCHA-created account survives database close and restart"
+  ],
+  "screenshots": [
+    {
+      "filename": "cap-signup-form-live.jpg",
+      "url": "http://127.0.0.1:5080/",
+      "capturedAt": "2026-10-27T23:35:08.571Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    },
+    {
+      "filename": "cap-account-home-live.jpg",
+      "url": "http://127.0.0.1:5080/home?nu=true",
+      "capturedAt": "2026-10-27T23:35:11.152Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    }
+  ],
+  "errors": [],
+  "apiFailures": [],
+  "database": {
+    "version": "PostgreSQL 18.6 (PGlite 0.5.12) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "database": "postgres"
+  },
+  "createdUserId": 1
+}

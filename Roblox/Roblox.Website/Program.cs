@@ -30,6 +30,7 @@ IConfiguration configuration = new ConfigurationBuilder()
     .Build();
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton(new Roblox.Website.WebsiteServices.CapService(configuration));
 
 // DB
 Roblox.Services.Database.Configure(configuration.GetSection("Postgres").Value);
