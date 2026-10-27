@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/rileyyyyyyx/bubbablox-v2",
+  "branch": "2021",
+  "commit": "612227933b3d24df11a965430f9d6ee694e03857",
+  "restored_source_files": 1058,
+  "excluded_build_artifacts_and_executables": [
+    ".gitignore",
+    "2016-roblox-main/public/Thumbs.db",
+    "2016-roblox-main/public/img/Thumbs.db",
+    "2016-roblox-main/public/img/placeholder/Thumbs.db",
+    "README.md",
+    "Roblox/Roblox.Website/Roblox.Website.csproj.Backup.tmp",
+    "Roblox/Roblox.Website/Roblox.Website.csproj.user",
+    "Roblox/Roblox.Website/UnsecuredContent/Thumbs.db",
+    "Roblox/Roblox.Website/packages-microsoft-prod.deb",
+    "admin/public/Thumbs.db",
+    "api/npm-debug.log",
+    "api/public/ObjToRBXMesh.exe",
+    "api/public/ObjToRBXMeshOBJ.exe",
+    "api/public/UnsecuredContent/Thumbs.db",
+    "api/public/images/BuildPage/Thumbs.db",
+    "api/public/images/Buttons/StyleGuide/Thumbs.db",
+    "api/public/images/StyleGuide/Thumbs.db",
+    "api/public/images/UI/Thumbs.db",
+    "api/public/img/Thumbs.db",
+    "api/public/img/placeholder/Thumbs.db",
+    "api/public/rbxmk/rbxmk.exe",
+    "redis-server.exe"
+  ],
+  "lost_worktree_recovered": false
+}

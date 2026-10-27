@@ -1,0 +1,29 @@
+# Installed dependencies and generated build outputs
+**/node_modules/
+**/.next/
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+# Private per-machine configuration and runtime data
+.local/
+**/.env
+**/.env.*
+!**/.env.example
+**/appsettings.json
+**/config.json
+**/game-servers.json
+Roblox/Roblox.Website/RSA/*.pem
+Roblox/Roblox.Website/RSA/*.key
+Roblox/Roblox.Website/RSA/PrivateKey*
+# Authorized proprietary runtimes are installed locally, not redistributed
+/RCCService/**
+/RCCService2015/**
+/RCCService2017/**
+/RCCService2018/**
+/RCCService2020/**
+!/RCCService/README.md
+!/RCCService2015/README.md
+!/RCCService2017/README.md
+!/RCCService2018/README.md
+!/RCCService2020/README.md

@@ -1,0 +1,11 @@
+{
+    "rcc": "C:\\Users\\Admin\\Desktop\\Revival\\ecsr\\ecsrev-main\\services\\RCCService",
+    "rccexe": "RCCService.exe",
+    "authorization": "RendererAuthInTheAppSettingsConfigJsonFileTheyShouldMatch",
+    "baseUrl": "https://your.domain",
+    "rccPort": 64989,
+    "port": 3040,
+    "websiteBotAuth": "TheBotAuthInTheAppSettingsConfigJson",
+    "thumbnailWebsocketPort": 3189,
+    "webhook": "YourWebhook"
+}
