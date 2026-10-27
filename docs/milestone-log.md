@@ -39,3 +39,13 @@ Remaining: authenticated Avatar/Settings/Groups/Develop and other legacy bodies,
 **Still broken / next:** Group relationships, store, shouts, paging and full membership/admin parity remain incomplete. Rendering and full historical visual certification remain outstanding.
 
 **Git status:** This entry and its actual runtime evidence are published with the corresponding source patch; test metadata identifies the source base and changed worktree.
+
+## 2026-10-27 — Group layout corrected from the supplied reference
+
+**Implemented:** Replaced the active November Group.aspx body with original redesigned group components: left group rail, image/name/count/rank header, four tabs, shout, description, members and wall. `/My/Groups.aspx` shares this component; old management/reference implementations are retained separately. Shared sidebar state now reserves its known width for this wide page.
+
+**Reused / recovered:** Original C# permissions, group/status/wall/catalog/member APIs and the universal Frame. Later original component templates/CSS recovered from a May 2019 capture; the Dec 13 beta announcement and supplied image establish the intended arrangement. Exact December bundles are unrecovered, so full 1:1 is not claimed.
+
+**Tests / screenshots:** Eight live integration checks, two genuine screenshots, no browser API mocks. Shout and wall writes survive SQL restart; anonymous posting/read restrictions remain enforced. See `evidence/groups-redesign/` for metadata and remaining gaps.
+
+**Still broken / next:** Affiliates persistence, complete menus/paging, exact December typography/resources and rendering. Next work is the actual December 2018 landing client requested by the user. Source and screenshots are committed together; metadata records the changed worktree used for capture.

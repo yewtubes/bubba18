@@ -6,9 +6,9 @@ import {pathToFileURL,fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),output=path.join(root,'docs/evidence/groups-2018');await mkdir(output,{recursive:true});
 const log=await open(path.join(root,'.local/group-next.log'),'w');
 const server=cp.spawn(process.execPath,['node_modules/next/dist/bin/next','dev','-H','127.0.0.1'],{cwd:path.join(root,'2016-roblox-main'),detached:true,env:{...process.env,NEXT_TELEMETRY_DISABLED:'1'},stdio:['ignore',log.fd,log.fd]});
-const delay=ms=>new Promise(r=>setTimeout(r,ms));let browser;const report={passed:false,kind:'Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification',viewport:{width:1366,height:768},sourceBaseCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),worktreeChanged:true,requests:[],errors:[],unsupported:[],screenshots:[]};
+const delay=ms=>new Promise(r=>setTimeout(r,ms));let browser;const report={passed:false,kind:'Retired November reference page with explicit browser API-contract fixtures; not the active December target or a live C# integration',viewport:{width:1366,height:768},sourceBaseCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),worktreeChanged:true,requests:[],errors:[],unsupported:[],screenshots:[]};
 try{
- let ready=false;for(let i=0;i<60;i++){try{if((await fetch('http://127.0.0.1:3000/Groups/Group.aspx?gid=900001')).ok){ready=true;break;}}catch{}await delay(500);}assert(ready,'Next.js did not start');
+ let ready=false;for(let i=0;i<60;i++){try{if((await fetch('http://127.0.0.1:3000/preservation/2018-november-group?gid=900001')).ok){ready=true;break;}}catch{}await delay(500);}assert(ready,'Next.js did not start');
  const {chromium}=await import(pathToFileURL(process.env.PLAYWRIGHT_MODULE).href);browser=await chromium.launch({executablePath:path.join(root,'.local/chromium'),args:['--no-sandbox','--no-zygote','--single-process','--disable-dev-shm-usage','--disable-gpu']});
  const context=await browser.newContext({viewport:report.viewport,serviceWorkers:'block'});
  await context.route('**/*',async route=>{
@@ -27,7 +27,7 @@ try{
   await route.fulfill({status,contentType:'application/json',body:JSON.stringify(data)});
  });
  const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));
- await page.goto('http://127.0.0.1:3000/Groups/Group.aspx?gid=900001',{waitUntil:'networkidle'});
+ await page.goto('http://127.0.0.1:3000/preservation/2018-november-group?gid=900001',{waitUntil:'networkidle'});
  await page.locator('.right-col h2').filter({hasText:'Local Group'}).waitFor();
  assert.equal((await page.locator('.GroupPlace .PlaceName').textContent()).trim(),'Local Test Place');assert.equal(await page.locator('.GroupWall_PostContainer').textContent(),'Local wall post. No historical account data is displayed.');
  const logo=await page.locator('.GroupThumbnail img').boundingBox();assert.equal(logo.width,150);assert.equal(logo.height,150);report.originalLogoDimensionsPreserved=true;

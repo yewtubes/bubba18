@@ -1,4 +1,5 @@
 import React,{useEffect,useRef,useState} from 'react';
+import Head from 'next/head';
 import {useRouter} from 'next/router';
 import capture from './group-redesign.generated.json';
 import AuthenticationStore from '../../stores/authentication';
@@ -63,7 +64,7 @@ export default function Group2018(){
    app.controller('groupStoreController',['$scope',function(s){s.layout={isLoading:true};s.storeData={results:[],showPagination:false};s.getDevelopPageUrl=()=>'/develop';
     (async()=>{const result=await searchCatalog({category:'All',creatorType:'Group',creatorId:groupId,limit:28,cursor:'0',sort:0}),details=(await getItemDetails(result.data.map(item=>item.id))).data.data;if(!disposed)s.$evalAsync(()=>{s.storeData.results=details.map(item=>({Name:item.name,AbsoluteUrl:getItemUrl({assetId:item.id,name:item.name}),Price:item.price,IsFree:item.price===0,NoPriceText:item.price===0?'Free':'',Thumbnail:{}}));});})().catch(()=>{if(!disposed)s.$evalAsync(()=>{s.layout.loadStoreItemsError=true;});}).finally(()=>{if(!disposed)s.$evalAsync(()=>{s.layout.isLoading=false;});});
    }]);
-   app.component('groupAffiliates',{template:'<div class="section-content-off" role="status">Affiliates are not implemented by the current backend.</div>',bindings:{groupId:'<'}});
+   app.component('groupAffiliates',{template:`<div class="section-content-off" role="status" ng-bind="'Message.GetGroupRelationshipsError' | translate"></div>`,bindings:{groupId:'<'}});
    app.controller('groupController',['$scope',function(s){scope=s;s.thumbnailTypes=thumbnailTypes;s.thumbnailSizes=thumbnailSizes;s.isAuthenticatedUser=auth.isAuthenticated;s.currencyInRobux=null;s.layout={};s.Data={activeTab:'about'};s.captcha={};s.captchaActionTypes={};
     s.groupConstants={currentTab:{1:'about',2:'store',3:'affiliates'},joinStatus:{allowed:6}};
     s.library={metadata:{isPhone:false,isConfigureGroupPageEnabled:false,groupStatusMaxLength:255,groupPostMaxLength:500},currentUser:{id:auth.userId},groupsList:{groups:memberships.map(row=>({...row.group,groupUrl:'/Groups/Group.aspx?gid='+row.group.id}))},currentGroup:{id:groupId,group:{...info,shout:info.shout||{shoutData:''}},role,roles:roles.filter(role=>role.rank>0),permissions:{groupPostsPermissions:{},groupEconomyPermissions:{},...permission.permissions}}};s.resources={www:{createGroupUrl:'/My/CreateGroup.aspx',upgradeMembershipUrl:'/buildersclub'}};
@@ -81,6 +82,6 @@ export default function Group2018(){
   })().catch(()=>fail('Some group content could not be loaded.'));
   return()=>{disposed=true;scope?.$root.$destroy();root.__removeGroupClick?.();root.replaceChildren();};
  },[router.isReady,router.query.gid,auth.isPending,auth.userId]);
- return <>{error&&<div className='content'><p role='status'>{error}</p></div>}<div ref={host}/></>;
+ return <><Head><link rel='stylesheet' href='/preserved/2018/group-redesign-adapter.css'/></Head>{error&&<div className='content'><p role='status'>{error}</p></div>}<div ref={host}/></>;
 }
 Group2018.preserved2018=true;Group2018.preservedPage='group-redesign';

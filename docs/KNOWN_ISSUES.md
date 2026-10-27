@@ -10,3 +10,4 @@
 - The opaque upstream settings ZIP is not published; active C# sources do not reference it. Proprietary Windows runtimes are installed separately.
 - December player-search markup, controller and templates are integrated and tested against C# and SQL. The exact 2018 metadata response remains unrecovered; the three-character minimum is from a 2021 metadata capture. Mobile, chat and join controls are not fully integrated.
 - The original Catalog languageResource adapter now exposes the recovered Intl comparison implementation; the previous langSensitiveCompare error is fixed and browser-tested.
+- The active Groups page now follows the supplied redesigned reference. Its recovered component bundle is May 2019; the separate Games tab restores the December beta arrangement. Exact December typography/resources and full 1:1 parity remain unverified. The earlier November page is a retired reference.

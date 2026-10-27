@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+  "sourceBaseCommit": "3616f7fbd79e0f8b9d149559bd92328b9578ae2d",
+  "worktreeChanged": true,
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "checks": [
+    "Supplied-reference structure: group rail, 126px image, four ordered tabs, Shout/Description/Members and nine members per page",
+    "Original member pager loads a different nine-record page from C#",
+    "Recovered shout form persists an actual group status through the existing permission-checked API",
+    "Recovered wall form posts and refreshes actual local database content",
+    "Games/Store tab selection works; Affiliates explicitly reports the backend gap",
+    "My Groups uses the same redesigned component and the universal sidebar toggles without covering the group rail",
+    "Anonymous viewer sees public group data but cannot access protected wall content or posting forms",
+    "Group shout and wall post survive database close and restart"
+  ],
+  "screenshots": [
+    {
+      "filename": "group-about-live.png",
+      "url": "http://127.0.0.1:5080/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T22:49:17.574Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    },
+    {
+      "filename": "group-games-live.png",
+      "url": "http://127.0.0.1:5080/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T22:49:19.135Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks"
+    }
+  ],
+  "errors": [],
+  "apiFailures": [],
+  "database": {
+    "version": "PostgreSQL 18.6 (PGlite 0.5.12) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "database": "postgres"
+  },
+  "geometry": {
+    "root": {
+      "x": 175,
+      "y": 52,
+      "width": 1146,
+      "height": 1104.96875
+    },
+    "list": {
+      "x": 175,
+      "y": 102,
+      "width": 160,
+      "height": 52
+    },
+    "header": {
+      "x": 366,
+      "y": 117,
+      "width": 940,
+      "height": 126
+    },
+    "icon": {
+      "x": 366,
+      "y": 117,
+      "width": 126,
+      "height": 126
+    },
+    "details": {
+      "x": 351,
+      "y": 102,
+      "width": 970,
+      "height": 1054.96875
+    },
+    "tabs": [
+      242.5,
+      242.5,
+      242.5,
+      242.5
+    ],
+    "shout": {
+      "x": 351,
+      "y": 364,
+      "width": 970,
+      "height": 155.1875
+    },
+    "description": {
+      "x": 366,
+      "y": 595.1875,
+      "width": 940,
+      "height": 20.796875
+    },
+    "members": {
+      "x": 351,
+      "y": 699.984375,
+      "width": 970,
+      "height": 149.796875
+    }
+  },
+  "restartPersistence": true
+}

@@ -1,0 +1,6 @@
+/* Compatibility with the universal sidebar; reserve its recovered 175px width
+   while it is open so the wide group list is not covered by the site navigation. */
+#preserved-2018-page[data-preserved-page="group-redesign"][data-sidebar-open="true"] .container-main{margin-left:175px}
+#preserved-2018-page #group-container .menu-vertical-container{float:left}
+/* December beta reference: Games is a separate fourth tab. */
+#preserved-2018-page .group-details #horizontal-tabs .group-tab{width:25%}
