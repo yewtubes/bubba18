@@ -27,5 +27,11 @@
     "api/public/rbxmk/rbxmk.exe",
     "redis-server.exe"
   ],
-  "lost_worktree_recovered": false
+  "lost_worktree_recovered": false,
+  "excluded_opaque_archives": [
+    {
+      "path": "Roblox/Roblox.Libraries/Json/Old/ClientAppSettings.zip",
+      "reason": "Automatic approval rejected opaque service configuration archive; no active C# references found. Kept local and excluded from publication."
+    }
+  ]
 }
