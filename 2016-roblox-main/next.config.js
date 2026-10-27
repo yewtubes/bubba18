@@ -28,7 +28,7 @@ module.exports = {
       */
       {
         source: '/groups/:id/:name',
-        destination: '/My/Groups.aspx?gid=:id',
+        destination: '/Groups/Group.aspx?gid=:id',
         permanent: false,
       },
     ];

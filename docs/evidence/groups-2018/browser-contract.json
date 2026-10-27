@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "kind": "Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "sourceBaseCommit": "368c8a5fc826a1fb8c53e2b012a749fbd7ef090a",
+  "worktreeChanged": true,
+  "requests": [
+    "/apisite/users/v1/users/authenticated",
+    "/apisite/groups/v1/groups/900001",
+    "/apisite/groups/v1/groups/900001/roles",
+    "/apisite/games/v2/groups/900001/games",
+    "/apisite/groups/v2/groups/900001/wall/posts",
+    "/apisite/groups/v1/groups/900001/roles/7/users",
+    "/apisite/thumbnails/v1/users/avatar",
+    "/apisite/thumbnails/v1/groups/icons",
+    "/apisite/thumbnails/v1/games/icons"
+  ],
+  "errors": [],
+  "unsupported": [],
+  "screenshots": [
+    {
+      "filename": "group-games-contract-fixture.png",
+      "url": "http://127.0.0.1:3000/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T19:17:16.431Z",
+      "kind": "Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification"
+    },
+    {
+      "filename": "group-members-contract-fixture.png",
+      "url": "http://127.0.0.1:3000/Groups/Group.aspx?gid=900001",
+      "capturedAt": "2026-10-27T19:17:16.900Z",
+      "kind": "Running Next.js frontend with explicit browser API-contract fixtures; not a live C# integration or full 1:1 certification"
+    }
+  ],
+  "originalLogoDimensionsPreserved": true
+}

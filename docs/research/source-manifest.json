@@ -1241,8 +1241,55 @@
       ],
       "published_content_hash": "4eb784f17f9c67be700cca4915d6dc581cda710ea56c0e09f9d2c3e33f12ea29",
       "publication_copy_may_be_redacted": true
+    },
+    {
+      "url": "https://web.archive.org/web/20181117045512id_/https://www.roblox.com/Groups/Group.aspx?gid=3059674",
+      "retrieved_url": "https://web.archive.org/web/20181117045512id_/https://www.roblox.com/Groups/Group.aspx?gid=3059674",
+      "filename": "group-20181117.html",
+      "description": "November public group-page document. Raw bytes remain private; only adapted structure is published.",
+      "claimed_date": null,
+      "independently_verified_date": "20181117045512",
+      "source_type": "document",
+      "retrieval_status": "retrieved",
+      "content_hash": "62351e382de3fb19318c7f27b080ef09a82b03b816047f8e4d868c73393638e1",
+      "local_path": null,
+      "private_original_preserved": true,
+      "helps_restore": [
+        "groups"
+      ],
+      "structural_template_path": "2016-roblox-main/components/preserved2018/group.generated.json"
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/MainCSS___0200f0fbdec2c0a87b8a3d910089d0b5_m.css/fetch",
+      "filename": "group-base.original.css",
+      "description": "Original CSS URL referenced by the November 17 group capture",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "20181117045512",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "42735f5a0b7809687f4f2cbf7bb14194c9022130d72637c2ebdea428ccfd8fdc",
+      "local_path": "2016-roblox-main/public/preserved/2018/group-base.original.css",
+      "helps_restore": [
+        "groups"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/page___3919aa3b07634a2d86e603b71aa22b08_m.css/fetch",
+      "filename": "group.original.css",
+      "description": "Original CSS URL referenced by the November 17 group capture",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "20181117045512",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "c962ff0192cfd9bcc6cb9ab5e7ba71dace9facbd1f01a6d070c57762abb391a8",
+      "local_path": "2016-roblox-main/public/preserved/2018/group.original.css",
+      "helps_restore": [
+        "groups"
+      ]
     }
   ],
-  "source_count": 84,
+  "source_count": 87,
   "publication_policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present."
 }

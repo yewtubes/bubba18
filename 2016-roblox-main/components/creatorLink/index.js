@@ -12,7 +12,7 @@ const verifiedCache = new Map();
  */
 const CreatorLink = (props) => {
   const [isVerified, setIsVerified] = useState(false);
-  const url = (props.type === 'User' || props.type === 1) ? '/users/' + props.id + "/profile" : '/My/Groups.aspx?gid=' + props.id;
+  const url = (props.type === 'User' || props.type === 1) ? '/users/' + props.id + "/profile" : '/Groups/Group.aspx?gid=' + props.id;
   
   useEffect(() => {
     if (props.type === 'User' || props.type === 1) {
