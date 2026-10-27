@@ -1441,8 +1441,1191 @@
         "groups-redesign"
       ],
       "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
+    },
+    {
+      "url": "https://web.archive.org/web/20181222212216id_/https://js.rbxcdn.com/ae4f6b9c4a503fbd2b3c6390d54bd678.js.gzip",
+      "filename": "templates.original.js",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212216",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved",
+      "content_hash": "079da734ad9080fbe491d0be79d4902c877d96ae40121951a07d3713ea62923c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222212217id_/https://js.rbxcdn.com/54076066a9da102068d6f476f810612a.js.gzip",
+      "filename": "auth.original.js",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212217",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved",
+      "content_hash": "c5f464e00da1a3955e234eb53cf7edafeffb30a0d4eabe1be5d59232315815dd",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222212217id_/https://js.rbxcdn.com/c208fa9aa4f1077a8a1db7b022d7506d.js.gzip",
+      "filename": "language.original.js",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212217",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved",
+      "content_hash": "81ae2cb0ed0cab6186cfb4b062b29dd90776a0b28dd481ecd2213db14f05548a",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222212214id_/https://static.rbxcdn.com/css/authAppCss___fee3ee9cbd451b4e0a9887686bb59b16_a9153727-1076-4e5a-a7df-d45894d70a19_m.css/fetch",
+      "filename": "auth.original.css",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212214",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "c5bb80a9e8677d32e7f0b79d4dddebbef805230dcc96b3d43caef20001336bd5",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/leanbase___0a74352b50a8582305046755be00a87e_m.css/fetch",
+      "filename": "base.original.css",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "d6a6339d8cf4fac9809d0eccf7289ddb70419eab281597c9e7919d3b1f24ba3f",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/page___ebadf6c083396ada1e0d5d4aaa956666_m.css/fetch",
+      "filename": "page.original.css",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "1d2b3c826e75f97ddde322b023001d18673a9bf187c029847f58dfee717e150b",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://js.rbxcdn.com/7d03d65a460ad98e2b2bf61267f6dc3b.js.gzip",
+      "filename": "landing-page.raw",
+      "description": "Original December AuthSite landing resource",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "script",
+      "retrieval_status": "retrieved-private-selected-sections-published",
+      "content_hash": "2f88dfb2290b2cd8160f48446818c288ce47399e24ab800b98d4cda1a3423983",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.svg",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.svg",
+      "filename": "source-sans-pro-v9-latin-300.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-300.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "78d7500f12669a1671c2233a8fc3cb9af9a5f0caef60298b6a2d71be7040cc59",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.woff",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.woff",
+      "filename": "source-sans-pro-v9-latin-300.woff",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-300.woff",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "205a3d073b11d53787f840431b237c87f2febae30af2e7d62bd10816cb506704",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.woff2",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-300.woff2",
+      "filename": "source-sans-pro-v9-latin-300.woff2",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-300.woff2",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "a4fac6d6f6782da9cfe8d8c756d89953e2e1ca6a5340724385b948e083bbf569",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.svg",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.svg",
+      "filename": "source-sans-pro-v9-latin-600.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-600.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "f599d22a139c513d1ea999376db23b3ebafa6c82cfb2ed844cf3dc73d34fd434",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.woff",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.woff",
+      "filename": "source-sans-pro-v9-latin-600.woff",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-600.woff",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "d4baa84c5bb927222aee6bcebcb29510b33b6de1a7ec71acbb2a4921d9f6ff22",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.woff2",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-600.woff2",
+      "filename": "source-sans-pro-v9-latin-600.woff2",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-600.woff2",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "0b1dd42ccd2f5da83fa717b15fdd9f91879436b84a15d95340fc7ed5c2bc0269",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.svg",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.svg",
+      "filename": "source-sans-pro-v9-latin-regular.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-regular.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "ba0c84b45590acaadfebfe60fb11cd8bb794a6763f262482c66be2b1686d07c3",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.woff",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.woff",
+      "filename": "source-sans-pro-v9-latin-regular.woff",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-regular.woff",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "760a5ecb51ae9bee28469d621b6604d62c8c7c4685c307aa36bcd2d7d28763b6",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.woff2",
+      "retrieved_url": "https://static.rbxcdn.com/fonts/source-sans-pro-v9-latin-regular.woff2",
+      "filename": "source-sans-pro-v9-latin-regular.woff2",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/fonts/source-sans-pro-v9-latin-regular.woff2",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "font",
+      "retrieval_status": "retrieved",
+      "content_hash": "599d93e0748728edc6bd55a82a52bff61196b149d566a67d4ed86d55d9c520aa",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/AssetIcons/asset-placeholder.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194011id_/https://static.rbxcdn.com/images/AssetIcons/asset-placeholder.svg",
+      "filename": "asset-placeholder.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/AssetIcons/asset-placeholder.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194011",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "673f07f9d0c6fce585d8ae502501cffbdd5c4d0345f4bd3cde01bc423e227385",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Avatar/avatar-fullbody-placeholder.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194012id_/https://static.rbxcdn.com/images/Avatar/avatar-fullbody-placeholder.svg",
+      "filename": "avatar-fullbody-placeholder.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Avatar/avatar-fullbody-placeholder.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194012",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2374624801232791407fe7b18806e9acfbbf8a6e0873281a399b959187c16348",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Avatar/avatar-headshot-placeholder.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194006id_/https://static.rbxcdn.com/images/Avatar/avatar-headshot-placeholder.svg",
+      "filename": "avatar-headshot-placeholder.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Avatar/avatar-headshot-placeholder.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194006",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2696efa96e6cab31a96eeec34c07c34f6acff82dabb195a17eb5155e61f27a2a",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Games/placeholder-game-icon.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194012id_/https://static.rbxcdn.com/images/Games/placeholder-game-icon.svg",
+      "filename": "placeholder-game-icon.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Games/placeholder-game-icon.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194012",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "39ab7100530d619518b964f9a6884076253d999f07ef4ee37254fbc0e6213694",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Home/friendsstatus.svg",
+      "retrieved_url": "https://web.archive.org/web/20181223020035id_/https://static.rbxcdn.com/images/Home/friendsstatus.svg",
+      "filename": "friendsstatus.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Home/friendsstatus.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181223020035",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "50bbe065c21f9b4d93292ad88589ebfa3868cb7f4793d7ed5801f05af044bc37",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/fb-icon.png",
+      "retrieved_url": "https://web.archive.org/web/20190103085049id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/fb-icon.png",
+      "filename": "fb-icon.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Landing/RollerCoaster/fb-icon.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20190103085049",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "0f5ed53f5c87947beb61aa0acede49af6e4d84d89848bec4f0a939ecdd1b5493",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/gender-female_12072017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/gender-female_12072017.png",
+      "filename": "gender-female_12072017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Landing/RollerCoaster/gender-female_12072017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "98b3f5e2e371d56759457e1f4f1e7eaf8bcae646154039547202657943b3aa43",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/gender-male_12072017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/Landing/RollerCoaster/gender-male_12072017.png",
+      "filename": "gender-male_12072017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Landing/RollerCoaster/gender-male_12072017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "756001ac41dbc04c9bc9819eca1148f347352ebcec09f2145ec2ff121e7adc87",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/icon_logo_tagline_white_09272017.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/Logo/icon_logo_tagline_white_09272017.svg",
+      "filename": "icon_logo_tagline_white_09272017.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/icon_logo_tagline_white_09272017.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "6ff63b19db3d179f3bd3433d3b976c6ec1cebd71f72da6485f1ec5b2e5795147",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/logo_O_01302017.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222235710id_/https://static.rbxcdn.com/images/Logo/logo_O_01302017.svg",
+      "filename": "logo_O_01302017.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/logo_O_01302017.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235710",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "e31b574e26125ff8c26447c130ffc76f0d25d19523cbedfe79bf16898a4bb49f",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/logo_O_light_11052018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194006id_/https://static.rbxcdn.com/images/Logo/logo_O_light_11052018.svg",
+      "filename": "logo_O_light_11052018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/logo_O_light_11052018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194006",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "cadc084c668eda345cdc94f50a89d5a85e8396a851096dc3d314025e29ff0d08",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/roblox_logo_11212016.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222235710id_/https://static.rbxcdn.com/images/Logo/roblox_logo_11212016.svg",
+      "filename": "roblox_logo_11212016.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/roblox_logo_11212016.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235710",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "6515d1cfa3b45c1a2c1e73759660bb92cff6db28f04d4decd13670b9a31e196e",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/roblox_logo_light_11052018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194007id_/https://static.rbxcdn.com/images/Logo/roblox_logo_light_11052018.svg",
+      "filename": "roblox_logo_light_11052018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/roblox_logo_light_11052018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194007",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "f7ad288b7d1eae78cf256b0e94c78e1189f9e9bdb694c9de2f6a3fa0e728beec",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_09262017.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194002id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_09262017.svg",
+      "filename": "roblox_tagline_09262017.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/roblox_tagline_09262017.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194002",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "f9d532906c97805d31868feaca98ad7ee62eb6a597d671af956d5fdea70e6caf",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_dark_09282018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194011id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_dark_09282018.svg",
+      "filename": "roblox_tagline_dark_09282018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/roblox_tagline_dark_09282018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194011",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "1ae4a5227a4eab977bc493aad7b32223a055b6ae763b1675651b9c3ebaad9d7c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_light_10252018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194002id_/https://static.rbxcdn.com/images/Logo/roblox_tagline_light_10252018.svg",
+      "filename": "roblox_tagline_light_10252018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Logo/roblox_tagline_light_10252018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194002",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "7eae0bfd7e578d22ed4fe950f63072b1d16955c6bfa5a2a10334f9cbd713254e",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/bc_06282017.svg",
+      "retrieved_url": "https://web.archive.org/web/20181223020033id_/https://static.rbxcdn.com/images/Shared/bc_06282017.svg",
+      "filename": "bc_06282017.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/bc_06282017.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181223020033",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "fe723650c319d095a0bc75b3baa553a89037c6486c471b6ca668306b4a5d5dc6",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/bc_dark_09282018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194005id_/https://static.rbxcdn.com/images/Shared/bc_dark_09282018.svg",
+      "filename": "bc_dark_09282018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/bc_dark_09282018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194005",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "babf2d98185b124139fe602b59f37269f123b1bead788ce7cd881fde08852859",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/bc_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194001id_/https://static.rbxcdn.com/images/Shared/bc_light_10232018.svg",
+      "filename": "bc_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/bc_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194001",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "c447200add4a4b821d7dec7603a24664e91c7b5c04e40ce7651bed6cbb363835",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/branded_04182018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222235711id_/https://static.rbxcdn.com/images/Shared/branded_04182018.svg",
+      "filename": "branded_04182018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/branded_04182018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235711",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "d659b092303eb5f6f113420e6f12a2437bf50a11033849c9a4f03444f422221c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/branded_dark_11062018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194001id_/https://static.rbxcdn.com/images/Shared/branded_dark_11062018.svg",
+      "filename": "branded_dark_11062018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/branded_dark_11062018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194001",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "466c184a36a0f29a5d0cec580de7a4c4fe06ec8706b223e755e87fbd5f174159",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/branded_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194001id_/https://static.rbxcdn.com/images/Shared/branded_light_10232018.svg",
+      "filename": "branded_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/branded_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194001",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "b569f62072601bc57799546b0ba5a9d79b3f30619df39ca5ab0dff6f346307cf",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/common_dark_12032018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181223072652id_/https://static.rbxcdn.com/images/Shared/common_dark_12032018.svg",
+      "filename": "common_dark_12032018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/common_dark_12032018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181223072652",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "536e74bc8d96393fe49816b51b1cafd16217345a0bceabc07d26edf7d32d7047",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/common_light_12032018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181214121251id_/https://static.rbxcdn.com/images/Shared/common_light_12032018.svg",
+      "filename": "common_light_12032018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/common_light_12032018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181214121251",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "6f8b02cf51743eb9e39fbbfee1a270e88b615120f5e6043bb70eed0fc88619b8",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/common_sm_dark_12032018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181214121256id_/https://static.rbxcdn.com/images/Shared/common_sm_dark_12032018.svg",
+      "filename": "common_sm_dark_12032018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/common_sm_dark_12032018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181214121256",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "75fedc372406f4bd8e25770f85c097914a8e8f3d790185c67c66a9297d9d934c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/common_sm_light_12032018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181214121255id_/https://static.rbxcdn.com/images/Shared/common_sm_light_12032018.svg",
+      "filename": "common_sm_light_12032018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/common_sm_light_12032018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181214121255",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "9dc0006659a4c832abf2080fcfe83283a59550013e46b7c2fe161820cd668bef",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/facebook.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222235731id_/https://static.rbxcdn.com/images/Shared/facebook.svg",
+      "filename": "facebook.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/facebook.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235731",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "ec60e859ab8720d0ee3d0ec4869f35413b5ed2a7103f9a42767526b8d97b1e52",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/generic_09132018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222222427id_/https://static.rbxcdn.com/images/Shared/generic_09132018.svg",
+      "filename": "generic_09132018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/generic_09132018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222222427",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "d8bfd62bce9df57c3591f2caecd07f8f13310860bcbbad1ff86f1e66dd28564c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/generic_dark_11062018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194004id_/https://static.rbxcdn.com/images/Shared/generic_dark_11062018.svg",
+      "filename": "generic_dark_11062018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/generic_dark_11062018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194004",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "ff1cf8a8c156dac9a4deaa9e4207761c6dc447f1bcf1dbcce928bf9dfdaa06f5",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/generic_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194006id_/https://static.rbxcdn.com/images/Shared/generic_light_10232018.svg",
+      "filename": "generic_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/generic_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194006",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2dc27509cf67d1e2dca90bd55677ed0fec06be6f0d99de5b7ec062dd8e01033a",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/navigation_10022018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222235710id_/https://static.rbxcdn.com/images/Shared/navigation_10022018.svg",
+      "filename": "navigation_10022018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/navigation_10022018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235710",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "617ee51571ef7ce2aeb708cf4396b4b25bba01311589a00d088688a58cd676ea",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/navigation_dark_10022018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194008id_/https://static.rbxcdn.com/images/Shared/navigation_dark_10022018.svg",
+      "filename": "navigation_dark_10022018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/navigation_dark_10022018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194008",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "8ccd560252e07361c91c845c43de15e5b11df3b16f96803d7d310a8cb4a534d5",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/navigation_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194010id_/https://static.rbxcdn.com/images/Shared/navigation_light_10232018.svg",
+      "filename": "navigation_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/navigation_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194010",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "5eafa65184db82c4cf969095abd99c3a66c1b3a6ac4220b00f482c1c3e65833b",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/negative_06142018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194010id_/https://static.rbxcdn.com/images/Shared/negative_06142018.svg",
+      "filename": "negative_06142018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/negative_06142018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194010",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2b0e3f3173d1af1fdd3ca72ca3fc71a8ab8f3331e7138133a08e0715071b3afb",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/negative_dark_09282018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194011id_/https://static.rbxcdn.com/images/Shared/negative_dark_09282018.svg",
+      "filename": "negative_dark_09282018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/negative_dark_09282018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194011",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "a47664a544f805b235068900f91cbed532c43e8089872463d1215fe50df9cb48",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/negative_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194006id_/https://static.rbxcdn.com/images/Shared/negative_light_10232018.svg",
+      "filename": "negative_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/negative_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194006",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "ec7f31ceaa458f82911b1f7be6ea58a105f18ca958e4e32d3f4370617d860043",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/placeholder_10182018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194004id_/https://static.rbxcdn.com/images/Shared/placeholder_10182018.svg",
+      "filename": "placeholder_10182018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/placeholder_10182018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194004",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "73101280598c0ac460f1fffeef78a7c19c98eccda8f80dec0f18a5978f5d956b",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/placeholder_dark_10182018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194000id_/https://static.rbxcdn.com/images/Shared/placeholder_dark_10182018.svg",
+      "filename": "placeholder_dark_10182018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/placeholder_dark_10182018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194000",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2c5afdaee9b0201837d23335afdcfeff8f1e7a2de3131ebb9aa5e3e561c2d378",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/placeholder_light_10242018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194004id_/https://static.rbxcdn.com/images/Shared/placeholder_light_10242018.svg",
+      "filename": "placeholder_light_10242018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/placeholder_light_10242018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194004",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "66d8a85539a8733b61cb1d9c701fdba676235f14993c2f7dd21536e5c3f00d5f",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/social_06282017.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194007id_/https://static.rbxcdn.com/images/Shared/social_06282017.svg",
+      "filename": "social_06282017.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/social_06282017.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194007",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "4c74789762d1cc938a40f98421d655953f96fd991944368b74caa620b64bbac0",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/social_dark_09282018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194004id_/https://static.rbxcdn.com/images/Shared/social_dark_09282018.svg",
+      "filename": "social_dark_09282018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/social_dark_09282018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194004",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "7271c6c1aef8df60976739e7f891e31578a2aff5122766c60ed3824f39bbac0b",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Shared/social_light_10232018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194005id_/https://static.rbxcdn.com/images/Shared/social_light_10232018.svg",
+      "filename": "social_light_10232018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Shared/social_light_10232018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194005",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "fc343cf0f50b8718d5be8bfa8eb57fe70a97a5f1bf687f5f8aab7f39ceb6ca2d",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow.svg",
+      "filename": "icon_downarrow.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Upgrades/Purchase/icon_downarrow.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "738b03df7253b873cd9bf2d7d50fc51fe77eb18ee5e97aa36cac490c9566cea3",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow_on.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222194006id_/https://static.rbxcdn.com/images/Upgrades/Purchase/icon_downarrow_on.svg",
+      "filename": "icon_downarrow_on.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/Upgrades/Purchase/icon_downarrow_on.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222194006",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "c8c67e570a9905a431c221a45ec9f6c5a7da01397eb1962cd9e4e5638638ae1c",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/App-Store-badge.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/App-Store-badge.png",
+      "filename": "App-Store-badge.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/App-Store-badge.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2540eb5325460933abf6865fe0658f9e826ac51ee45df4444ec65c832cfa985d",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/amazon-store-badge.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/amazon-store-badge.png",
+      "filename": "amazon-store-badge.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/amazon-store-badge.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "c1f114f3cd3aeeca7e442081d55099fd21c42c59f2a071de54627c633077375f",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/devices_only_12072017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/landing/Rollercoaster/devices_only_12072017.png",
+      "filename": "devices_only_12072017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/devices_only_12072017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "f29bfc7022b520524ce0937773acf49c3e7033877f9f9b8b61e568f24b84d185",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/devices_people_12072017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/landing/Rollercoaster/devices_people_12072017.png",
+      "filename": "devices_people_12072017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/devices_people_12072017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "2e515ba9da477b54f23958b927de7ca0855e5aac174bd49650983b803774e9a9",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage1_12072017.jpg",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage1_12072017.jpg",
+      "filename": "gameimage1_12072017.jpg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/gameimage1_12072017.jpg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "802e019e9f5e1a4fca0d79cf3bae236988c9982397e7fc7bc580ea7968b9a0fa",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage2_12072017.jpg",
+      "retrieved_url": "https://web.archive.org/web/20181222212220id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage2_12072017.jpg",
+      "filename": "gameimage2_12072017.jpg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/gameimage2_12072017.jpg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212220",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "f430b160290ee27b739e5db79fb97e4a0cc55bdcc3b91c698d98ca58cdbcc98f",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage3_12072017.jpg",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/landing/Rollercoaster/gameimage3_12072017.jpg",
+      "filename": "gameimage3_12072017.jpg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/gameimage3_12072017.jpg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "4214fb0e2cf4ef3f33372661be894c30eb8fe54814681c5913cb590258768d93",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/google_play_store_badge_12022017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/google_play_store_badge_12022017.png",
+      "filename": "google_play_store_badge_12022017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/google_play_store_badge_12022017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "f1091c5dbd9cc672280e7e07e51ffc5219c80b8d11e491006250815ad74b0216",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/landing_bg_01082017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/landing_bg_01082017.png",
+      "filename": "landing_bg_01082017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/landing_bg_01082017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "c9208ab9755c52ee2a38dfbe13d1d5e8a3f034e029a1c37e9d935981f165ecfb",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/whatsroblox_12072017.jpg",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/landing/Rollercoaster/whatsroblox_12072017.jpg",
+      "filename": "whatsroblox_12072017.jpg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/whatsroblox_12072017.jpg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "0af2cfc82aa80ac711dbef3c3fd39ef2671b65513287ebd7f77062b0f9b4d685",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/windows_store_badge_01122018.svg",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/windows_store_badge_01122018.svg",
+      "filename": "windows_store_badge_01122018.svg",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/windows_store_badge_01122018.svg",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "e17cd58adf61e5d22c578ed1d102c61075f669b8eec0a75de3d4230a191a12bf",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/landing/Rollercoaster/xbox-store-badge.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212218id_/https://static.rbxcdn.com/images/landing/Rollercoaster/xbox-store-badge.png",
+      "filename": "xbox-store-badge.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/landing/Rollercoaster/xbox-store-badge.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212218",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "e5118052cf9f3211a15dab5dbfcfeff7d45090b5df2c043bea0c7aec387af74a",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/logo/logo_O_12072017.png",
+      "retrieved_url": "https://web.archive.org/web/20181222212219id_/https://static.rbxcdn.com/images/logo/logo_O_12072017.png",
+      "filename": "logo_O_12072017.png",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/logo/logo_O_12072017.png",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222212219",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "5bb23143bc22e08b6fda5c2d969f8c47437bd2fd6e2b6bc621127d82b9ce4a80",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222id_/https://static.rbxcdn.com/images/shared/loading.gif",
+      "retrieved_url": "https://web.archive.org/web/20181222235731id_/https://static.rbxcdn.com/images/shared/loading.gif",
+      "filename": "loading.gif",
+      "local_path": "api/public/Data/preserved/2018/landing/assets/images/shared/loading.gif",
+      "description": "Original landing CSS dependency",
+      "claimed_date": null,
+      "independently_verified_date": "20181222235731",
+      "referenced_by_capture": "2018-12-22T02:29:38Z",
+      "source_type": "image",
+      "retrieval_status": "retrieved",
+      "content_hash": "abe5cc7ec81a92de937f9402e5c9b31a55f8d50e984e66a876e05d2d0603cfe3",
+      "helps_restore": [
+        "landing"
+      ]
+    },
+    {
+      "url": "https://web.archive.org/web/20181222022938id_/https://www.roblox.com/",
+      "filename": "landing-web.raw",
+      "description": "Actual December landing document; immutable original private, structural adaptation at api/public/Data/index.html",
+      "claimed_date": null,
+      "independently_verified_date": "2018-12-22T02:29:38Z",
+      "source_type": "document",
+      "retrieval_status": "retrieved-private-original",
+      "content_hash": "4c214a1462a87d36f584fde7f964f8800e183b54f1373ca131a254e69c6432ad",
+      "helps_restore": [
+        "landing"
+      ]
     }
   ],
-  "source_count": 97,
+  "source_count": 172,
   "publication_policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present."
 }

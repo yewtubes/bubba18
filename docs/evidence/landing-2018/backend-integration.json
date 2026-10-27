@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+  "sourceBaseCommit": "155e2f61f5c6edddcbd97a0e7c289b144602274f",
+  "worktreeChanged": true,
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "checks": [
+    "Native root serves recovered December templates, CSS, real image/font assets and non-stale HTML; no missing preservation resources",
+    "Original Play/About/Platforms scrolling and navigation indicator execute",
+    "Original signup validator rejects empty/invalid fields before any account creation",
+    "Native username uniqueness contract, password visibility and real signup 403 work; missing Discord verification cannot create an account",
+    "Original responsive mobile login expands without horizontal overflow",
+    "Wrong password is rejected by the real C# endpoint; original login error route displays its recovered message",
+    "Recovered header login establishes a real session, respects a local ReturnUrl and retains authenticated root redirect"
+  ],
+  "screenshots": [
+    {
+      "filename": "landing-desktop-live.jpg",
+      "url": "http://127.0.0.1:5080/?ReturnUrl=%2Fusers%2F1%2Fprofile",
+      "capturedAt": "2026-10-27T23:14:44.305Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    },
+    {
+      "filename": "landing-full-live.jpg",
+      "url": "http://127.0.0.1:5080/?ReturnUrl=%2Fusers%2F1%2Fprofile",
+      "capturedAt": "2026-10-27T23:14:44.470Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": true
+    },
+    {
+      "filename": "landing-about-live.jpg",
+      "url": "http://127.0.0.1:5080/?ReturnUrl=%2Fusers%2F1%2Fprofile#/WhatsRobloxContainer",
+      "capturedAt": "2026-10-27T23:14:45.306Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    },
+    {
+      "filename": "landing-platforms-live.jpg",
+      "url": "http://127.0.0.1:5080/?ReturnUrl=%2Fusers%2F1%2Fprofile#/RobloxDeviceText",
+      "capturedAt": "2026-10-27T23:14:46.148Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    },
+    {
+      "filename": "landing-verification-live.jpg",
+      "url": "http://127.0.0.1:5080/?ReturnUrl=%2Fusers%2F1%2Fprofile#/RollerContainer",
+      "capturedAt": "2026-10-27T23:14:47.137Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    },
+    {
+      "filename": "landing-mobile-login-live.jpg",
+      "url": "http://127.0.0.1:5080/",
+      "capturedAt": "2026-10-27T23:14:48.241Z",
+      "kind": "Running original C# website, Redis, persistent PostgreSQL engine via PGlite wire server, and Next.js; synthetic local database accounts; no browser API mocks",
+      "fullPage": false
+    }
+  ],
+  "errors": [],
+  "apiFailures": [],
+  "database": {
+    "version": "PostgreSQL 18.6 (PGlite 0.5.12) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "database": "postgres"
+  },
+  "geometry": {
+    "navbar": {
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 66
+    },
+    "signup": {
+      "x": 683,
+      "y": 190,
+      "width": 683,
+      "height": 491.203125
+    },
+    "logo": {
+      "x": 186,
+      "y": 190,
+      "width": 457,
+      "height": 130
+    },
+    "roller": {
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 894
+    },
+    "fonts": "loaded"
+  }
+}

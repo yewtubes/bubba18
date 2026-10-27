@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="fullbody" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="360px" height="360px" viewBox="0 0 360 360" style="enable-background:new 0 0 360 360;" xml:space="preserve" preserveaspectratio="none">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F2F2F2;}
+	.st1{fill:none;stroke:#CCCCCC;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<rect id="bg" class="st0" width="360" height="360"/>
+<g id="fullbody_1_">
+	<g>
+		<path class="st1" d="M216,158v141c0,3.3-2.7,6-6,6h-18c-3.3,0-6-2.7-6-6v-70c0-2.2-1.8-4-4-4h-4c-2.2,0-4,1.8-4,4v70
+			c0,3.3-2.7,6-6,6h-18c-3.3,0-6-2.7-6-6V158"/>
+	</g>
+	<path class="st1" d="M180,55c-16,0-29,2.2-29,5v54c0,2.8,13,5,29,5s29-2.2,29-5V60C209,57.2,196,55,180,55z"/>
+	<g>
+		<path class="st1" d="M144,184l-15.3,28.7l-22.6-8.2l20.2-55.4c3.2-8.8,11.3-14.9,20.6-15.7c9-0.7,20.9-1.5,33.1-1.5"/>
+		<path class="st1" d="M109.2,231.2c-6.2-2.3-9.4-9.2-7.2-15.4s9.2-9.4,15.4-7.2c6.2,2.3,9.4,9.2,7.2,15.4"/>
+	</g>
+	<g>
+		<path class="st1" d="M216,184l15.3,28.7l22.6-8.2l-20.2-55.4c-3.2-8.8-11.3-14.9-20.6-15.7c-9-0.7-20.9-1.5-33.1-1.5"/>
+		<path class="st1" d="M250.8,231.2c6.2-2.3,9.4-9.2,7.2-15.4c-2.3-6.2-9.2-9.4-15.4-7.2s-9.4,9.2-7.2,15.4"/>
+	</g>
+</g>
+</svg>

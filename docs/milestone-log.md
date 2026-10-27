@@ -49,3 +49,13 @@ Remaining: authenticated Avatar/Settings/Groups/Develop and other legacy bodies,
 **Tests / screenshots:** Eight live integration checks, two genuine screenshots, no browser API mocks. Shout and wall writes survive SQL restart; anonymous posting/read restrictions remain enforced. See `evidence/groups-redesign/` for metadata and remaining gaps.
 
 **Still broken / next:** Affiliates persistence, complete menus/paging, exact December typography/resources and rendering. Next work is the actual December 2018 landing client requested by the user. Source and screenshots are committed together; metadata records the changed worktree used for capture.
+
+## 2026-10-27 — Actual December landing client integrated
+
+**Implemented / reused:** Replaced the actual native `api/public/Data/index.html` with the December 22 landing mount/footer and original AuthSite templates, controllers, validators, translations, CSS, artwork and scroll widgets. Existing C# authentication, signup verification, cooldowns and session handling remain authoritative. Landing adapters and HTML revalidate instead of being cached for a year. The existing login page now displays the original client's error-code messages.
+
+**Recovery / integration:** Same-day December AuthSite bundles and 67 local CSS dependency paths; immutable original hashes and exact dates in the source manifest. One unused Facebook image has a January 3 capture, explicitly recorded. Generic original resources are separate from local transport/bootstrap adaptations.
+
+**Tests / screenshots:** Actual C# + Redis + persistent PostgreSQL wire engine + Next.js, no browser mocks. Build passed. Browser test covers original scrolling, mobile expansion, username uniqueness, validation, real signup verification denial, wrong password, successful session and local redirect. Six real screenshots and exact outcomes are in `evidence/landing-2018/`.
+
+**Still broken / next:** Signup requires configured Discord OAuth; no verification was bypassed. Only English is connected. Store links lead to the local download page; genuine 2018 client/rendering compatibility is still unverified. Full pixel comparison remains outstanding. Continue converting remaining page bodies after publishing this milestone.

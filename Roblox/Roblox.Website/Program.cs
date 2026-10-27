@@ -179,6 +179,13 @@ app.UseRouting();
 
 var prepareResponseForCache = (StaticFileResponseContext ctx) =>
 {
+    if (string.Equals(ctx.File.Name, "index.html", StringComparison.OrdinalIgnoreCase) ||
+        ctx.Context.Request.Path.StartsWithSegments("/preserved/2018/landing"))
+    {
+        // The root landing document changes between preservation builds.
+        ctx.Context.Response.Headers[HeaderNames.CacheControl] = "no-cache";
+        return;
+    }
     const int durationInSeconds = 86400 * 365;
     ctx.Context.Response.Headers[HeaderNames.CacheControl] = "public,max-age=" + durationInSeconds;
     ctx.Context.Response.Headers.Remove(HeaderNames.LastModified);

@@ -1,0 +1,8 @@
+{
+  "source": "December 22 AuthSite language bundle c208fa9aa4f1077a8a1db7b022d7506d",
+  "messages": {
+    "0": "An unknown error occurred. Please try again.",
+    "1": "Incorrect username or password.",
+    "7": "Too many attempts. Please wait a bit."
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="36px" viewBox="0 0 72 36" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>light_common</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.9999815,8.5 L30.9248482,24.5356171 C31.7763195,25.5353915 31.6701266,27.0482825 30.6876596,27.9147537 C30.2596679,28.2922142 29.7122939,28.5 29.1459343,28.5 L8.85402874,28.5 C7.55393456,28.5 6.5,27.427499 6.5,26.1045019 C6.5,25.5281652 6.70418877,24.9711485 7.07511492,24.5356171 L18.9999815,8.5 Z" id="path-1"></path>
+    </defs>
+    <g id="light_common" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Triangle" fill="#FFFFFF" fill-rule="evenodd" transform="translate(19.000000, 18.500000) rotate(-270.000000) translate(-19.000000, -18.500000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
