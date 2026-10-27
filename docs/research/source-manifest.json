@@ -1426,8 +1426,23 @@
         "groups-redesign"
       ],
       "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
+    },
+    {
+      "url": "https://static.rbxcdn.com/css/e3a341febe3b8871291bbd49425371fb533cab903374592a92d4ccc6cd0ed325.css/fetch",
+      "filename": "redesign-angularcss.raw",
+      "description": "Later original redesigned Groups component resource; exact December version unrecovered",
+      "claimed_date": null,
+      "independently_verified_date": null,
+      "referenced_by_capture": "2019-05-24T13:08:08Z",
+      "source_type": "css",
+      "retrieval_status": "retrieved",
+      "content_hash": "d71593e2747f08e734bc661629f0ff73b39959a26e3a99e440f54e694524d648",
+      "helps_restore": [
+        "groups-redesign"
+      ],
+      "historical_limit": "2019 resource; target placement supported by Dec 13 beta announcement and supplied screenshot"
     }
   ],
-  "source_count": 96,
+  "source_count": 97,
   "publication_policy": "Public runtime templates omit captured verification fields and account hydration. Raw HTML and full conversations remain private. Original source hashes identify private immutable originals; published-content hashes identify adapted public copies where present."
 }
