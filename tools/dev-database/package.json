@@ -1,0 +1,1 @@
+{"name":"bubba18-dev-database","private":true,"type":"module","scripts":{"start":"node server.mjs","verify":"node verify.mjs"},"dependencies":{"@electric-sql/pglite":"0.5.12","@electric-sql/pglite-socket":"0.2.15","pg":"8.23.1"}}

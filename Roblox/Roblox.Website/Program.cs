@@ -17,15 +17,16 @@ using Roblox.Website.WebsiteModels;
 using Npgsql;
 
 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
-ServicePointManager.ServerCertificateValidationCallback += 
-	(sender, cert, chain, sslPolicyErrors) => true;
+
 
 var domain = AppDomain.CurrentDomain;
 // Set a timeout interval of 5 seconds.
 domain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromSeconds(5));
 
 IConfiguration configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
     .Build();
 
 var builder = WebApplication.CreateBuilder(args);

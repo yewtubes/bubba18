@@ -962,7 +962,7 @@ public class GameServerService : ServiceBase
 			{
 				id = jobId,
 				asset_id = placeId,
-				ip = "games.zawg.ca",
+				ip = Configuration.GSIPAddress,
 				port = NSPort,
 				RCCConnection = $"127.0.0.1:{RCCPort}",
 			});
@@ -972,7 +972,8 @@ public class GameServerService : ServiceBase
 		Process rccServer = new Process();
 		rccServer.StartInfo.CreateNoWindow = false;
 		rccServer.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
-		rccServer.StartInfo.FileName = $"{Configuration.RccService2018Path}RCCService.exe";
+		rccServer.StartInfo.FileName = Path.Combine(Configuration.RccService2018Path, "RCCService.exe");
+        rccServer.StartInfo.WorkingDirectory = Configuration.RccService2018Path;
 		// should i get rid of devsetting later
 		rccServer.StartInfo.Arguments = $"-console -verbose -settingsfile \"DevSettingsFile.json\" -port {RCCPort}";
 		rccServer.StartInfo.RedirectStandardError = false;
